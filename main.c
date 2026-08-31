@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "ships.h"
 
 // Function to print the battlefield and ship coordinates
 void displayBattlefield(double size,
@@ -54,6 +55,8 @@ int main()
     printf("=====================================\n");
     printf("    ADVANCED NAVAL BATTLE SIMULATOR\n");
     printf("=====================================\n\n");
+
+    showShipMessage();
 
     // Get battlefield size from user
     printf("Enter battlefield size: ");
