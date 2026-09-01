@@ -1,84 +1,52 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 #include "ships.h"
+#include "battle.h"
 
-// Function to print the battlefield and ship coordinates
-void displayBattlefield(double size,
-                        double battleshipX,
-                        double battleshipY,
-                        double escortX[],
-                        double escortY[],
-                        int numberOfEscorts)
+int main(void)
 {
-    int i;
-
-    printf("\n-------------------------------------\n");
-    printf("BATTLEFIELD\n");
-    printf("-------------------------------------\n");
-
-    // Print battleship location
-    printf("B at (%.2f, %.2f)\n",
-           battleshipX, battleshipY);
-
-    // Loop through and print each escort ship position
-    for (i = 0; i < numberOfEscorts; i++)
-    {
-        printf("E%d at (%.2f, %.2f)\n",
-               i + 1,
-               escortX[i],
-               escortY[i]);
-    }
-
-    printf("-------------------------------------\n");
-}
-
-int main()
-{
-    // Variables for grid size and battleship coordinates
     double battlefieldSize;
-    double battleshipX;
-    double battleshipY;
 
-    // Number of escort ships and loop index
+    Battleship battleship;
+    EscortShip escorts[MAX_ESCORTS];
+
+    double escortX[MAX_ESCORTS];
+    double escortY[MAX_ESCORTS];
+
     int numberOfEscorts;
     int i;
 
-    // Arrays to store X and Y coordinates of escort ships
-    double escortX[100];
-    double escortY[100];
-
-    // random number generator
-    srand(time(NULL));
-
-    // Welcome message
     printf("=====================================\n");
-    printf("    ADVANCED NAVAL BATTLE SIMULATOR\n");
+    printf("   ADVANCED NAVAL BATTLE SIMULATOR\n");
     printf("=====================================\n\n");
 
-    showShipMessage();
-
-    // Get battlefield size from user
+    /*
+     * Battlefield size
+     */
     printf("Enter battlefield size: ");
     scanf("%lf", &battlefieldSize);
 
-    // Check if size is valid
     if (battlefieldSize <= 0)
     {
         printf("Invalid battlefield size!\n");
         return 0;
     }
 
-    // Get battleship coordinates
+    /*
+     * Battleship position
+     */
     printf("Enter battleship X position: ");
-    scanf("%lf", &battleshipX);
+    scanf("%lf", &battleship.position.x);
 
     printf("Enter battleship Y position: ");
-    scanf("%lf", &battleshipY);
+    scanf("%lf", &battleship.position.y);
 
-    // Check if battleship is inside the grid boundary
-    if (battleshipX < 0 || battleshipX > battlefieldSize ||
-        battleshipY < 0 || battleshipY > battlefieldSize)
+    /*
+     * Validate Battleship
+     */
+    if (!isInsideBattlefield(battleship.position.x,
+                             battleship.position.y,
+                             battlefieldSize))
     {
         printf("\nInvalid battleship position!\n");
         printf("Position must be inside the battlefield.\n");
@@ -86,49 +54,63 @@ int main()
         return 0;
     }
 
-    // Get total number of escort ships
+    /*
+     * Number of Escort Ships
+     */
     printf("\nEnter number of escort ships: ");
     scanf("%d", &numberOfEscorts);
 
-    // Validate number of escort ships (1 to 100)
-    if (numberOfEscorts <= 0 || numberOfEscorts > 100)
+    if (numberOfEscorts <= 0 ||
+        numberOfEscorts > MAX_ESCORTS)
     {
         printf("\nInvalid number of escort ships!\n");
-        printf("Please enter a number between 1 and 100.\n");
+        printf("Please enter a number between 1 and %d.\n",
+               MAX_ESCORTS);
 
         return 0;
     }
 
-    // Randomly place escort ships within the battlefield size
+    /*
+     * Generate Escort Ships
+     */
+    createEscortShips(escorts,
+                      numberOfEscorts,
+                      battlefieldSize);
+
+    /*
+     * Copy coordinates for display.
+     */
     for (i = 0; i < numberOfEscorts; i++)
     {
-        escortX[i] = ((double)rand() / RAND_MAX) * battlefieldSize;
-        escortY[i] = ((double)rand() / RAND_MAX) * battlefieldSize;
+        escortX[i] = escorts[i].position.x;
+        escortY[i] = escorts[i].position.y;
     }
 
-    // Output summary
+    /*
+     * Display ship information.
+     */
     printf("\n=====================================\n");
-    printf("          BATTLEFIELD CREATED\n");
+    printf("         SHIPS CREATED\n");
     printf("=====================================\n");
 
-    printf("Battlefield size: %.2f x %.2f\n",
-           battlefieldSize, battlefieldSize);
-
-    printf("Battleship position: (%.2f, %.2f)\n",
-           battleshipX, battleshipY);
-
-    printf("\nEscort Ships:\n");
+    printf("Battleship: (%.2f, %.2f)\n",
+           battleship.position.x,
+           battleship.position.y);
 
     for (i = 0; i < numberOfEscorts; i++)
     {
-        printf("E%d -> (%.2f, %.2f)\n",
-               i + 1, escortX[i], escortY[i]);
+        printf("E%d: (%.2f, %.2f)\n",
+               escorts[i].id,
+               escorts[i].position.x,
+               escorts[i].position.y);
     }
 
-    // Calling function to display full battlefield output
+    /*
+     * Display visual battlefield.
+     */
     displayBattlefield(battlefieldSize,
-                       battleshipX,
-                       battleshipY,
+                       battleship.position.x,
+                       battleship.position.y,
                        escortX,
                        escortY,
                        numberOfEscorts);

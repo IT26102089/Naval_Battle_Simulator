@@ -1,7 +1,23 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include "ships.h"
 
-void showShipMessage(void)
+void createEscortShips(EscortShip escorts[],
+                       int numberOfEscorts,
+                       double battlefieldSize)
 {
-    printf("Ship system ready.\n");
+    int i;
+
+    srand((unsigned int)time(NULL));
+
+    for (i = 0; i < numberOfEscorts; i++)
+    {
+        escorts[i].id = i + 1;
+
+        escorts[i].position.x =
+            ((double)rand() / RAND_MAX) * battlefieldSize;
+
+        escorts[i].position.y =
+            ((double)rand() / RAND_MAX) * battlefieldSize;
+    }
 }
