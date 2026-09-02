@@ -1,0 +1,21 @@
+========================================
+       NAVAL BATTLE SIMULATOR
+       FINAL CONDITIONS
+========================================
+
+Battlefield Size: 1000.00
+
+BATTLESHIP
+Notation: U
+Name: USS Iowa (BB-61)
+Position: (500.00, 500.00)
+
+ESCORT SHIPS
+E1 - E_E - Japanese Kaibokan - Position (648.02, 743.99)
+E2 - E_B - Gabbiano-class Corvette - Position (377.22, 995.39)
+E3 - E_D - F-class Escort Ships - Position (413.82, 633.96)
+E4 - E_C - Matsu-class Destroyer - Position (829.66, 130.03)
+E5 - E_D - F-class Escort Ships - Position (208.65, 500.25)
+E6 - E_E - Japanese Kaibokan - Position (397.10, 663.39)
+E7 - E_D - F-class Escort Ships - Position (895.25, 641.08)
+E8 - E_E - Japanese Kaibokan - Position (847.03, 845.41)

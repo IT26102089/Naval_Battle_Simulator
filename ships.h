@@ -2,6 +2,8 @@
 #define SHIPS_H
 
 #define MAX_ESCORTS 100
+#define ESCORT_TYPES 5
+#define BATTLESHIP_TYPES 4
 
 typedef struct
 {
@@ -11,17 +13,45 @@ typedef struct
 
 typedef struct
 {
+    char notation;
+    char name[50];
+
     Position position;
-} Battleship;
+
+    double vmax;
+    double vmin;
+
+    double angleMax;
+    double angleMin;
+
+    double impactPower;
+
+} EscortShip;
 
 typedef struct
 {
-    int id;
-    Position position;
-} EscortShip;
+    char notation;
+    char name[50];
+    char gunName[60];
 
+    Position position;
+
+    double vmax;
+
+    double angleMax;
+    double angleMin;
+
+} Battleship;
+
+
+/* Create escort ships with random properties */
 void createEscortShips(EscortShip escorts[],
                        int numberOfEscorts,
-                       double battlefieldSize);
+                       double battlefieldSize,
+                       double battleshipVmax);
+
+
+/* Select battleship type */
+void setupBattleship(Battleship *battleship);
 
 #endif

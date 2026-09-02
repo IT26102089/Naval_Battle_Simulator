@@ -1,0 +1,98 @@
+========================================
+       NAVAL BATTLE SIMULATOR
+       INITIAL CONDITIONS
+========================================
+
+Battlefield Size: 1000.00
+
+BATTLESHIP
+Notation: U
+Name: USS Iowa (BB-61)
+Gun: 50-caliber Mark 7 gun
+Position: (500.00, 500.00)
+Vmax: 100.00
+Minimum Angle: 0.00
+Maximum Angle: 90.00
+
+ESCORT SHIPS
+========================================
+
+E1
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (648.02, 743.99)
+Vmax: 60.05
+Vmin: 9.71
+Maximum Angle: 70.00
+Minimum Angle: 38.94
+Impact Power: 0.04
+
+E2
+Notation: E_B
+Type: Gabbiano-class Corvette
+Position: (377.22, 995.39)
+Vmax: 79.05
+Vmin: 59.31
+Maximum Angle: 30.00
+Minimum Angle: 20.82
+Impact Power: 0.06
+
+E3
+Notation: E_D
+Type: F-class Escort Ships
+Position: (413.82, 633.96)
+Vmax: 57.15
+Vmin: 42.88
+Maximum Angle: 50.00
+Minimum Angle: 40.87
+Impact Power: 0.05
+
+E4
+Notation: E_C
+Type: Matsu-class Destroyer
+Position: (829.66, 130.03)
+Vmax: 18.93
+Vmin: 13.83
+Maximum Angle: 25.00
+Minimum Angle: 4.51
+Impact Power: 0.07
+
+E5
+Notation: E_D
+Type: F-class Escort Ships
+Position: (208.65, 500.25)
+Vmax: 73.56
+Vmin: 1.13
+Maximum Angle: 50.00
+Minimum Angle: 9.04
+Impact Power: 0.05
+
+E6
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (397.10, 663.39)
+Vmax: 95.34
+Vmin: 25.16
+Maximum Angle: 70.00
+Minimum Angle: 10.87
+Impact Power: 0.04
+
+E7
+Notation: E_D
+Type: F-class Escort Ships
+Position: (895.25, 641.08)
+Vmax: 58.94
+Vmin: 25.44
+Maximum Angle: 50.00
+Minimum Angle: 15.62
+Impact Power: 0.05
+
+E8
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (847.03, 845.41)
+Vmax: 66.43
+Vmin: 27.69
+Maximum Angle: 70.00
+Minimum Angle: 48.77
+Impact Power: 0.04
