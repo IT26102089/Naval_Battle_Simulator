@@ -3,18 +3,23 @@
 
 #include "ships.h"
 
-int isInsideBattlefield(double x,
-                        double y,
-                        double battlefieldSize);
-
 double calculateDistance(Position a,
                          Position b);
 
+double calculateProjectileRange(double velocity,
+                                double angleDegrees);
+
+double calculateFlightTime(double distance,
+                           double velocity,
+                           double angleDegrees);
+
 int canBattleshipHitEscort(Battleship battleship,
-                           EscortShip escort);
+                           EscortShip escort,
+                           double *hitTime);
 
 int canEscortHitBattleship(Battleship battleship,
-                           EscortShip escort);
+                           EscortShip escort,
+                           double *hitTime);
 
 void displayBattlefield(double battlefieldSize,
                         Battleship battleship,
@@ -29,6 +34,8 @@ void saveInitialConditions(Battleship battleship,
 void saveFinalConditions(Battleship battleship,
                          EscortShip escorts[],
                          int numberOfEscorts,
-                         double battlefieldSize);
+                         double battlefieldSize,
+                         int escortsHit,
+                         int sinkingEscort);
 
 #endif

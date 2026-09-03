@@ -1,0 +1,54 @@
+PART 1-A - ESCORT SHIPS HIT BY B
+
+Number of E ships hit: 10
+
+Index: E1
+Type: E_D
+Ship: F-class Escort Ships
+Time to hit: 8.26 seconds
+
+Index: E2
+Type: E_D
+Ship: F-class Escort Ships
+Time to hit: 5.44 seconds
+
+Index: E3
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 4.60 seconds
+
+Index: E4
+Type: E_A
+Ship: 1936A-class Destroyer
+Time to hit: 2.99 seconds
+
+Index: E5
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 3.05 seconds
+
+Index: E6
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 3.11 seconds
+
+Index: E7
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 7.51 seconds
+
+Index: E8
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 5.76 seconds
+
+Index: E9
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 4.58 seconds
+
+Index: E10
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 2.00 seconds
+

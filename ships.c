@@ -10,8 +10,7 @@ void setupBattleship(Battleship *battleship)
 {
     int choice;
 
-    printf("\n");
-    printf("========================================\n");
+    printf("\n========================================\n");
     printf("       BATTLESHIP TYPE SELECTION\n");
     printf("========================================\n");
 
@@ -27,71 +26,48 @@ void setupBattleship(Battleship *battleship)
     {
         case 1:
             battleship->notation = 'U';
-
-            strcpy(battleship->name,
-                   "USS Iowa (BB-61)");
-
-            strcpy(battleship->gunName,
-                   "50-caliber Mark 7 gun");
-
+            strcpy(battleship->name, "USS Iowa (BB-61)");
+            strcpy(battleship->gunName, "50-caliber Mark 7 gun");
             break;
 
         case 2:
             battleship->notation = 'M';
-
-            strcpy(battleship->name,
-                   "MS King George V");
-
-            strcpy(battleship->gunName,
-                   "356 mm Mark VII gun");
-
+            strcpy(battleship->name, "MS King George V");
+            strcpy(battleship->gunName, "356 mm Mark VII gun");
             break;
 
         case 3:
             battleship->notation = 'R';
-
-            strcpy(battleship->name,
-                   "Richelieu");
-
-            strcpy(battleship->gunName,
-                   "15 inch Mle 1935 gun");
-
+            strcpy(battleship->name, "Richelieu");
+            strcpy(battleship->gunName, "15 inch Mle 1935 gun");
             break;
 
         case 4:
             battleship->notation = 'S';
-
-            strcpy(battleship->name,
-                   "Sovetsky Soyuz-class");
-
-            strcpy(battleship->gunName,
-                   "16 inch B-37 gun");
-
+            strcpy(battleship->name, "Sovetsky Soyuz-class");
+            strcpy(battleship->gunName, "16 inch B-37 gun");
             break;
 
         default:
             printf("Invalid choice. Using USS Iowa.\n");
 
             battleship->notation = 'U';
-
-            strcpy(battleship->name,
-                   "USS Iowa (BB-61)");
-
-            strcpy(battleship->gunName,
-                   "50-caliber Mark 7 gun");
+            strcpy(battleship->name, "USS Iowa (BB-61)");
+            strcpy(battleship->gunName, "50-caliber Mark 7 gun");
+            break;
     }
 
     /*
      * Placeholder Vmax.
-     *
-     * We will replace this with the exact
-     * projectile/battleship velocity model
-     * from the assignment.
+     * We can later make this a proper
+     * user/random input if the assignment
+     * gives a specific value.
      */
     battleship->vmax = 100.0;
 
     battleship->angleMin = 0.0;
     battleship->angleMax = 90.0;
+    battleship->destroyed = 0;
 }
 
 
@@ -107,10 +83,10 @@ void createEscortShips(EscortShip escorts[],
 
     for (i = 0; i < numberOfEscorts; i++)
     {
-        type = rand() % ESCORT_TYPES;
+        escorts[i].destroyed = 0;
 
         /*
-         * Generate position.
+         * Random position.
          */
         escorts[i].position.x =
             ((double)rand() / RAND_MAX) * battlefieldSize;
@@ -120,36 +96,28 @@ void createEscortShips(EscortShip escorts[],
 
 
         /*
-         * Assign escort type.
+         * Select one of the five escort types.
          */
+        type = rand() % 5;
+
         switch (type)
         {
             case 0:
-
                 escorts[i].notation = 'A';
 
                 strcpy(escorts[i].name,
                        "1936A-class Destroyer");
 
+                escorts[i].impactPower = 0.08;
+
                 /*
-                 * Table 1:
-                 * Impact Power = 0.08
                  * Angle range = 20 degrees
                  */
-                escorts[i].impactPower = 0.08;
-                escorts[i].angleMax = 20.0;
+                escorts[i].angleRange = 20.0;
 
                 /*
-                 * Random minimum angle.
-                 */
-                escorts[i].angleMin =
-                    ((double)rand() / RAND_MAX) *
-                    escorts[i].angleMax;
-
-                /*
-                 * EA maximum velocity:
-                 *
-                 * Vmax = 1.2 * Vmax(B)
+                 * EA:
+                 * Vmax = 1.2 * Battleship Vmax
                  */
                 escorts[i].vmax =
                     1.2 * battleshipVmax;
@@ -158,121 +126,102 @@ void createEscortShips(EscortShip escorts[],
 
 
             case 1:
-
                 escorts[i].notation = 'B';
 
                 strcpy(escorts[i].name,
                        "Gabbiano-class Corvette");
 
+                escorts[i].impactPower = 0.06;
+
                 /*
-                 * Table 1:
-                 * Impact Power = 0.06
                  * Angle range = 30 degrees
                  */
-                escorts[i].impactPower = 0.06;
-                escorts[i].angleMax = 30.0;
-
-                escorts[i].angleMin =
-                    ((double)rand() / RAND_MAX) *
-                    escorts[i].angleMax;
+                escorts[i].angleRange = 30.0;
 
                 /*
-                 * Other escort maximum velocities
-                 * must be less than B Vmax.
+                 * Vmax < Battleship Vmax
                  */
                 escorts[i].vmax =
-                    ((double)rand() / RAND_MAX)
-                    * battleshipVmax;
+                    0.5 * battleshipVmax;
 
                 break;
 
 
             case 2:
-
                 escorts[i].notation = 'C';
 
                 strcpy(escorts[i].name,
                        "Matsu-class Destroyer");
 
+                escorts[i].impactPower = 0.07;
+
                 /*
-                 * Table 1:
-                 * Impact Power = 0.07
                  * Angle range = 25 degrees
                  */
-                escorts[i].impactPower = 0.07;
-                escorts[i].angleMax = 25.0;
-
-                escorts[i].angleMin =
-                    ((double)rand() / RAND_MAX) *
-                    escorts[i].angleMax;
+                escorts[i].angleRange = 25.0;
 
                 escorts[i].vmax =
-                    ((double)rand() / RAND_MAX)
-                    * battleshipVmax;
+                    0.5 * battleshipVmax;
 
                 break;
 
 
             case 3:
-
                 escorts[i].notation = 'D';
 
                 strcpy(escorts[i].name,
                        "F-class Escort Ships");
 
+                escorts[i].impactPower = 0.05;
+
                 /*
-                 * Table 1:
-                 * Impact Power = 0.05
                  * Angle range = 50 degrees
                  */
-                escorts[i].impactPower = 0.05;
-                escorts[i].angleMax = 50.0;
-
-                escorts[i].angleMin =
-                    ((double)rand() / RAND_MAX) *
-                    escorts[i].angleMax;
+                escorts[i].angleRange = 50.0;
 
                 escorts[i].vmax =
-                    ((double)rand() / RAND_MAX)
-                    * battleshipVmax;
+                    0.5 * battleshipVmax;
 
                 break;
 
 
             default:
-
                 escorts[i].notation = 'E';
 
                 strcpy(escorts[i].name,
                        "Japanese Kaibokan");
 
+                escorts[i].impactPower = 0.04;
+
                 /*
-                 * Table 1:
-                 * Impact Power = 0.04
                  * Angle range = 70 degrees
                  */
-                escorts[i].impactPower = 0.04;
-                escorts[i].angleMax = 70.0;
-
-                escorts[i].angleMin =
-                    ((double)rand() / RAND_MAX) *
-                    escorts[i].angleMax;
+                escorts[i].angleRange = 70.0;
 
                 escorts[i].vmax =
-                    ((double)rand() / RAND_MAX)
-                    * battleshipVmax;
+                    0.5 * battleshipVmax;
 
                 break;
         }
 
 
         /*
-         * Minimum velocity is randomly generated.
-         *
-         * It must be lower than Vmax.
+         * Vmin is randomly generated below Vmax.
          */
         escorts[i].vmin =
             ((double)rand() / RAND_MAX)
             * escorts[i].vmax;
+
+
+        /*
+         * theta_L is randomly generated.
+         *
+         * theta_H = theta_L + angleRange
+         *
+         * Maximum angle cannot exceed 90 degrees.
+         */
+        escorts[i].angleMin =
+            ((double)rand() / RAND_MAX)
+            * (90.0 - escorts[i].angleRange);
     }
 }
