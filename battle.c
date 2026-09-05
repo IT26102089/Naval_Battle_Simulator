@@ -3,98 +3,131 @@
 
 #include "battle.h"
 
-#define GRAVITY 9.81
+#define G 9.81
 
 
-double calculateDistance(Position a,
-                         Position b)
+double calculateDistance(
+    Position a,
+    Position b)
 {
-    double dx;
-    double dy;
-
-    dx = b.x - a.x;
-    dy = b.y - a.y;
+    double dx = b.x - a.x;
+    double dy = b.y - a.y;
 
     return sqrt(dx * dx + dy * dy);
 }
 
 
 /*
- * A/L projectile motion equation:
+ * A/L projectile equation:
  *
  * R = u^2 sin(2theta) / g
  */
-double calculateProjectileRange(double velocity,
-                                double angleDegrees)
+double calculateProjectileRange(
+    double velocity,
+    double angleDegrees)
 {
-    double angleRadians;
+    double radians;
 
-    angleRadians =
+    radians =
         angleDegrees * acos(-1.0) / 180.0;
 
-    return (velocity * velocity *
-            sin(2.0 * angleRadians))
-            / GRAVITY;
+    return
+        (velocity * velocity *
+         sin(2.0 * radians)) / G;
 }
 
 
 /*
- * Time required for the shell to reach
- * horizontal distance R.
- *
- * R = u cos(theta) * t
- *
- * Therefore:
+ * R = u cos(theta) t
  *
  * t = R / (u cos(theta))
  */
-double calculateFlightTime(double distance,
-                           double velocity,
-                           double angleDegrees)
+double calculateFlightTime(
+    double distance,
+    double velocity,
+    double angleDegrees)
 {
-    double angleRadians;
+    double radians;
 
-    angleRadians =
+    radians =
         angleDegrees * acos(-1.0) / 180.0;
 
+    if (velocity <= 0 ||
+        fabs(cos(radians)) < 0.000001)
+    {
+        return 0.0;
+    }
+
     return distance /
-           (velocity * cos(angleRadians));
+           (velocity * cos(radians));
 }
 
 
 /*
- * Find a firing angle that can hit the target.
+ * Checks whether B can hit E.
  *
- * For Part 1-A, B can fire from 0 to 90 degrees.
+ * minimumAngle and maximumAngle allow us
+ * to use this function for:
  *
- * We use the lower possible angle because
- * it gives a valid projectile path.
+ * Part 1-A:
+ * 0 - 90 degrees
+ *
+ * Part 1-B Simulation 2:
+ * jammed minimum angle - 90 degrees
  */
-int canBattleshipHitEscort(Battleship battleship,
-                           EscortShip escort,
-                           double *hitTime)
+int canBattleshipHitEscort(
+    Battleship battleship,
+    EscortShip escort,
+    double minimumAngle,
+    double maximumAngle,
+    double *hitTime)
 {
     double distance;
-    double maximumRange;
+    double maxRange;
     double value;
-    double angleRadians;
-    double angleDegrees;
+    double theta1;
+    double theta2;
+    double selectedAngle;
+
 
     distance =
-        calculateDistance(battleship.position,
-                          escort.position);
+        calculateDistance(
+            battleship.position,
+            escort.position);
 
 
     /*
-     * Maximum range occurs at 45 degrees.
+     * Maximum range within the permitted
+     * angle range.
+     *
+     * Check several angles.
      */
-    maximumRange =
-        calculateProjectileRange(
-            battleship.vmax,
-            45.0);
+    maxRange = 0.0;
+    selectedAngle = minimumAngle;
 
 
-    if (distance > maximumRange)
+    {
+        double angle;
+
+        for (angle = minimumAngle;
+             angle <= maximumAngle;
+             angle += 0.1)
+        {
+            double range =
+                calculateProjectileRange(
+                    battleship.vmax,
+                    angle);
+
+            if (range > maxRange)
+            {
+                maxRange = range;
+                selectedAngle = angle;
+            }
+        }
+    }
+
+
+    if (distance > maxRange)
     {
         return 0;
     }
@@ -103,91 +136,88 @@ int canBattleshipHitEscort(Battleship battleship,
     /*
      * Solve:
      *
-     * R = u^2 sin(2theta) / g
-     *
-     * sin(2theta) =
-     * Rg / u^2
+     * sin(2theta) = Rg/u^2
      */
     value =
-        (distance * GRAVITY) /
+        (distance * G) /
         (battleship.vmax *
          battleship.vmax);
 
 
-    /*
-     * Numerical protection.
-     */
     if (value > 1.0)
-    {
         value = 1.0;
-    }
-
 
     if (value < 0.0)
-    {
         value = 0.0;
-    }
 
 
-    angleRadians =
-        0.5 * asin(value);
+    theta1 =
+        0.5 * asin(value)
+        * 180.0 / acos(-1.0);
 
-    angleDegrees =
-        angleRadians * 180.0 /
-        acos(-1.0);
+
+    theta2 =
+        90.0 - theta1;
 
 
     /*
-     * Calculate shell flight time.
+     * Prefer lower-angle solution.
      */
-    if (distance == 0.0)
+    if (theta1 >= minimumAngle &&
+        theta1 <= maximumAngle)
     {
-        *hitTime = 0.0;
+        selectedAngle = theta1;
+    }
+    else if (theta2 >= minimumAngle &&
+             theta2 <= maximumAngle)
+    {
+        selectedAngle = theta2;
     }
     else
     {
-        *hitTime =
-            calculateFlightTime(
-                distance,
-                battleship.vmax,
-                angleDegrees);
+        return 0;
     }
+
+
+    *hitTime =
+        calculateFlightTime(
+            distance,
+            battleship.vmax,
+            selectedAngle);
 
     return 1;
 }
 
 
 /*
- * Determine whether an Escort can hit B.
+ * Escort attack range.
  *
- * Escort has:
+ * Escort has an angle range:
  *
- * theta_L = angleMin
- * theta_H = angleMin + angleRange
+ * theta_L to theta_H
  *
- * We check the projectile range at the
- * allowed angles.
+ * Therefore its attack range is not
+ * necessarily a circle.
  */
-int canEscortHitBattleship(Battleship battleship,
-                           EscortShip escort,
-                           double *hitTime)
+int canEscortHitBattleship(
+    Battleship battleship,
+    EscortShip escort,
+    double *hitTime)
 {
     double distance;
 
     double thetaL;
     double thetaH;
 
-    double rangeL;
-    double rangeH;
-    double range45;
-
-    double minimumRange;
-    double maximumRange;
-
     double value;
+    double theta1;
+    double theta2;
+    double selectedAngle;
 
-    double angleRadians;
-    double angleDegrees;
+    double minRange = 999999999.0;
+    double maxRange = 0.0;
+
+    double angle;
 
 
     distance =
@@ -196,135 +226,82 @@ int canEscortHitBattleship(Battleship battleship,
             battleship.position);
 
 
-    thetaL = escort.angleMin;
+    thetaL =
+        escort.angleMin;
 
     thetaH =
         escort.angleMin +
         escort.angleRange;
 
 
-    /*
-     * thetaH should never exceed 90.
-     */
     if (thetaH > 90.0)
-    {
         thetaH = 90.0;
-    }
-
-
-    rangeL =
-        calculateProjectileRange(
-            escort.vmax,
-            thetaL);
-
-    rangeH =
-        calculateProjectileRange(
-            escort.vmax,
-            thetaH);
 
 
     /*
-     * Normally the minimum range is one
-     * of the two boundary angles.
+     * Find minimum and maximum range
+     * in the allowed angle interval.
      */
-    if (rangeL < rangeH)
+    for (angle = thetaL;
+         angle <= thetaH;
+         angle += 0.1)
     {
-        minimumRange = rangeL;
-    }
-    else
-    {
-        minimumRange = rangeH;
-    }
-
-
-    if (rangeL > rangeH)
-    {
-        maximumRange = rangeL;
-    }
-    else
-    {
-        maximumRange = rangeH;
-    }
-
-
-    /*
-     * If 45 degrees is inside the allowed
-     * angle range, it gives maximum range.
-     */
-    if (thetaL <= 45.0 &&
-        thetaH >= 45.0)
-    {
-        range45 =
+        double range =
             calculateProjectileRange(
                 escort.vmax,
-                45.0);
+                angle);
 
-        if (range45 > maximumRange)
-        {
-            maximumRange = range45;
-        }
+        if (range < minRange)
+            minRange = range;
+
+        if (range > maxRange)
+            maxRange = range;
     }
 
 
     /*
-     * Target must be inside the annular
-     * attack range.
+     * If target is outside the annular
+     * attack region, it cannot be hit.
      */
-    if (distance < minimumRange ||
-        distance > maximumRange)
+    if (distance < minRange ||
+        distance > maxRange)
     {
         return 0;
     }
 
 
-    /*
-     * Find a possible angle.
-     *
-     * sin(2theta) = Rg/u^2
-     */
     value =
-        (distance * GRAVITY) /
+        (distance * G) /
         (escort.vmax *
          escort.vmax);
 
 
     if (value > 1.0)
-    {
         value = 1.0;
-    }
 
     if (value < 0.0)
-    {
         value = 0.0;
-    }
 
 
-    angleRadians =
-        0.5 * asin(value);
+    theta1 =
+        0.5 * asin(value)
+        * 180.0 / acos(-1.0);
 
-    angleDegrees =
-        angleRadians * 180.0 /
-        acos(-1.0);
+    theta2 =
+        90.0 - theta1;
 
 
-    /*
-     * If the lower angle is outside the
-     * allowed range, use the complementary
-     * projectile angle.
-     */
-    if (angleDegrees < thetaL ||
-        angleDegrees > thetaH)
+    if (theta1 >= thetaL &&
+        theta1 <= thetaH)
     {
-        angleDegrees =
-            90.0 - angleDegrees;
+        selectedAngle = theta1;
     }
-
-
-    /*
-     * Final angle validation.
-     */
-    if (angleDegrees < thetaL ||
-        angleDegrees > thetaH)
+    else if (theta2 >= thetaL &&
+             theta2 <= thetaH)
+    {
+        selectedAngle = theta2;
+    }
+    else
     {
         return 0;
     }
@@ -334,93 +311,71 @@ int canEscortHitBattleship(Battleship battleship,
         calculateFlightTime(
             distance,
             escort.vmax,
-            angleDegrees);
+            selectedAngle);
 
     return 1;
 }
 
 
 /*
- * Simple visual representation of the
- * battlefield.
+ * Simple coordinate-grid display.
  */
-void displayBattlefield(double battlefieldSize,
-                        Battleship battleship,
-                        EscortShip escorts[],
-                        int numberOfEscorts)
+void displayBattlefield(
+    double battlefieldSize,
+    Battleship battleship,
+    EscortShip escorts[],
+    int numberOfEscorts)
 {
-    int rows = 10;
-    int columns = 10;
-
     int row;
     int column;
     int i;
 
-    int found;
+    int rows = 10;
+    int columns = 10;
 
 
     printf("\n");
-    printf("============================================\n");
-    printf("             NAVAL BATTLEFIELD\n");
-    printf("============================================\n");
+    printf("========== BATTLEFIELD ==========\n");
 
 
     for (row = rows - 1;
          row >= 0;
          row--)
     {
-        printf("%4d |",
-               (int)(battlefieldSize *
-                     row / rows));
-
-
         for (column = 0;
              column < columns;
              column++)
         {
-            double minX;
-            double maxX;
-            double minY;
-            double maxY;
-
-
-            minX =
+            double minX =
                 battlefieldSize *
                 column / columns;
 
-            maxX =
+            double maxX =
                 battlefieldSize *
                 (column + 1) / columns;
 
-            minY =
+            double minY =
                 battlefieldSize *
                 row / rows;
 
-            maxY =
+            double maxY =
                 battlefieldSize *
                 (row + 1) / rows;
 
+            int printed = 0;
 
-            found = 0;
 
-
-            /*
-             * Display B.
-             */
             if (battleship.position.x >= minX &&
                 battleship.position.x < maxX &&
                 battleship.position.y >= minY &&
                 battleship.position.y < maxY)
             {
                 printf(" B ");
-                found = 1;
+                printed = 1;
             }
 
 
-            /*
-             * Display E.
-             */
-            if (!found)
+            if (!printed)
             {
                 for (i = 0;
                      i < numberOfEscorts;
@@ -433,72 +388,68 @@ void displayBattlefield(double battlefieldSize,
                         escorts[i].position.y < maxY)
                     {
                         printf(" E ");
-                        found = 1;
+                        printed = 1;
                         break;
                     }
                 }
             }
 
 
-            if (!found)
-            {
+            if (!printed)
                 printf(" . ");
-            }
         }
 
         printf("\n");
     }
 
-    printf("      +-------------------------------\n");
-
-    printf("\nB = Battleship\n");
-    printf("E = Escort Ship\n");
-    printf(". = Empty area\n");
+    printf("B = Battleship | E = Escort\n");
 }
 
 
 /*
- * Save all initial conditions.
+ * Part 1-A initial file.
  */
-void saveInitialConditions(Battleship battleship,
-                           EscortShip escorts[],
-                           int numberOfEscorts,
-                           double battlefieldSize)
+void savePart1AInitial(
+    Battleship battleship,
+    EscortShip escorts[],
+    int numberOfEscorts,
+    double battlefieldSize)
 {
     FILE *file;
     int i;
 
 
     file =
-        fopen("results/initial_conditions.txt", "w");
+        fopen(
+            "results/part1A_initial.txt",
+            "w");
 
 
     if (file == NULL)
-    {
-        printf("Could not create initial_conditions.txt\n");
         return;
-    }
 
 
     fprintf(file,
             "NAVAL BATTLE SIMULATOR\n");
     fprintf(file,
-            "PART 1-A - INITIAL CONDITIONS\n\n");
+            "PART 1-A INITIAL CONDITIONS\n\n");
 
 
     fprintf(file,
-            "Battlefield Size: %.2f\n\n",
+            "Battlefield: %.2f x %.2f\n\n",
+            battlefieldSize,
             battlefieldSize);
 
 
     fprintf(file,
             "BATTLESHIP\n");
+
     fprintf(file,
-            "Notation: %c\n",
+            "Type: %c\n",
             battleship.notation);
 
     fprintf(file,
-            "Type: %s\n",
+            "Name: %s\n",
             battleship.name);
 
     fprintf(file,
@@ -506,7 +457,7 @@ void saveInitialConditions(Battleship battleship,
             battleship.gunName);
 
     fprintf(file,
-            "Position: (%.2f, %.2f)\n",
+            "Position: %.2f %.2f\n",
             battleship.position.x,
             battleship.position.y);
 
@@ -515,12 +466,7 @@ void saveInitialConditions(Battleship battleship,
             battleship.vmax);
 
     fprintf(file,
-            "Minimum Angle: %.2f\n",
-            battleship.angleMin);
-
-    fprintf(file,
-            "Maximum Angle: %.2f\n\n",
-            battleship.angleMax);
+            "Angle: 0 - 90 degrees\n\n");
 
 
     fprintf(file,
@@ -533,18 +479,18 @@ void saveInitialConditions(Battleship battleship,
     {
         fprintf(file,
                 "\nE%d\n",
-                i + 1);
+                escorts[i].index);
 
         fprintf(file,
-                "Notation: E_%c\n",
+                "Type: E_%c\n",
                 escorts[i].notation);
 
         fprintf(file,
-                "Type: %s\n",
+                "Name: %s\n",
                 escorts[i].name);
 
         fprintf(file,
-                "Position: (%.2f, %.2f)\n",
+                "Position: %.2f %.2f\n",
                 escorts[i].position.x,
                 escorts[i].position.y);
 
@@ -557,15 +503,11 @@ void saveInitialConditions(Battleship battleship,
                 escorts[i].vmax);
 
         fprintf(file,
-                "Minimum Angle: %.2f\n",
+                "Theta_L: %.2f\n",
                 escorts[i].angleMin);
 
         fprintf(file,
-                "Angle Range: %.2f\n",
-                escorts[i].angleRange);
-
-        fprintf(file,
-                "Maximum Angle: %.2f\n",
+                "Theta_H: %.2f\n",
                 escorts[i].angleMin +
                 escorts[i].angleRange);
 
@@ -580,56 +522,38 @@ void saveInitialConditions(Battleship battleship,
 
 
 /*
- * Save final conditions and battle result.
+ * Part 1-A final file.
  */
-void saveFinalConditions(Battleship battleship,
-                         EscortShip escorts[],
-                         int numberOfEscorts,
-                         double battlefieldSize,
-                         int escortsHit,
-                         int sinkingEscort)
+void savePart1AFinal(
+    Battleship battleship,
+    EscortShip escorts[],
+    int numberOfEscorts,
+    int escortsHit,
+    int sinkingEscort)
 {
     FILE *file;
     int i;
 
 
     file =
-        fopen("results/final_conditions.txt", "w");
+        fopen(
+            "results/part1A_final.txt",
+            "w");
 
 
     if (file == NULL)
-    {
-        printf("Could not create final_conditions.txt\n");
         return;
-    }
 
 
     fprintf(file,
-            "NAVAL BATTLE SIMULATOR\n");
-    fprintf(file,
-            "PART 1-A - FINAL CONDITIONS\n\n");
+            "PART 1-A FINAL CONDITIONS\n\n");
 
 
     fprintf(file,
-            "Battlefield Size: %.2f\n\n",
-            battlefieldSize);
-
-
-    fprintf(file,
-            "BATTLESHIP\n");
-
-    fprintf(file,
-            "Notation: %c\n",
-            battleship.notation);
-
-    fprintf(file,
-            "Type: %s\n",
+            "Battleship: %c - %s\n",
+            battleship.notation,
             battleship.name);
 
-    fprintf(file,
-            "Position: (%.2f, %.2f)\n",
-            battleship.position.x,
-            battleship.position.y);
 
     fprintf(file,
             "Status: %s\n\n",
@@ -637,9 +561,6 @@ void saveFinalConditions(Battleship battleship,
                 ? "DESTROYED"
                 : "ALIVE");
 
-
-    fprintf(file,
-            "BATTLE RESULT\n");
 
     fprintf(file,
             "Escort ships destroyed by B: %d\n",
@@ -655,12 +576,12 @@ void saveFinalConditions(Battleship battleship,
     else
     {
         fprintf(file,
-                "B survived the battle.\n");
+                "B survived.\n");
     }
 
 
     fprintf(file,
-            "\nESCORT FINAL CONDITIONS\n");
+            "\nEscort final states:\n");
 
 
     for (i = 0;
@@ -668,14 +589,9 @@ void saveFinalConditions(Battleship battleship,
          i++)
     {
         fprintf(file,
-                "E%d - E_%c - %s - "
-                "Position (%.2f, %.2f) - "
-                "Status: %s\n",
-                i + 1,
+                "E%d E_%c - %s\n",
+                escorts[i].index,
                 escorts[i].notation,
-                escorts[i].name,
-                escorts[i].position.x,
-                escorts[i].position.y,
                 escorts[i].destroyed
                     ? "DESTROYED"
                     : "ALIVE");

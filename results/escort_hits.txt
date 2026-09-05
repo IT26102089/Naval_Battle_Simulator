@@ -1,54 +1,214 @@
 PART 1-A - ESCORT SHIPS HIT BY B
 
-Number of E ships hit: 10
+Number of E ships hit: 42
 
 Index: E1
-Type: E_D
-Ship: F-class Escort Ships
-Time to hit: 8.26 seconds
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 0.41 seconds
 
 Index: E2
-Type: E_D
-Ship: F-class Escort Ships
-Time to hit: 5.44 seconds
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 5.72 seconds
 
 Index: E3
-Type: E_C
-Ship: Matsu-class Destroyer
-Time to hit: 4.60 seconds
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 4.47 seconds
 
 Index: E4
-Type: E_A
-Ship: 1936A-class Destroyer
-Time to hit: 2.99 seconds
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 0.56 seconds
 
 Index: E5
-Type: E_E
-Ship: Japanese Kaibokan
-Time to hit: 3.05 seconds
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 2.57 seconds
 
 Index: E6
-Type: E_E
-Ship: Japanese Kaibokan
-Time to hit: 3.11 seconds
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 3.18 seconds
 
 Index: E7
 Type: E_E
 Ship: Japanese Kaibokan
-Time to hit: 7.51 seconds
+Time to hit: 2.98 seconds
 
 Index: E8
-Type: E_C
-Ship: Matsu-class Destroyer
-Time to hit: 5.76 seconds
+Type: E_D
+Ship: F-class Escort Ships
+Time to hit: 5.06 seconds
 
 Index: E9
-Type: E_B
-Ship: Gabbiano-class Corvette
-Time to hit: 4.58 seconds
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 1.86 seconds
 
 Index: E10
 Type: E_E
 Ship: Japanese Kaibokan
-Time to hit: 2.00 seconds
+Time to hit: 3.90 seconds
+
+Index: E11
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 3.98 seconds
+
+Index: E12
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 2.37 seconds
+
+Index: E13
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 2.94 seconds
+
+Index: E14
+Type: E_D
+Ship: F-class Escort Ships
+Time to hit: 1.23 seconds
+
+Index: E15
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 3.09 seconds
+
+Index: E16
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 1.14 seconds
+
+Index: E17
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 2.27 seconds
+
+Index: E18
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 4.15 seconds
+
+Index: E19
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 2.24 seconds
+
+Index: E20
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 1.53 seconds
+
+Index: E21
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 2.09 seconds
+
+Index: E22
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 3.74 seconds
+
+Index: E23
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 0.92 seconds
+
+Index: E24
+Type: E_A
+Ship: 1936A-class Destroyer
+Time to hit: 3.80 seconds
+
+Index: E25
+Type: E_A
+Ship: 1936A-class Destroyer
+Time to hit: 3.08 seconds
+
+Index: E26
+Type: E_D
+Ship: F-class Escort Ships
+Time to hit: 3.82 seconds
+
+Index: E27
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 5.00 seconds
+
+Index: E28
+Type: E_A
+Ship: 1936A-class Destroyer
+Time to hit: 1.19 seconds
+
+Index: E29
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 5.76 seconds
+
+Index: E30
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 3.18 seconds
+
+Index: E31
+Type: E_A
+Ship: 1936A-class Destroyer
+Time to hit: 0.70 seconds
+
+Index: E32
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 4.23 seconds
+
+Index: E33
+Type: E_A
+Ship: 1936A-class Destroyer
+Time to hit: 5.29 seconds
+
+Index: E34
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 4.07 seconds
+
+Index: E35
+Type: E_A
+Ship: 1936A-class Destroyer
+Time to hit: 1.19 seconds
+
+Index: E36
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 1.88 seconds
+
+Index: E37
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 0.30 seconds
+
+Index: E38
+Type: E_C
+Ship: Matsu-class Destroyer
+Time to hit: 2.09 seconds
+
+Index: E39
+Type: E_D
+Ship: F-class Escort Ships
+Time to hit: 4.23 seconds
+
+Index: E40
+Type: E_A
+Ship: 1936A-class Destroyer
+Time to hit: 2.77 seconds
+
+Index: E41
+Type: E_E
+Ship: Japanese Kaibokan
+Time to hit: 5.62 seconds
+
+Index: E42
+Type: E_B
+Ship: Gabbiano-class Corvette
+Time to hit: 2.90 seconds
 

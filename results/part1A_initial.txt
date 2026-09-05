@@ -1,0 +1,94 @@
+NAVAL BATTLE SIMULATOR
+PART 1-A INITIAL CONDITIONS
+
+Battlefield: 1000.00 x 1000.00
+
+BATTLESHIP
+Type: U
+Name: USS Iowa (BB-61)
+Gun: 50-caliber Mark 7 gun
+Position: 500.00 500.00
+Vmax: 80.00
+Angle: 0 - 90 degrees
+
+ESCORT SHIPS
+
+E1
+Type: E_D
+Name: F-class Escort Ships
+Position: 894.32 628.64
+Vmin: 62.45
+Vmax: 64.00
+Theta_L: 26.86
+Theta_H: 76.86
+Impact Power: 0.05
+
+E2
+Type: E_D
+Name: F-class Escort Ships
+Position: 507.60 15.64
+Vmin: 15.03
+Vmax: 64.00
+Theta_L: 7.65
+Theta_H: 57.65
+Impact Power: 0.05
+
+E3
+Type: E_A
+Name: 1936A-class Destroyer
+Position: 430.80 547.98
+Vmin: 3.66
+Vmax: 96.00
+Theta_L: 1.74
+Theta_H: 21.74
+Impact Power: 0.08
+
+E4
+Type: E_E
+Name: Japanese Kaibokan
+Position: 921.87 520.46
+Vmin: 5.86
+Vmax: 64.00
+Theta_L: 10.42
+Theta_H: 80.42
+Impact Power: 0.04
+
+E5
+Type: E_C
+Name: Matsu-class Destroyer
+Position: 540.31 130.40
+Vmin: 61.68
+Vmax: 64.00
+Theta_L: 24.96
+Theta_H: 49.96
+Impact Power: 0.07
+
+E6
+Type: E_D
+Name: F-class Escort Ships
+Position: 865.69 378.58
+Vmin: 32.48
+Vmax: 64.00
+Theta_L: 22.45
+Theta_H: 72.45
+Impact Power: 0.05
+
+E7
+Type: E_C
+Name: Matsu-class Destroyer
+Position: 664.86 401.79
+Vmin: 49.21
+Vmax: 64.00
+Theta_L: 24.55
+Theta_H: 49.55
+Impact Power: 0.07
+
+E8
+Type: E_D
+Name: F-class Escort Ships
+Position: 861.47 276.56
+Vmin: 4.92
+Vmax: 64.00
+Theta_L: 20.46
+Theta_H: 70.46
+Impact Power: 0.05

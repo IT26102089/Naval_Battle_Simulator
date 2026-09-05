@@ -1,68 +1,58 @@
 NAVAL BATTLE SIMULATOR
 PART 1-A - FINAL CONDITIONS
 
-Battlefield Size: 1000.00
+Battlefield Size: 500.00
 
 BATTLESHIP
 Notation: S
 Type: Sovetsky Soyuz-class
-Position: (5.00, 88.00)
-Status: DESTROYED
+Position: (52.00, 89.00)
+Status: ALIVE
 
 BATTLE RESULT
-Escort ships destroyed by B: 43
-E that sank B: E32
+Escort ships destroyed by B: 42
+B survived the battle.
 
 ESCORT FINAL CONDITIONS
-E1 - E_D - F-class Escort Ships - Position (32.48, 435.34) - Status: DESTROYED
-E2 - E_D - F-class Escort Ships - Position (18.47, 403.14) - Status: DESTROYED
-E3 - E_A - 1936A-class Destroyer - Position (951.31, 115.02) - Status: DESTROYED
-E4 - E_D - F-class Escort Ships - Position (753.88, 816.09) - Status: ALIVE
-E5 - E_D - F-class Escort Ships - Position (200.43, 773.94) - Status: DESTROYED
-E6 - E_A - 1936A-class Destroyer - Position (479.45, 496.65) - Status: DESTROYED
-E7 - E_D - F-class Escort Ships - Position (413.61, 870.03) - Status: DESTROYED
-E8 - E_A - 1936A-class Destroyer - Position (190.56, 287.48) - Status: DESTROYED
-E9 - E_C - Matsu-class Destroyer - Position (747.68, 794.08) - Status: ALIVE
-E10 - E_B - Gabbiano-class Corvette - Position (112.51, 728.40) - Status: DESTROYED
-E11 - E_D - F-class Escort Ships - Position (624.11, 87.87) - Status: DESTROYED
-E12 - E_A - 1936A-class Destroyer - Position (888.82, 248.99) - Status: DESTROYED
-E13 - E_E - Japanese Kaibokan - Position (852.60, 962.07) - Status: ALIVE
-E14 - E_C - Matsu-class Destroyer - Position (163.78, 103.90) - Status: DESTROYED
-E15 - E_B - Gabbiano-class Corvette - Position (973.78, 521.82) - Status: ALIVE
-E16 - E_A - 1936A-class Destroyer - Position (115.56, 656.53) - Status: DESTROYED
-E17 - E_B - Gabbiano-class Corvette - Position (1.83, 930.56) - Status: DESTROYED
-E18 - E_D - F-class Escort Ships - Position (362.39, 441.69) - Status: DESTROYED
-E19 - E_B - Gabbiano-class Corvette - Position (35.64, 442.19) - Status: DESTROYED
-E20 - E_D - F-class Escort Ships - Position (183.28, 156.00) - Status: DESTROYED
-E21 - E_A - 1936A-class Destroyer - Position (406.09, 675.61) - Status: DESTROYED
-E22 - E_D - F-class Escort Ships - Position (948.30, 262.40) - Status: DESTROYED
-E23 - E_B - Gabbiano-class Corvette - Position (420.14, 174.87) - Status: DESTROYED
-E24 - E_D - F-class Escort Ships - Position (199.52, 414.37) - Status: DESTROYED
-E25 - E_A - 1936A-class Destroyer - Position (159.55, 184.26) - Status: DESTROYED
-E26 - E_B - Gabbiano-class Corvette - Position (801.67, 295.04) - Status: DESTROYED
-E27 - E_C - Matsu-class Destroyer - Position (262.61, 667.18) - Status: DESTROYED
-E28 - E_B - Gabbiano-class Corvette - Position (892.12, 662.87) - Status: ALIVE
-E29 - E_A - 1936A-class Destroyer - Position (645.26, 188.42) - Status: DESTROYED
-E30 - E_B - Gabbiano-class Corvette - Position (738.50, 344.19) - Status: DESTROYED
-E31 - E_C - Matsu-class Destroyer - Position (658.73, 67.46) - Status: DESTROYED
-E32 - E_A - 1936A-class Destroyer - Position (853.54, 906.55) - Status: ALIVE
-E33 - E_E - Japanese Kaibokan - Position (471.14, 448.62) - Status: DESTROYED
-E34 - E_A - 1936A-class Destroyer - Position (648.83, 35.76) - Status: DESTROYED
-E35 - E_A - 1936A-class Destroyer - Position (661.96, 370.50) - Status: DESTROYED
-E36 - E_B - Gabbiano-class Corvette - Position (232.87, 411.22) - Status: DESTROYED
-E37 - E_B - Gabbiano-class Corvette - Position (352.17, 546.38) - Status: DESTROYED
-E38 - E_A - 1936A-class Destroyer - Position (565.82, 882.78) - Status: DESTROYED
-E39 - E_A - 1936A-class Destroyer - Position (725.45, 511.23) - Status: DESTROYED
-E40 - E_D - F-class Escort Ships - Position (680.60, 209.10) - Status: DESTROYED
-E41 - E_D - F-class Escort Ships - Position (494.67, 168.61) - Status: DESTROYED
-E42 - E_D - F-class Escort Ships - Position (820.02, 720.02) - Status: ALIVE
-E43 - E_D - F-class Escort Ships - Position (571.68, 31.56) - Status: DESTROYED
-E44 - E_E - Japanese Kaibokan - Position (805.29, 524.10) - Status: DESTROYED
-E45 - E_A - 1936A-class Destroyer - Position (12.37, 88.55) - Status: DESTROYED
-E46 - E_B - Gabbiano-class Corvette - Position (730.28, 210.38) - Status: DESTROYED
-E47 - E_A - 1936A-class Destroyer - Position (792.26, 915.58) - Status: ALIVE
-E48 - E_A - 1936A-class Destroyer - Position (726.97, 917.13) - Status: ALIVE
-E49 - E_A - 1936A-class Destroyer - Position (730.40, 551.20) - Status: DESTROYED
-E50 - E_C - Matsu-class Destroyer - Position (688.88, 689.73) - Status: DESTROYED
-E51 - E_E - Japanese Kaibokan - Position (597.76, 644.83) - Status: DESTROYED
-E52 - E_E - Japanese Kaibokan - Position (790.21, 403.46) - Status: DESTROYED
+E1 - E_B - Gabbiano-class Corvette - Position (11.38, 81.92) - Status: DESTROYED
+E2 - E_E - Japanese Kaibokan - Position (458.03, 458.98) - Status: DESTROYED
+E3 - E_B - Gabbiano-class Corvette - Position (488.17, 96.56) - Status: DESTROYED
+E4 - E_E - Japanese Kaibokan - Position (89.44, 130.26) - Status: DESTROYED
+E5 - E_C - Matsu-class Destroyer - Position (69.72, 342.96) - Status: DESTROYED
+E6 - E_B - Gabbiano-class Corvette - Position (191.88, 369.96) - Status: DESTROYED
+E7 - E_E - Japanese Kaibokan - Position (342.70, 137.52) - Status: DESTROYED
+E8 - E_D - F-class Escort Ships - Position (487.13, 315.22) - Status: DESTROYED
+E9 - E_E - Japanese Kaibokan - Position (236.18, 103.68) - Status: DESTROYED
+E10 - E_E - Japanese Kaibokan - Position (336.46, 344.64) - Status: DESTROYED
+E11 - E_C - Matsu-class Destroyer - Position (440.65, 51.09) - Status: DESTROYED
+E12 - E_C - Matsu-class Destroyer - Position (206.13, 267.06) - Status: DESTROYED
+E13 - E_B - Gabbiano-class Corvette - Position (286.28, 261.06) - Status: DESTROYED
+E14 - E_D - F-class Escort Ships - Position (170.27, 56.32) - Status: DESTROYED
+E15 - E_E - Japanese Kaibokan - Position (345.93, 4.97) - Status: DESTROYED
+E16 - E_B - Gabbiano-class Corvette - Position (1.71, 191.40) - Status: DESTROYED
+E17 - E_E - Japanese Kaibokan - Position (133.97, 298.82) - Status: DESTROYED
+E18 - E_C - Matsu-class Destroyer - Position (439.20, 212.22) - Status: DESTROYED
+E19 - E_B - Gabbiano-class Corvette - Position (34.26, 310.78) - Status: DESTROYED
+E20 - E_B - Gabbiano-class Corvette - Position (9.88, 235.24) - Status: DESTROYED
+E21 - E_E - Japanese Kaibokan - Position (108.11, 289.27) - Status: DESTROYED
+E22 - E_C - Matsu-class Destroyer - Position (269.18, 385.33) - Status: DESTROYED
+E23 - E_C - Matsu-class Destroyer - Position (8.39, 7.96) - Status: DESTROYED
+E24 - E_A - 1936A-class Destroyer - Position (416.31, 171.45) - Status: DESTROYED
+E25 - E_A - 1936A-class Destroyer - Position (356.87, 91.63) - Status: DESTROYED
+E26 - E_D - F-class Escort Ships - Position (386.69, 258.39) - Status: DESTROYED
+E27 - E_C - Matsu-class Destroyer - Position (395.88, 431.08) - Status: DESTROYED
+E28 - E_A - 1936A-class Destroyer - Position (135.23, 174.06) - Status: DESTROYED
+E29 - E_B - Gabbiano-class Corvette - Position (443.52, 479.24) - Status: DESTROYED
+E30 - E_B - Gabbiano-class Corvette - Position (70.07, 402.15) - Status: DESTROYED
+E31 - E_A - 1936A-class Destroyer - Position (78.88, 153.22) - Status: DESTROYED
+E32 - E_C - Matsu-class Destroyer - Position (207.75, 472.29) - Status: DESTROYED
+E33 - E_A - 1936A-class Destroyer - Position (361.86, 495.46) - Status: DESTROYED
+E34 - E_C - Matsu-class Destroyer - Position (41.04, 488.09) - Status: DESTROYED
+E35 - E_A - 1936A-class Destroyer - Position (122.45, 184.59) - Status: DESTROYED
+E36 - E_E - Japanese Kaibokan - Position (149.66, 248.54) - Status: DESTROYED
+E37 - E_E - Japanese Kaibokan - Position (32.10, 111.48) - Status: DESTROYED
+E38 - E_C - Matsu-class Destroyer - Position (99.85, 290.99) - Status: DESTROYED
+E39 - E_D - F-class Escort Ships - Position (464.63, 121.83) - Status: DESTROYED
+E40 - E_A - 1936A-class Destroyer - Position (286.39, 232.01) - Status: DESTROYED
+E41 - E_E - Japanese Kaibokan - Position (421.73, 483.25) - Status: DESTROYED
+E42 - E_B - Gabbiano-class Corvette - Position (328.08, 9.56) - Status: DESTROYED

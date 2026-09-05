@@ -2,6 +2,7 @@
 #define SHIPS_H
 
 #define MAX_ESCORTS 100
+#define MAX_POINTS 100
 
 typedef struct
 {
@@ -11,6 +12,8 @@ typedef struct
 
 typedef struct
 {
+    int index;
+
     char notation;
     char name[50];
 
@@ -25,6 +28,10 @@ typedef struct
     double impactPower;
 
     int destroyed;
+
+    int shotsFired;
+
+    double currentImpact;
 
 } EscortShip;
 
@@ -43,14 +50,21 @@ typedef struct
 
     int destroyed;
 
+    int shotsFired;
+
+    double gamma;
+
+    double currentImpact;
+
 } Battleship;
 
 
 void setupBattleship(Battleship *battleship);
 
-void createEscortShips(EscortShip escorts[],
-                       int numberOfEscorts,
-                       double battlefieldSize,
-                       double battleshipVmax);
+void createEscortShips(
+    EscortShip escorts[],
+    int numberOfEscorts,
+    double battlefieldSize,
+    double battleshipVmax);
 
 #endif

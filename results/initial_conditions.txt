@@ -1,13 +1,13 @@
 NAVAL BATTLE SIMULATOR
 PART 1-A - INITIAL CONDITIONS
 
-Battlefield Size: 1000.00
+Battlefield Size: 500.00
 
 BATTLESHIP
 Notation: S
 Type: Sovetsky Soyuz-class
 Gun: 16 inch B-37 gun
-Position: (5.00, 88.00)
+Position: (52.00, 89.00)
 Vmax: 100.00
 Minimum Angle: 0.00
 Maximum Angle: 90.00
@@ -15,573 +15,463 @@ Maximum Angle: 90.00
 ESCORT SHIPS
 
 E1
-Notation: E_D
-Type: F-class Escort Ships
-Position: (32.48, 435.34)
-Vmin: 16.86
+Notation: E_B
+Type: Gabbiano-class Corvette
+Position: (11.38, 81.92)
+Vmin: 0.20
 Vmax: 50.00
-Minimum Angle: 5.19
-Angle Range: 50.00
-Maximum Angle: 55.19
-Impact Power: 0.05
+Minimum Angle: 24.51
+Angle Range: 30.00
+Maximum Angle: 54.51
+Impact Power: 0.06
 
 E2
-Notation: E_D
-Type: F-class Escort Ships
-Position: (18.47, 403.14)
-Vmin: 8.39
-Vmax: 50.00
-Minimum Angle: 5.49
-Angle Range: 50.00
-Maximum Angle: 55.49
-Impact Power: 0.05
-
-E3
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (951.31, 115.02)
-Vmin: 69.69
-Vmax: 120.00
-Minimum Angle: 37.96
-Angle Range: 20.00
-Maximum Angle: 57.96
-Impact Power: 0.08
-
-E4
-Notation: E_D
-Type: F-class Escort Ships
-Position: (753.88, 816.09)
-Vmin: 2.43
-Vmax: 50.00
-Minimum Angle: 17.33
-Angle Range: 50.00
-Maximum Angle: 67.33
-Impact Power: 0.05
-
-E5
-Notation: E_D
-Type: F-class Escort Ships
-Position: (200.43, 773.94)
-Vmin: 32.13
-Vmax: 50.00
-Minimum Angle: 13.51
-Angle Range: 50.00
-Maximum Angle: 63.51
-Impact Power: 0.05
-
-E6
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (479.45, 496.65)
-Vmin: 100.51
-Vmax: 120.00
-Minimum Angle: 43.78
-Angle Range: 20.00
-Maximum Angle: 63.78
-Impact Power: 0.08
-
-E7
-Notation: E_D
-Type: F-class Escort Ships
-Position: (413.61, 870.03)
-Vmin: 13.45
-Vmax: 50.00
-Minimum Angle: 8.29
-Angle Range: 50.00
-Maximum Angle: 58.29
-Impact Power: 0.05
-
-E8
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (190.56, 287.48)
-Vmin: 101.13
-Vmax: 120.00
-Minimum Angle: 31.87
-Angle Range: 20.00
-Maximum Angle: 51.87
-Impact Power: 0.08
-
-E9
-Notation: E_C
-Type: Matsu-class Destroyer
-Position: (747.68, 794.08)
-Vmin: 48.73
-Vmax: 50.00
-Minimum Angle: 24.36
-Angle Range: 25.00
-Maximum Angle: 49.36
-Impact Power: 0.07
-
-E10
-Notation: E_B
-Type: Gabbiano-class Corvette
-Position: (112.51, 728.40)
-Vmin: 44.37
-Vmax: 50.00
-Minimum Angle: 46.63
-Angle Range: 30.00
-Maximum Angle: 76.63
-Impact Power: 0.06
-
-E11
-Notation: E_D
-Type: F-class Escort Ships
-Position: (624.11, 87.87)
-Vmin: 38.48
-Vmax: 50.00
-Minimum Angle: 29.22
-Angle Range: 50.00
-Maximum Angle: 79.22
-Impact Power: 0.05
-
-E12
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (888.82, 248.99)
-Vmin: 65.81
-Vmax: 120.00
-Minimum Angle: 6.06
-Angle Range: 20.00
-Maximum Angle: 26.06
-Impact Power: 0.08
-
-E13
 Notation: E_E
 Type: Japanese Kaibokan
-Position: (852.60, 962.07)
-Vmin: 45.67
+Position: (458.03, 458.98)
+Vmin: 9.72
 Vmax: 50.00
-Minimum Angle: 4.62
+Minimum Angle: 5.51
 Angle Range: 70.00
-Maximum Angle: 74.62
+Maximum Angle: 75.51
 Impact Power: 0.04
 
-E14
+E3
+Notation: E_B
+Type: Gabbiano-class Corvette
+Position: (488.17, 96.56)
+Vmin: 12.25
+Vmax: 50.00
+Minimum Angle: 39.29
+Angle Range: 30.00
+Maximum Angle: 69.29
+Impact Power: 0.06
+
+E4
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (89.44, 130.26)
+Vmin: 18.45
+Vmax: 50.00
+Minimum Angle: 3.37
+Angle Range: 70.00
+Maximum Angle: 73.37
+Impact Power: 0.04
+
+E5
 Notation: E_C
 Type: Matsu-class Destroyer
-Position: (163.78, 103.90)
-Vmin: 38.71
+Position: (69.72, 342.96)
+Vmin: 16.43
 Vmax: 50.00
-Minimum Angle: 61.53
+Minimum Angle: 43.42
 Angle Range: 25.00
-Maximum Angle: 86.53
+Maximum Angle: 68.42
 Impact Power: 0.07
 
-E15
+E6
 Notation: E_B
 Type: Gabbiano-class Corvette
-Position: (973.78, 521.82)
-Vmin: 27.20
+Position: (191.88, 369.96)
+Vmin: 12.61
 Vmax: 50.00
-Minimum Angle: 29.78
+Minimum Angle: 24.12
 Angle Range: 30.00
-Maximum Angle: 59.78
+Maximum Angle: 54.12
 Impact Power: 0.06
 
-E16
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (115.56, 656.53)
-Vmin: 36.77
-Vmax: 120.00
-Minimum Angle: 38.08
-Angle Range: 20.00
-Maximum Angle: 58.08
-Impact Power: 0.08
-
-E17
-Notation: E_B
-Type: Gabbiano-class Corvette
-Position: (1.83, 930.56)
-Vmin: 27.64
+E7
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (342.70, 137.52)
+Vmin: 35.72
 Vmax: 50.00
-Minimum Angle: 42.01
-Angle Range: 30.00
-Maximum Angle: 72.01
-Impact Power: 0.06
+Minimum Angle: 5.58
+Angle Range: 70.00
+Maximum Angle: 75.58
+Impact Power: 0.04
 
-E18
+E8
 Notation: E_D
 Type: F-class Escort Ships
-Position: (362.39, 441.69)
-Vmin: 29.48
+Position: (487.13, 315.22)
+Vmin: 11.55
 Vmax: 50.00
-Minimum Angle: 39.61
+Minimum Angle: 33.00
 Angle Range: 50.00
-Maximum Angle: 89.61
+Maximum Angle: 83.00
 Impact Power: 0.05
+
+E9
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (236.18, 103.68)
+Vmin: 25.52
+Vmax: 50.00
+Minimum Angle: 9.05
+Angle Range: 70.00
+Maximum Angle: 79.05
+Impact Power: 0.04
+
+E10
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (336.46, 344.64)
+Vmin: 48.14
+Vmax: 50.00
+Minimum Angle: 1.17
+Angle Range: 70.00
+Maximum Angle: 71.17
+Impact Power: 0.04
+
+E11
+Notation: E_C
+Type: Matsu-class Destroyer
+Position: (440.65, 51.09)
+Vmin: 7.52
+Vmax: 50.00
+Minimum Angle: 27.99
+Angle Range: 25.00
+Maximum Angle: 52.99
+Impact Power: 0.07
+
+E12
+Notation: E_C
+Type: Matsu-class Destroyer
+Position: (206.13, 267.06)
+Vmin: 41.84
+Vmax: 50.00
+Minimum Angle: 51.12
+Angle Range: 25.00
+Maximum Angle: 76.12
+Impact Power: 0.07
+
+E13
+Notation: E_B
+Type: Gabbiano-class Corvette
+Position: (286.28, 261.06)
+Vmin: 6.92
+Vmax: 50.00
+Minimum Angle: 14.19
+Angle Range: 30.00
+Maximum Angle: 44.19
+Impact Power: 0.06
+
+E14
+Notation: E_D
+Type: F-class Escort Ships
+Position: (170.27, 56.32)
+Vmin: 26.88
+Vmax: 50.00
+Minimum Angle: 13.75
+Angle Range: 50.00
+Maximum Angle: 63.75
+Impact Power: 0.05
+
+E15
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (345.93, 4.97)
+Vmin: 35.49
+Vmax: 50.00
+Minimum Angle: 10.41
+Angle Range: 70.00
+Maximum Angle: 80.41
+Impact Power: 0.04
+
+E16
+Notation: E_B
+Type: Gabbiano-class Corvette
+Position: (1.71, 191.40)
+Vmin: 35.82
+Vmax: 50.00
+Minimum Angle: 20.73
+Angle Range: 30.00
+Maximum Angle: 50.73
+Impact Power: 0.06
+
+E17
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (133.97, 298.82)
+Vmin: 0.61
+Vmax: 50.00
+Minimum Angle: 14.96
+Angle Range: 70.00
+Maximum Angle: 84.96
+Impact Power: 0.04
+
+E18
+Notation: E_C
+Type: Matsu-class Destroyer
+Position: (439.20, 212.22)
+Vmin: 2.45
+Vmax: 50.00
+Minimum Angle: 16.98
+Angle Range: 25.00
+Maximum Angle: 41.98
+Impact Power: 0.07
 
 E19
 Notation: E_B
 Type: Gabbiano-class Corvette
-Position: (35.64, 442.19)
-Vmin: 49.61
+Position: (34.26, 310.78)
+Vmin: 6.50
 Vmax: 50.00
-Minimum Angle: 21.33
+Minimum Angle: 45.60
 Angle Range: 30.00
-Maximum Angle: 51.33
+Maximum Angle: 75.60
 Impact Power: 0.06
 
 E20
-Notation: E_D
-Type: F-class Escort Ships
-Position: (183.28, 156.00)
-Vmin: 35.09
-Vmax: 50.00
-Minimum Angle: 37.21
-Angle Range: 50.00
-Maximum Angle: 87.21
-Impact Power: 0.05
-
-E21
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (406.09, 675.61)
-Vmin: 17.62
-Vmax: 120.00
-Minimum Angle: 15.37
-Angle Range: 20.00
-Maximum Angle: 35.37
-Impact Power: 0.08
-
-E22
-Notation: E_D
-Type: F-class Escort Ships
-Position: (948.30, 262.40)
-Vmin: 8.65
-Vmax: 50.00
-Minimum Angle: 22.75
-Angle Range: 50.00
-Maximum Angle: 72.75
-Impact Power: 0.05
-
-E23
 Notation: E_B
 Type: Gabbiano-class Corvette
-Position: (420.14, 174.87)
-Vmin: 2.60
+Position: (9.88, 235.24)
+Vmin: 44.33
 Vmax: 50.00
-Minimum Angle: 43.66
+Minimum Angle: 0.48
 Angle Range: 30.00
-Maximum Angle: 73.66
+Maximum Angle: 30.48
 Impact Power: 0.06
 
-E24
-Notation: E_D
-Type: F-class Escort Ships
-Position: (199.52, 414.37)
-Vmin: 7.43
+E21
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (108.11, 289.27)
+Vmin: 38.36
 Vmax: 50.00
-Minimum Angle: 0.16
-Angle Range: 50.00
-Maximum Angle: 50.16
-Impact Power: 0.05
+Minimum Angle: 5.77
+Angle Range: 70.00
+Maximum Angle: 75.77
+Impact Power: 0.04
+
+E22
+Notation: E_C
+Type: Matsu-class Destroyer
+Position: (269.18, 385.33)
+Vmin: 37.40
+Vmax: 50.00
+Minimum Angle: 31.65
+Angle Range: 25.00
+Maximum Angle: 56.65
+Impact Power: 0.07
+
+E23
+Notation: E_C
+Type: Matsu-class Destroyer
+Position: (8.39, 7.96)
+Vmin: 23.23
+Vmax: 50.00
+Minimum Angle: 1.83
+Angle Range: 25.00
+Maximum Angle: 26.83
+Impact Power: 0.07
+
+E24
+Notation: E_A
+Type: 1936A-class Destroyer
+Position: (416.31, 171.45)
+Vmin: 13.77
+Vmax: 120.00
+Minimum Angle: 27.43
+Angle Range: 20.00
+Maximum Angle: 47.43
+Impact Power: 0.08
 
 E25
 Notation: E_A
 Type: 1936A-class Destroyer
-Position: (159.55, 184.26)
-Vmin: 13.41
+Position: (356.87, 91.63)
+Vmin: 59.64
 Vmax: 120.00
-Minimum Angle: 12.35
+Minimum Angle: 21.92
 Angle Range: 20.00
-Maximum Angle: 32.35
+Maximum Angle: 41.92
 Impact Power: 0.08
 
 E26
-Notation: E_B
-Type: Gabbiano-class Corvette
-Position: (801.67, 295.04)
-Vmin: 13.05
+Notation: E_D
+Type: F-class Escort Ships
+Position: (386.69, 258.39)
+Vmin: 32.30
 Vmax: 50.00
-Minimum Angle: 59.81
-Angle Range: 30.00
-Maximum Angle: 89.81
-Impact Power: 0.06
+Minimum Angle: 16.14
+Angle Range: 50.00
+Maximum Angle: 66.14
+Impact Power: 0.05
 
 E27
 Notation: E_C
 Type: Matsu-class Destroyer
-Position: (262.61, 667.18)
-Vmin: 35.73
+Position: (395.88, 431.08)
+Vmin: 40.49
 Vmax: 50.00
-Minimum Angle: 52.91
+Minimum Angle: 40.91
 Angle Range: 25.00
-Maximum Angle: 77.91
+Maximum Angle: 65.91
 Impact Power: 0.07
 
 E28
-Notation: E_B
-Type: Gabbiano-class Corvette
-Position: (892.12, 662.87)
-Vmin: 38.41
-Vmax: 50.00
-Minimum Angle: 50.15
-Angle Range: 30.00
-Maximum Angle: 80.15
-Impact Power: 0.06
-
-E29
 Notation: E_A
 Type: 1936A-class Destroyer
-Position: (645.26, 188.42)
-Vmin: 17.36
+Position: (135.23, 174.06)
+Vmin: 113.00
 Vmax: 120.00
-Minimum Angle: 16.83
+Minimum Angle: 6.73
 Angle Range: 20.00
-Maximum Angle: 36.83
+Maximum Angle: 26.73
 Impact Power: 0.08
+
+E29
+Notation: E_B
+Type: Gabbiano-class Corvette
+Position: (443.52, 479.24)
+Vmin: 48.58
+Vmax: 50.00
+Minimum Angle: 25.38
+Angle Range: 30.00
+Maximum Angle: 55.38
+Impact Power: 0.06
 
 E30
 Notation: E_B
 Type: Gabbiano-class Corvette
-Position: (738.50, 344.19)
-Vmin: 45.40
+Position: (70.07, 402.15)
+Vmin: 29.64
 Vmax: 50.00
-Minimum Angle: 29.57
+Minimum Angle: 55.14
 Angle Range: 30.00
-Maximum Angle: 59.57
+Maximum Angle: 85.14
 Impact Power: 0.06
 
 E31
-Notation: E_C
-Type: Matsu-class Destroyer
-Position: (658.73, 67.46)
-Vmin: 5.24
-Vmax: 50.00
-Minimum Angle: 11.65
-Angle Range: 25.00
-Maximum Angle: 36.65
-Impact Power: 0.07
+Notation: E_A
+Type: 1936A-class Destroyer
+Position: (78.88, 153.22)
+Vmin: 20.55
+Vmax: 120.00
+Minimum Angle: 56.24
+Angle Range: 20.00
+Maximum Angle: 76.24
+Impact Power: 0.08
 
 E32
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (853.54, 906.55)
-Vmin: 22.32
-Vmax: 120.00
-Minimum Angle: 11.73
-Angle Range: 20.00
-Maximum Angle: 31.73
-Impact Power: 0.08
+Notation: E_C
+Type: Matsu-class Destroyer
+Position: (207.75, 472.29)
+Vmin: 9.96
+Vmax: 50.00
+Minimum Angle: 38.38
+Angle Range: 25.00
+Maximum Angle: 63.38
+Impact Power: 0.07
 
 E33
-Notation: E_E
-Type: Japanese Kaibokan
-Position: (471.14, 448.62)
-Vmin: 7.18
-Vmax: 50.00
-Minimum Angle: 3.26
-Angle Range: 70.00
-Maximum Angle: 73.26
-Impact Power: 0.04
-
-E34
 Notation: E_A
 Type: 1936A-class Destroyer
-Position: (648.83, 35.76)
-Vmin: 87.03
+Position: (361.86, 495.46)
+Vmin: 84.69
 Vmax: 120.00
-Minimum Angle: 56.28
+Minimum Angle: 56.05
 Angle Range: 20.00
-Maximum Angle: 76.28
+Maximum Angle: 76.05
 Impact Power: 0.08
+
+E34
+Notation: E_C
+Type: Matsu-class Destroyer
+Position: (41.04, 488.09)
+Vmin: 24.11
+Vmax: 50.00
+Minimum Angle: 59.66
+Angle Range: 25.00
+Maximum Angle: 84.66
+Impact Power: 0.07
 
 E35
 Notation: E_A
 Type: 1936A-class Destroyer
-Position: (661.96, 370.50)
-Vmin: 80.73
+Position: (122.45, 184.59)
+Vmin: 42.83
 Vmax: 120.00
-Minimum Angle: 36.06
+Minimum Angle: 23.86
 Angle Range: 20.00
-Maximum Angle: 56.06
+Maximum Angle: 43.86
 Impact Power: 0.08
 
 E36
-Notation: E_B
-Type: Gabbiano-class Corvette
-Position: (232.87, 411.22)
-Vmin: 44.38
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (149.66, 248.54)
+Vmin: 3.26
 Vmax: 50.00
-Minimum Angle: 19.15
-Angle Range: 30.00
-Maximum Angle: 49.15
-Impact Power: 0.06
+Minimum Angle: 1.80
+Angle Range: 70.00
+Maximum Angle: 71.80
+Impact Power: 0.04
 
 E37
-Notation: E_B
-Type: Gabbiano-class Corvette
-Position: (352.17, 546.38)
-Vmin: 1.46
+Notation: E_E
+Type: Japanese Kaibokan
+Position: (32.10, 111.48)
+Vmin: 8.32
 Vmax: 50.00
-Minimum Angle: 39.08
-Angle Range: 30.00
-Maximum Angle: 69.08
-Impact Power: 0.06
+Minimum Angle: 7.88
+Angle Range: 70.00
+Maximum Angle: 77.88
+Impact Power: 0.04
 
 E38
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (565.82, 882.78)
-Vmin: 4.81
-Vmax: 120.00
-Minimum Angle: 4.82
-Angle Range: 20.00
-Maximum Angle: 24.82
-Impact Power: 0.08
-
-E39
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (725.45, 511.23)
-Vmin: 67.23
-Vmax: 120.00
-Minimum Angle: 45.84
-Angle Range: 20.00
-Maximum Angle: 65.84
-Impact Power: 0.08
-
-E40
-Notation: E_D
-Type: F-class Escort Ships
-Position: (680.60, 209.10)
-Vmin: 25.33
-Vmax: 50.00
-Minimum Angle: 37.37
-Angle Range: 50.00
-Maximum Angle: 87.37
-Impact Power: 0.05
-
-E41
-Notation: E_D
-Type: F-class Escort Ships
-Position: (494.67, 168.61)
-Vmin: 24.36
-Vmax: 50.00
-Minimum Angle: 33.65
-Angle Range: 50.00
-Maximum Angle: 83.65
-Impact Power: 0.05
-
-E42
-Notation: E_D
-Type: F-class Escort Ships
-Position: (820.02, 720.02)
-Vmin: 33.97
-Vmax: 50.00
-Minimum Angle: 24.31
-Angle Range: 50.00
-Maximum Angle: 74.31
-Impact Power: 0.05
-
-E43
-Notation: E_D
-Type: F-class Escort Ships
-Position: (571.68, 31.56)
-Vmin: 47.91
-Vmax: 50.00
-Minimum Angle: 2.43
-Angle Range: 50.00
-Maximum Angle: 52.43
-Impact Power: 0.05
-
-E44
-Notation: E_E
-Type: Japanese Kaibokan
-Position: (805.29, 524.10)
-Vmin: 18.16
-Vmax: 50.00
-Minimum Angle: 11.28
-Angle Range: 70.00
-Maximum Angle: 81.28
-Impact Power: 0.04
-
-E45
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (12.37, 88.55)
-Vmin: 63.57
-Vmax: 120.00
-Minimum Angle: 45.42
-Angle Range: 20.00
-Maximum Angle: 65.42
-Impact Power: 0.08
-
-E46
-Notation: E_B
-Type: Gabbiano-class Corvette
-Position: (730.28, 210.38)
-Vmin: 21.05
-Vmax: 50.00
-Minimum Angle: 43.02
-Angle Range: 30.00
-Maximum Angle: 73.02
-Impact Power: 0.06
-
-E47
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (792.26, 915.58)
-Vmin: 11.65
-Vmax: 120.00
-Minimum Angle: 28.19
-Angle Range: 20.00
-Maximum Angle: 48.19
-Impact Power: 0.08
-
-E48
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (726.97, 917.13)
-Vmin: 117.54
-Vmax: 120.00
-Minimum Angle: 41.76
-Angle Range: 20.00
-Maximum Angle: 61.76
-Impact Power: 0.08
-
-E49
-Notation: E_A
-Type: 1936A-class Destroyer
-Position: (730.40, 551.20)
-Vmin: 106.13
-Vmax: 120.00
-Minimum Angle: 35.66
-Angle Range: 20.00
-Maximum Angle: 55.66
-Impact Power: 0.08
-
-E50
 Notation: E_C
 Type: Matsu-class Destroyer
-Position: (688.88, 689.73)
-Vmin: 31.62
+Position: (99.85, 290.99)
+Vmin: 26.00
 Vmax: 50.00
-Minimum Angle: 3.43
+Minimum Angle: 50.78
 Angle Range: 25.00
-Maximum Angle: 28.43
+Maximum Angle: 75.78
 Impact Power: 0.07
 
-E51
+E39
+Notation: E_D
+Type: F-class Escort Ships
+Position: (464.63, 121.83)
+Vmin: 19.10
+Vmax: 50.00
+Minimum Angle: 37.98
+Angle Range: 50.00
+Maximum Angle: 87.98
+Impact Power: 0.05
+
+E40
+Notation: E_A
+Type: 1936A-class Destroyer
+Position: (286.39, 232.01)
+Vmin: 86.59
+Vmax: 120.00
+Minimum Angle: 66.23
+Angle Range: 20.00
+Maximum Angle: 86.23
+Impact Power: 0.08
+
+E41
 Notation: E_E
 Type: Japanese Kaibokan
-Position: (597.76, 644.83)
-Vmin: 33.66
+Position: (421.73, 483.25)
+Vmin: 35.99
 Vmax: 50.00
-Minimum Angle: 3.49
+Minimum Angle: 6.47
 Angle Range: 70.00
-Maximum Angle: 73.49
+Maximum Angle: 76.47
 Impact Power: 0.04
 
-E52
-Notation: E_E
-Type: Japanese Kaibokan
-Position: (790.21, 403.46)
-Vmin: 32.41
+E42
+Notation: E_B
+Type: Gabbiano-class Corvette
+Position: (328.08, 9.56)
+Vmin: 40.07
 Vmax: 50.00
-Minimum Angle: 16.49
-Angle Range: 70.00
-Maximum Angle: 86.49
-Impact Power: 0.04
+Minimum Angle: 5.06
+Angle Range: 30.00
+Maximum Angle: 35.06
+Impact Power: 0.06
