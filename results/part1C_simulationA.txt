@@ -1,46 +1,261 @@
 PART 1-C SIMULATION A
 
 B status: ALIVE
-Escort ships destroyed by B: 8
-Cumulative impact on B: 0.00%
+Escort ships destroyed by B: 12
+Cumulative impact on B: 16.00%
 
 E1 E_D
-Destroyed: YES
+Destroyed: NO
 Impact power: 0.05
 Shots fired: 0
 
 E2 E_D
-Destroyed: YES
+Destroyed: NO
 Impact power: 0.05
 Shots fired: 0
 
 E3 E_A
-Destroyed: YES
+Destroyed: NO
 Impact power: 0.08
 Shots fired: 0
 
 E4 E_E
-Destroyed: YES
+Destroyed: NO
 Impact power: 0.04
 Shots fired: 0
 
 E5 E_C
-Destroyed: YES
+Destroyed: NO
 Impact power: 0.07
 Shots fired: 0
 
 E6 E_D
-Destroyed: YES
+Destroyed: NO
 Impact power: 0.05
 Shots fired: 0
 
 E7 E_C
-Destroyed: YES
+Destroyed: NO
 Impact power: 0.07
 Shots fired: 0
 
 E8 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E9 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E10 E_C
 Destroyed: YES
+Impact power: 0.07
+Shots fired: 0
+
+E11 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E12 E_A
+Destroyed: YES
+Impact power: 0.08
+Shots fired: 0
+
+E13 E_E
+Destroyed: YES
+Impact power: 0.04
+Shots fired: 0
+
+E14 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E15 E_A
+Destroyed: YES
+Impact power: 0.08
+Shots fired: 0
+
+E16 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E17 E_B
+Destroyed: NO
+Impact power: 0.06
+Shots fired: 0
+
+E18 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E19 E_B
+Destroyed: NO
+Impact power: 0.06
+Shots fired: 0
+
+E20 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E21 E_C
+Destroyed: YES
+Impact power: 0.07
+Shots fired: 0
+
+E22 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E23 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E24 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E25 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E26 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E27 E_C
+Destroyed: YES
+Impact power: 0.07
+Shots fired: 0
+
+E28 E_B
+Destroyed: NO
+Impact power: 0.06
+Shots fired: 0
+
+E29 E_A
+Destroyed: NO
+Impact power: 0.08
+Shots fired: 1
+
+E30 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E31 E_A
+Destroyed: YES
+Impact power: 0.08
+Shots fired: 0
+
+E32 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E33 E_A
+Destroyed: NO
+Impact power: 0.08
+Shots fired: 1
+
+E34 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E35 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E36 E_B
+Destroyed: NO
+Impact power: 0.06
+Shots fired: 0
+
+E37 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E38 E_A
+Destroyed: YES
+Impact power: 0.08
+Shots fired: 0
+
+E39 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E40 E_B
+Destroyed: NO
+Impact power: 0.06
+Shots fired: 0
+
+E41 E_A
+Destroyed: NO
+Impact power: 0.08
+Shots fired: 0
+
+E42 E_B
+Destroyed: YES
+Impact power: 0.06
+Shots fired: 0
+
+E43 E_C
+Destroyed: YES
+Impact power: 0.07
+Shots fired: 0
+
+E44 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E45 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E46 E_B
+Destroyed: YES
+Impact power: 0.06
+Shots fired: 0
+
+E47 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E48 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E49 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E50 E_C
+Destroyed: YES
+Impact power: 0.07
+Shots fired: 0
+
+E51 E_D
+Destroyed: NO
 Impact power: 0.05
 Shots fired: 0
 

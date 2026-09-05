@@ -217,7 +217,6 @@ int canEscortHitBattleship(
     double minRange = 999999999.0;
     double maxRange = 0.0;
 
-    double angle;
 
 
     distance =
@@ -239,23 +238,43 @@ int canEscortHitBattleship(
 
 
     /*
-     * Find minimum and maximum range
-     * in the allowed angle interval.
+     * Find the exact minimum and maximum
+     * projectile range in the allowed angle
+     * interval.  R(theta) reaches its maximum
+     * at 45 degrees, so the extrema are found
+     * from the interval endpoints and 45 degrees
+     * when it lies inside the interval.
      */
-    for (angle = thetaL;
-         angle <= thetaH;
-         angle += 0.1)
     {
-        double range =
+        double rangeL =
             calculateProjectileRange(
                 escort.vmax,
-                angle);
+                thetaL);
 
-        if (range < minRange)
-            minRange = range;
+        double rangeH =
+            calculateProjectileRange(
+                escort.vmax,
+                thetaH);
 
-        if (range > maxRange)
-            maxRange = range;
+        minRange = rangeL < rangeH
+                 ? rangeL
+                 : rangeH;
+
+        maxRange = rangeL > rangeH
+                 ? rangeL
+                 : rangeH;
+
+        if (thetaL <= 45.0 &&
+            45.0 <= thetaH)
+        {
+            double range45 =
+                calculateProjectileRange(
+                    escort.vmax,
+                    45.0);
+
+            if (range45 > maxRange)
+                maxRange = range45;
+        }
     }
 
 

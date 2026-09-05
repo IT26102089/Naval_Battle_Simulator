@@ -558,6 +558,15 @@ void runPart1B(
                 b.position.x,
                 b.position.y);
 
+        printf("\n--------------------------------------------\n");
+        printf("ITERATION %d\n", iteration + 1);
+        printf("B position: (%.2f, %.2f)\n",
+               b.position.x, b.position.y);
+        if (jammed && iteration >= jamAfter)
+            printf("B gun angle restriction: %.2f - 90.00 degrees\n", jamMinAngle);
+        else
+            printf("B gun angle range: 0.00 - 90.00 degrees\n");
+
 
         /*
          * B fires at all surviving E ships.
@@ -592,6 +601,9 @@ void runPart1B(
                 fprintf(file,
                         "Time to hit: %.2f\n",
                         hitTime);
+
+                printf("B hit E%d E_%c | Time to hit: %.2f seconds\n",
+                       e[i].index, e[i].notation, hitTime);
             }
         }
 
@@ -617,6 +629,8 @@ void runPart1B(
                     e[i],
                     &hitTime))
             {
+                e[i].shotsFired++;
+
                 /*
                  * Part 1-B:
                  * one hit destroys B.
@@ -642,12 +656,13 @@ void runPart1B(
                     cumulativeImpact +=
                         e[i].impactPower;
 
-                    e[i].shotsFired++;
-
                     fprintf(file,
                             "E%d hit B: %.2f%% impact\n",
                             e[i].index,
                             e[i].impactPower * 100.0);
+
+                    printf("E%d hit B: %.2f%% impact\n",
+                           e[i].index, e[i].impactPower * 100.0);
 
 
                     if (cumulativeImpact >= 1.0)
@@ -678,6 +693,7 @@ void runPart1B(
         fprintf(file,
                 "E ships hit this iteration: %d\n",
                 escortsHit);
+        printf("E ships hit by B this iteration: %d\n", escortsHit);
 
 
         if (b.destroyed)
@@ -690,8 +706,17 @@ void runPart1B(
                     sinkingEscort);
 
             fprintf(file,
+                    "Time to impact: %.2f seconds\n",
+                    battleTime);
+
+            fprintf(file,
                     "Simulation stopped at iteration %d\n\n",
                     iteration + 1);
+
+            printf("B DESTROYED\n");
+            printf("E%d sank B\n", sinkingEscort);
+            printf("Time to impact: %.2f seconds\n", battleTime);
+            printf("Simulation stopped at iteration %d\n", iteration + 1);
 
             break;
         }
@@ -702,11 +727,13 @@ void runPart1B(
             fprintf(file,
                     "Cumulative B impact: %.2f%%\n",
                     cumulativeImpact * 100.0);
+            printf("Cumulative B impact: %.2f%%\n", cumulativeImpact * 100.0);
         }
 
 
         fprintf(file,
                 "B survives this iteration\n\n");
+        printf("B survives this iteration\n");
     }
 
 
@@ -733,6 +760,9 @@ void runPart1B(
                 cumulativeImpact * 100.0);
     }
 
+    printf("\nFINAL RESULT: B %s\n", b.destroyed ? "DESTROYED" : "ALIVE");
+    if (partCMode)
+        printf("Cumulative impact on B: %.2f%%\n", cumulativeImpact * 100.0);
 
     fclose(file);
 }
@@ -741,290 +771,203 @@ void runPart1B(
 int main(void)
 {
     Battleship battleship;
-
     EscortShip escorts[MAX_ESCORTS];
-
-    int numberOfEscorts;
-
-    double battlefieldSize;
-
-    unsigned int seed;
-
     Position path[MAX_POINTS];
 
-    int k;
+    int numberOfEscorts;
+    double battlefieldSize;
+    unsigned int seed;
+    int choice;
 
-    int t;
+    int k = 0;
+    int t = 0;
+    double jamAngle = 0.0;
 
-    double jamAngle;
-
-
-    printf("\n");
-    printf("============================================\n");
+    printf("\n============================================\n");
     printf("       ADVANCED NAVAL BATTLE SIMULATOR\n");
     printf("============================================\n");
 
+    /* Main menu comes FIRST. */
+    do
+    {
+        printf("\n=============== MAIN MENU ===============\n");
+        printf("1. Run Part 1-A\n");
+        printf("2. Run Part 1-B\n");
+        printf("3. Run Part 1-C\n");
+        printf("4. Run ALL Part 1 (A + B + C)\n");
+        printf("5. Exit\n");
+        printf("==========================================\n");
+        printf("Select an option: ");
+        scanf("%d", &choice);
 
-    /*
-     * Seed.
-     */
+        if (choice < 1 || choice > 5)
+            printf("Invalid option. Please select 1-5.\n");
+    }
+    while (choice < 1 || choice > 5);
+
+    if (choice == 5)
+    {
+        printf("\nExiting simulator. Goodbye!\n");
+        return 0;
+    }
+
+    /* Common initial conditions. */
     printf("\nEnter random seed: ");
     scanf("%u", &seed);
-
     srand(seed);
 
-
-    /*
-     * Battlefield.
-     */
     printf("\nEnter battlefield size D: ");
     scanf("%lf", &battlefieldSize);
-
-
     while (battlefieldSize <= 0)
     {
         printf("D must be positive: ");
         scanf("%lf", &battlefieldSize);
     }
 
-
-    /*
-     * Battleship.
-     */
     setupBattleship(&battleship);
 
-
-    printf("\nEnter Battleship X: ");
-    scanf("%lf",
-          &battleship.position.x);
-
-    printf("Enter Battleship Y: ");
-    scanf("%lf",
-          &battleship.position.y);
-
-
-    /*
-     * Escort count.
-     */
-    printf("\nEnter number of Escort Ships: ");
-    scanf("%d", &numberOfEscorts);
-
-
-    if (numberOfEscorts <= 0 ||
-        numberOfEscorts > MAX_ESCORTS)
+    do
     {
-        printf("Invalid number.\n");
-        return 1;
+        printf("\nEnter Battleship X (0 - %.2f): ", battlefieldSize);
+        scanf("%lf", &battleship.position.x);
+    }
+    while (battleship.position.x < 0 ||
+           battleship.position.x > battlefieldSize);
+
+    do
+    {
+        printf("Enter Battleship Y (0 - %.2f): ", battlefieldSize);
+        scanf("%lf", &battleship.position.y);
+    }
+    while (battleship.position.y < 0 ||
+           battleship.position.y > battlefieldSize);
+
+    do
+    {
+        printf("\nEnter number of Escort Ships (1-%d): ", MAX_ESCORTS);
+        scanf("%d", &numberOfEscorts);
+        if (numberOfEscorts <= 0 || numberOfEscorts > MAX_ESCORTS)
+            printf("Please enter a value between 1 and %d.\n", MAX_ESCORTS);
+    }
+    while (numberOfEscorts <= 0 || numberOfEscorts > MAX_ESCORTS);
+
+    createEscortShips(escorts, numberOfEscorts,
+                      battlefieldSize, battleship.vmax);
+
+    displayBattlefield(battlefieldSize, battleship,
+                       escorts, numberOfEscorts);
+
+    /* Part 1-A */
+    if (choice == 1 || choice == 4)
+    {
+        printf("\n============================================\n");
+        printf("               PART 1-A\n");
+        printf("============================================\n");
+
+        savePart1AInitial(battleship, escorts,
+                          numberOfEscorts, battlefieldSize);
+        runPart1A(battleship, escorts, numberOfEscorts, 0);
     }
 
-
-    /*
-     * Generate E ships.
-     */
-    createEscortShips(
-        escorts,
-        numberOfEscorts,
-        battlefieldSize,
-        battleship.vmax);
-
-
-    /*
-     * Display battlefield.
-     */
-    displayBattlefield(
-        battlefieldSize,
-        battleship,
-        escorts,
-        numberOfEscorts);
-
-
-    /*
-     * Create results directory externally
-     * using mkdir.
-     */
-
-
-    /*
-     * ==========================================
-     * PART 1-A
-     * ==========================================
-     */
-    printf("\n");
-    printf("============================================\n");
-    printf("               PART 1-A\n");
-    printf("============================================\n");
-
-
-    savePart1AInitial(
-        battleship,
-        escorts,
-        numberOfEscorts,
-        battlefieldSize);
-
-
-    runPart1A(
-        battleship,
-        escorts,
-        numberOfEscorts,
-        0);
-
-
-    /*
-     * ==========================================
-     * PART 1-B
-     * ==========================================
-     */
-
-    printf("\n");
-    printf("============================================\n");
-    printf("               PART 1-B\n");
-    printf("============================================\n");
-
-
-    printf("\nEnter k (number of path points, max %d): ",
-           MAX_POINTS);
-
-    scanf("%d", &k);
-
-
-    if (k <= 0 || k > MAX_POINTS)
+    /* Part 1-B needs k, t and jam angle. */
+    if (choice == 2 || choice == 4)
     {
-        printf("Invalid k. Using 10.\n");
-        k = 10;
+        printf("\n============================================\n");
+        printf("               PART 1-B\n");
+        printf("============================================\n");
+
+        do
+        {
+            printf("\nEnter k (number of path points, max %d): ", MAX_POINTS);
+            scanf("%d", &k);
+            if (k <= 0 || k > MAX_POINTS)
+                printf("Please enter a value between 1 and %d.\n", MAX_POINTS);
+        }
+        while (k <= 0 || k > MAX_POINTS);
+
+        generatePath(path, k, battlefieldSize);
+
+        do
+        {
+            printf("Enter t (jam point, 1 to %d): ", k - 1);
+            scanf("%d", &t);
+            if (t < 1 || t >= k)
+                printf("t must satisfy 0 < t < k.\n");
+        }
+        while (t < 1 || t >= k);
+
+        do
+        {
+            printf("Enter jammed minimum angle (0-30): ");
+            scanf("%lf", &jamAngle);
+            if (jamAngle <= 0 || jamAngle >= 30)
+                printf("Angle must satisfy 0 < theta_min < 30.\n");
+        }
+        while (jamAngle <= 0 || jamAngle >= 30);
+
+        printf("\n========== SIMULATION 1 ==========\n");
+        runPart1B(battleship, escorts, numberOfEscorts,
+                  path, k, t, jamAngle, 0, 0);
+
+        printf("\n========== SIMULATION 2 ==========\n");
+        runPart1B(battleship, escorts, numberOfEscorts,
+                  path, k, t, jamAngle, 0, 1);
     }
 
-
-    generatePath(
-        path,
-        k,
-        battlefieldSize);
-
-
-    /*
-     * t must be less than k.
-     */
-    printf("Enter t (jam point, less than k): ");
-    scanf("%d", &t);
-
-
-    if (t < 1)
-        t = 1;
-
-    if (t >= k)
-        t = k - 1;
-
-
-    /*
-     * Required:
-     * 0 < theta_min < 30
-     */
-    printf("Enter jammed minimum angle (0-30): ");
-    scanf("%lf", &jamAngle);
-
-
-    if (jamAngle <= 0 ||
-        jamAngle >= 30)
+    /* Part 1-C includes its own A, B1 and B2 simulations. */
+    if (choice == 3 || choice == 4)
     {
-        jamAngle = 15.0;
+        printf("\n============================================\n");
+        printf("               PART 1-C\n");
+        printf("============================================\n");
+
+        if (choice == 3)
+        {
+            do
+            {
+                printf("\nEnter k (number of path points, max %d): ", MAX_POINTS);
+                scanf("%d", &k);
+                if (k <= 0 || k > MAX_POINTS)
+                    printf("Please enter a value between 1 and %d.\n", MAX_POINTS);
+            }
+            while (k <= 0 || k > MAX_POINTS);
+
+            generatePath(path, k, battlefieldSize);
+
+            do
+            {
+                printf("Enter t (jam point, 1 to %d): ", k - 1);
+                scanf("%d", &t);
+                if (t < 1 || t >= k)
+                    printf("t must satisfy 0 < t < k.\n");
+            }
+            while (t < 1 || t >= k);
+
+            do
+            {
+                printf("Enter jammed minimum angle (0-30): ");
+                scanf("%lf", &jamAngle);
+                if (jamAngle <= 0 || jamAngle >= 30)
+                    printf("Angle must satisfy 0 < theta_min < 30.\n");
+            }
+            while (jamAngle <= 0 || jamAngle >= 30);
+        }
+
+        printf("\nRunning Part 1-C Simulation A...\n");
+        runPart1A(battleship, escorts, numberOfEscorts, 1);
+
+        printf("\nRunning Part 1-C Simulation B1...\n");
+        runPart1B(battleship, escorts, numberOfEscorts,
+                  path, k, t, jamAngle, 1, 0);
+
+        printf("\nRunning Part 1-C Simulation B2...\n");
+        runPart1B(battleship, escorts, numberOfEscorts,
+                  path, k, t, jamAngle, 1, 1);
     }
 
-
-    /*
-     * Simulation 1.
-     */
-    printf("\nRunning Part 1-B Simulation 1...\n");
-
-
-    runPart1B(
-        battleship,
-        escorts,
-        numberOfEscorts,
-        path,
-        k,
-        t,
-        jamAngle,
-	1,
-        0);
-
-
-    /*
-     * Simulation 2.
-     */
-    printf("Running Part 1-B Simulation 2...\n");
-
-
-    runPart1B(
-        battleship,
-        escorts,
-        numberOfEscorts,
-        path,
-        k,
-        t,
-        jamAngle,
-	1,
-        1);
-
-
-    /*
-     * ==========================================
-     * PART 1-C
-     * ==========================================
-     */
-
-    printf("\n");
+    printf("\n============================================\n");
+    printf("              SIMULATION COMPLETE\n");
     printf("============================================\n");
-    printf("               PART 1-C\n");
-    printf("============================================\n");
-
-
-    printf("\nRunning Part 1-C Simulation A...\n");
-
-
-    runPart1A(
-        battleship,
-        escorts,
-        numberOfEscorts,
-        1);
-
-
-    printf("\nRunning Part 1-C Simulation B1...\n");
-
-
-    runPart1B(
-        battleship,
-        escorts,
-        numberOfEscorts,
-        path,
-        k,
-        t,
-        jamAngle,
-        1,
-	0);
-
-
-    printf("\nRunning Part 1-C Simulation B2...\n");
-
-
-    runPart1B(
-        battleship,
-        escorts,
-        numberOfEscorts,
-        path,
-        k,
-        t,
-        jamAngle,
-	1,
-        1);
-
-
-    printf("\n");
-    printf("============================================\n");
-    printf("       PARTS 1-A, 1-B AND 1-C DONE\n");
-    printf("============================================\n");
-
-
-    printf("\nResults saved in results/\n");
-
 
     return 0;
 }
