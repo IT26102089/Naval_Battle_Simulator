@@ -6,6 +6,31 @@
 #include "ships.h"
 #include "battle.h"
 
+/* Current run number used for result file names. */
+static int resultRunNumber = 1;
+
+static int getNextRunNumber(void)
+{
+    FILE *file;
+    char filename[100];
+    int run = 1;
+
+    while (1)
+    {
+        sprintf(filename, "results/part1A_initial_run%03d.txt", run);
+        file = fopen(filename, "r");
+
+        if (file == NULL)
+            break;
+
+        fclose(file);
+        run++;
+    }
+
+    return run;
+}
+
+
 
 /*
  * Copy escort array.
@@ -203,10 +228,14 @@ void runPart1A(
          * Save hit details.
          */
         {
-            FILE *file =
-                fopen(
-                    "results/part1A_hits.txt",
-                    "w");
+            FILE *file;
+            char filename[100];
+
+            sprintf(filename,
+                    "results/part1A_hits_run%03d.txt",
+                    resultRunNumber);
+
+            file = fopen(filename, "w");
 
             if (file != NULL)
             {
@@ -283,11 +312,6 @@ void runPart1A(
             e[i].currentImpact =
                 e[i].impactPower;
 
-            printf("\nE%d attacked B: %.2f%% damage\n",
-                   e[i].index,
-                   e[i].impactPower * 100.0);
-
-
             if (cumulativeImpact >= 1.0)
             {
                 b.destroyed = 1;
@@ -324,11 +348,14 @@ void runPart1A(
      * Save Part 1-C result.
      */
     {
-        FILE *file =
-            fopen(
-                "results/part1C_simulationA.txt",
-                "w");
+        FILE *file;
+        char filename[120];
 
+        sprintf(filename,
+                "results/part1C_simulationA_run%03d.txt",
+                resultRunNumber);
+
+        file = fopen(filename, "w");
 
         if (file != NULL)
         {
@@ -451,23 +478,27 @@ void runPart1B(
         numberOfEscorts);
 
 
-    if (partCMode)
     {
-        file =
-            fopen(
-                jammed
-                    ? "results/part1C_simulationB2.txt"
-                    : "results/part1C_simulationB1.txt",
-                "w");
-    }
-    else
-    {
-        file =
-            fopen(
-                jammed
-                    ? "results/part1B_simulation2.txt"
-                    : "results/part1B_simulation1.txt",
-                "w");
+        char filename[120];
+
+        if (partCMode)
+        {
+            sprintf(filename,
+                    jammed
+                        ? "results/part1C_simulationB2_run%03d.txt"
+                        : "results/part1C_simulationB1_run%03d.txt",
+                    resultRunNumber);
+        }
+        else
+        {
+            sprintf(filename,
+                    jammed
+                        ? "results/part1B_simulation2_run%03d.txt"
+                        : "results/part1B_simulation1_run%03d.txt",
+                    resultRunNumber);
+        }
+
+        file = fopen(filename, "w");
     }
 
 
@@ -558,15 +589,6 @@ void runPart1B(
                 b.position.x,
                 b.position.y);
 
-        printf("\n--------------------------------------------\n");
-        printf("ITERATION %d\n", iteration + 1);
-        printf("B position: (%.2f, %.2f)\n",
-               b.position.x, b.position.y);
-        if (jammed && iteration >= jamAfter)
-            printf("B gun angle restriction: %.2f - 90.00 degrees\n", jamMinAngle);
-        else
-            printf("B gun angle range: 0.00 - 90.00 degrees\n");
-
 
         /*
          * B fires at all surviving E ships.
@@ -602,8 +624,6 @@ void runPart1B(
                         "Time to hit: %.2f\n",
                         hitTime);
 
-                printf("B hit E%d E_%c | Time to hit: %.2f seconds\n",
-                       e[i].index, e[i].notation, hitTime);
             }
         }
 
@@ -661,8 +681,6 @@ void runPart1B(
                             e[i].index,
                             e[i].impactPower * 100.0);
 
-                    printf("E%d hit B: %.2f%% impact\n",
-                           e[i].index, e[i].impactPower * 100.0);
 
 
                     if (cumulativeImpact >= 1.0)
@@ -693,7 +711,6 @@ void runPart1B(
         fprintf(file,
                 "E ships hit this iteration: %d\n",
                 escortsHit);
-        printf("E ships hit by B this iteration: %d\n", escortsHit);
 
 
         if (b.destroyed)
@@ -713,11 +730,6 @@ void runPart1B(
                     "Simulation stopped at iteration %d\n\n",
                     iteration + 1);
 
-            printf("B DESTROYED\n");
-            printf("E%d sank B\n", sinkingEscort);
-            printf("Time to impact: %.2f seconds\n", battleTime);
-            printf("Simulation stopped at iteration %d\n", iteration + 1);
-
             break;
         }
 
@@ -727,13 +739,11 @@ void runPart1B(
             fprintf(file,
                     "Cumulative B impact: %.2f%%\n",
                     cumulativeImpact * 100.0);
-            printf("Cumulative B impact: %.2f%%\n", cumulativeImpact * 100.0);
         }
 
 
         fprintf(file,
                 "B survives this iteration\n\n");
-        printf("B survives this iteration\n");
     }
 
 
@@ -760,11 +770,35 @@ void runPart1B(
                 cumulativeImpact * 100.0);
     }
 
-    printf("\nFINAL RESULT: B %s\n", b.destroyed ? "DESTROYED" : "ALIVE");
-    if (partCMode)
-        printf("Cumulative impact on B: %.2f%%\n", cumulativeImpact * 100.0);
-
     fclose(file);
+
+    /* Terminal shows only the required final summary. */
+    if (partCMode)
+    {
+        printf("Result: B %s\n", b.destroyed ? "DESTROYED" : "ALIVE");
+        printf("Cumulative impact on B: %.2f%%\n", cumulativeImpact * 100.0);
+    }
+    else
+    {
+        printf("Result: B %s\n", b.destroyed ? "DESTROYED" : "ALIVE");
+        printf("Iterations completed: %d\n", b.destroyed ? iteration + 1 : k);
+        if (b.destroyed)
+        {
+            printf("E%d sank B\n", sinkingEscort);
+            printf("Time to impact: %.2f seconds\n", battleTime);
+        }
+    }
+
+    if (partCMode)
+    {
+        printf("Detailed results saved to: results/part1C_simulationB%s_run%03d.txt\n",
+               jammed ? "2" : "1", resultRunNumber);
+    }
+    else
+    {
+        printf("Detailed results saved to: results/part1B_simulation%s_run%03d.txt\n",
+               jammed ? "2" : "1", resultRunNumber);
+    }
 }
 
 
@@ -776,7 +810,6 @@ int main(void)
 
     int numberOfEscorts;
     double battlefieldSize;
-    unsigned int seed;
     int choice;
 
     int k = 0;
@@ -786,6 +819,9 @@ int main(void)
     printf("\n============================================\n");
     printf("       ADVANCED NAVAL BATTLE SIMULATOR\n");
     printf("============================================\n");
+
+    resultRunNumber = getNextRunNumber();
+    setResultRunNumber(resultRunNumber);
 
     /* Main menu comes FIRST. */
     do
@@ -811,10 +847,8 @@ int main(void)
         return 0;
     }
 
-    /* Common initial conditions. */
-    printf("\nEnter random seed: ");
-    scanf("%u", &seed);
-    srand(seed);
+    /* Use the current time for random values. */
+    srand((unsigned int)time(NULL));
 
     printf("\nEnter battlefield size D: ");
     scanf("%lf", &battlefieldSize);
@@ -867,6 +901,9 @@ int main(void)
         savePart1AInitial(battleship, escorts,
                           numberOfEscorts, battlefieldSize);
         runPart1A(battleship, escorts, numberOfEscorts, 0);
+        printf("Detailed results saved to: results/part1A_initial_run%03d.txt\n", resultRunNumber);
+        printf("Detailed results saved to: results/part1A_hits_run%03d.txt\n", resultRunNumber);
+        printf("Detailed results saved to: results/part1A_final_run%03d.txt\n", resultRunNumber);
     }
 
     /* Part 1-B needs k, t and jam angle. */
@@ -955,6 +992,7 @@ int main(void)
 
         printf("\nRunning Part 1-C Simulation A...\n");
         runPart1A(battleship, escorts, numberOfEscorts, 1);
+        printf("Detailed results saved to: results/part1C_simulationA_run%03d.txt\n", resultRunNumber);
 
         printf("\nRunning Part 1-C Simulation B1...\n");
         runPart1B(battleship, escorts, numberOfEscorts,

@@ -5,6 +5,13 @@
 
 #define G 9.81
 
+static int resultRunNumber = 1;
+
+void setResultRunNumber(int runNumber)
+{
+    resultRunNumber = runNumber;
+}
+
 
 double calculateDistance(
     Position a,
@@ -438,10 +445,13 @@ void savePart1AInitial(
     int i;
 
 
-    file =
-        fopen(
-            "results/part1A_initial.txt",
-            "w");
+    {
+        char filename[100];
+        sprintf(filename,
+                "results/part1A_initial_run%03d.txt",
+                resultRunNumber);
+        file = fopen(filename, "w");
+    }
 
 
     if (file == NULL)
@@ -554,10 +564,13 @@ void savePart1AFinal(
     int i;
 
 
-    file =
-        fopen(
-            "results/part1A_final.txt",
-            "w");
+    {
+        char filename[100];
+        sprintf(filename,
+                "results/part1A_final_run%03d.txt",
+                resultRunNumber);
+        file = fopen(filename, "w");
+    }
 
 
     if (file == NULL)

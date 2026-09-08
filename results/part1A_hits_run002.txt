@@ -1,0 +1,52 @@
+PART 1-A ESCORT HITS
+
+Number hit: 16
+
+E2 E_D
+Time: 4.61 seconds
+
+E3 E_B
+Time: 3.22 seconds
+
+E5 E_D
+Time: 5.03 seconds
+
+E13 E_D
+Time: 5.41 seconds
+
+E27 E_A
+Time: 0.53 seconds
+
+E39 E_B
+Time: 3.11 seconds
+
+E43 E_C
+Time: 5.74 seconds
+
+E47 E_A
+Time: 4.31 seconds
+
+E52 E_B
+Time: 6.06 seconds
+
+E54 E_B
+Time: 5.11 seconds
+
+E56 E_E
+Time: 6.29 seconds
+
+E64 E_A
+Time: 3.55 seconds
+
+E65 E_C
+Time: 6.40 seconds
+
+E67 E_B
+Time: 6.72 seconds
+
+E74 E_E
+Time: 5.96 seconds
+
+E85 E_E
+Time: 1.86 seconds
+
