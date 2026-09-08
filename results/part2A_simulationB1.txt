@@ -1,0 +1,165 @@
+NAVAL BATTLE SIMULATOR
+PART 2-A - SIMULATION B1 (Part 1-B style)
+B firing interval: 5.00 seconds
+
+
+------------------------------
+ITERATION 1
+B position: (865.69, 378.58)
+Attack angle: 0.00 - 90.00 degrees
+B attack order position 1: E4 E_E
+Flight time: 3.22 seconds
+
+------------------------------
+ITERATION 2
+B position: (661.08, 507.47)
+Attack angle: 0.00 - 90.00 degrees
+B attack order position 2: E3 E_A
+Flight time: 5.59 seconds
+
+------------------------------
+ITERATION 3
+B position: (561.36, 664.86)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 4
+B position: (401.79, 190.00)
+Attack angle: 0.00 - 90.00 degrees
+B attack order position 3: E5 E_C
+Flight time: 3.17 seconds
+
+------------------------------
+ITERATION 5
+B position: (768.96, 377.64)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 6
+B position: (861.47, 276.56)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 7
+B position: (393.28, 76.94)
+Attack angle: 0.00 - 90.00 degrees
+B attack order position 4: E2 E_D
+Flight time: 2.69 seconds
+
+------------------------------
+ITERATION 8
+B position: (511.43, 584.61)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 9
+B position: (507.74, 59.41)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 10
+B position: (599.74, 545.83)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 11
+B position: (84.23, 521.61)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 12
+B position: (66.29, 732.00)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 13
+B position: (613.25, 587.54)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 14
+B position: (272.31, 743.65)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 15
+B position: (644.44, 236.03)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 16
+B position: (127.67, 510.14)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 17
+B position: (614.62, 788.76)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 18
+B position: (17.60, 175.98)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 19
+B position: (453.62, 419.39)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 20
+B position: (365.98, 222.57)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 21
+B position: (797.03, 227.45)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 22
+B position: (499.13, 190.31)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 23
+B position: (304.39, 10.56)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 24
+B position: (774.93, 812.13)
+Attack angle: 0.00 - 90.00 degrees
+B attack order position 5: E1 E_D
+Flight time: 5.04 seconds
+
+------------------------------
+ITERATION 25
+B position: (69.97, 374.66)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+FINAL RESULT
+B status: ALIVE
+E ships destroyed by B: 5
+B shots fired: 5
+Total time: 139.71 seconds

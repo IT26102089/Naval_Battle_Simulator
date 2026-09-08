@@ -3,8 +3,6 @@
 
 #include "ships.h"
 
-void setResultRunNumber(int runNumber);
-
 
 double calculateDistance(
     Position a,
