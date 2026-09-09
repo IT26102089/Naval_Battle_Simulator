@@ -1,7 +1,7 @@
 PART 1-C SIMULATION A
 
 B status: ALIVE
-Escort ships destroyed by B: 22
+Escort ships destroyed by B: 21
 Cumulative impact on B: 8.00%
 
 E1 E_D
@@ -432,20 +432,5 @@ Shots fired: 0
 E86 E_A
 Destroyed: NO
 Impact power: 0.08
-Shots fired: 0
-
-E87 E_A
-Destroyed: YES
-Impact power: 0.08
-Shots fired: 0
-
-E88 E_E
-Destroyed: NO
-Impact power: 0.04
-Shots fired: 0
-
-E89 E_C
-Destroyed: NO
-Impact power: 0.07
 Shots fired: 0
 

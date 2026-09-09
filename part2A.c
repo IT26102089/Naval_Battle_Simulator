@@ -161,9 +161,6 @@ static void runTimedSimulation(Battleship originalB,
     fprintf(file, "%s\n", title);
     fprintf(file, "B firing interval: %.2f seconds\n\n", fireInterval);
 
-    printf("\n%s\n", title);
-    printf("B firing interval: %.2f seconds\n", fireInterval);
-
     for (i = 0; i < k; i++)
     {
         double minAngle = 0.0;
@@ -182,9 +179,6 @@ static void runTimedSimulation(Battleship originalB,
         fprintf(file, "Attack angle: %.2f - %.2f degrees\n",
                 minAngle, maxAngle);
 
-        printf("\nIteration %d\n", i + 1);
-        printf("B position: (%.2f, %.2f)\n",
-               b.position.x, b.position.y);
 
         if (b.destroyed)
             break;
@@ -202,7 +196,6 @@ static void runTimedSimulation(Battleship originalB,
         if (target == -1)
         {
             fprintf(file, "No E ship is in B attack range.\n");
-            printf("No E ship is in B attack range.\n");
         }
         else
         {
@@ -218,9 +211,6 @@ static void runTimedSimulation(Battleship originalB,
                     "Flight time: %.2f seconds\n",
                     hitTime);
 
-            printf("B attacks E%d E_%c\n",
-                   e[target].index, e[target].notation);
-            printf("Flight time: %.2f seconds\n", hitTime);
         }
 
         /*
@@ -238,7 +228,6 @@ static void runTimedSimulation(Battleship originalB,
             fprintf(file,
                     "B destroyed by E%d.\n",
                     sinker);
-            printf("B destroyed by E%d.\n", sinker);
             break;
         }
 
@@ -247,8 +236,6 @@ static void runTimedSimulation(Battleship originalB,
             fprintf(file,
                     "Cumulative B impact: %.2f%%\n",
                     totalDamage * 100.0);
-            printf("Cumulative B impact: %.2f%%\n",
-                   totalDamage * 100.0);
         }
     }
 
@@ -263,10 +250,15 @@ static void runTimedSimulation(Battleship originalB,
         fprintf(file, "Cumulative B impact: %.2f%%\n",
                 totalDamage * 100.0);
 
-    printf("\nFinal result: B %s\n",
+    printf("\n%s\n", title);
+    printf("Battleship status  : %s\n",
            b.destroyed ? "DESTROYED" : "ALIVE");
-    printf("E ships destroyed by B: %d\n", destroyed);
-    printf("Total time: %.2f seconds\n", currentTime);
+    printf("E ships destroyed  : %d\n", destroyed);
+    printf("Attack order       : %d E ships\n", destroyed);
+    if (cumulative)
+        printf("Cumulative impact  : %.2f%%\n",
+               totalDamage * 100.0);
+    printf("Detailed results saved in:\n%s\n", fileName);
 
     fclose(file);
 }
@@ -368,5 +360,5 @@ void runPart2A(Battleship battleship,
                        resultPath("part2A_simulationC.txt"),
                        "PART 2-A - SIMULATION C (Part 1-C style)");
 
-    printf("\nPart 2-A result files were saved in results/.\n");
+    printf("\nPart 2-A detailed results saved in the current results/run folder.\n");
 }

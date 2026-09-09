@@ -94,9 +94,15 @@ static int processEscortShots(Battleship *b, EscortShip e[], int count,
             if (canEscortHitBattleship(*b, e[i], &hitTime))
             {
                 e[i].shotsFired++;
-                e[i].currentImpact = impactAfterShots(
-                    e[i].impactPower, 0.001 + 0.01 * (e[i].notation - 'A'),
-                    e[i].shotsFired);
+                {
+                    int type = e[i].notation - 'A';
+                    if (type < 0 || type >= MAX_E_TYPES)
+                        type = 0;
+
+                    e[i].currentImpact = impactAfterShots(
+                        e[i].impactPower, eGamma[type],
+                        e[i].shotsFired);
+                }
 
                 if (!cumulative)
                 {
