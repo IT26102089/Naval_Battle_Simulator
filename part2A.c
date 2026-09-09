@@ -341,7 +341,7 @@ void runPart2A(Battleship battleship,
     runTimedSimulation(battleship, escorts, numberOfEscorts,
                        path, 1, fireInterval,
                        0, 0, 0, 0.0, 0,
-                       "results/part2A_simulationA.txt",
+                       resultPath("part2A_simulationA.txt"),
                        "PART 2-A - SIMULATION A (Part 1-A style)");
 
     /*
@@ -350,13 +350,13 @@ void runPart2A(Battleship battleship,
     runTimedSimulation(battleship, escorts, numberOfEscorts,
                        path, k, fireInterval,
                        1, 0, t, jamAngle, 0,
-                       "results/part2A_simulationB1.txt",
+                       resultPath("part2A_simulationB1.txt"),
                        "PART 2-A - SIMULATION B1 (Part 1-B style)");
 
     runTimedSimulation(battleship, escorts, numberOfEscorts,
                        path, k, fireInterval,
                        1, 1, t, jamAngle, 0,
-                       "results/part2A_simulationB2.txt",
+                       resultPath("part2A_simulationB2.txt"),
                        "PART 2-A - SIMULATION B2 (jammed Part 1-B style)");
 
     /*
@@ -365,7 +365,7 @@ void runPart2A(Battleship battleship,
     runTimedSimulation(battleship, escorts, numberOfEscorts,
                        path, 1, fireInterval,
                        0, 0, 0, 0.0, 1,
-                       "results/part2A_simulationC.txt",
+                       resultPath("part2A_simulationC.txt"),
                        "PART 2-A - SIMULATION C (Part 1-C style)");
 
     printf("\nPart 2-A result files were saved in results/.\n");

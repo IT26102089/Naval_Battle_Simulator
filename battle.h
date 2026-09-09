@@ -45,7 +45,8 @@ void savePart1AInitial(
     Battleship battleship,
     EscortShip escorts[],
     int numberOfEscorts,
-    double battlefieldSize);
+    double battlefieldSize,
+    unsigned int seed);
 
 
 void savePart1AFinal(
@@ -55,5 +56,12 @@ void savePart1AFinal(
     int escortsHit,
     int sinkingEscort);
 
+
+
+/* Start a new folder for this simulation session. */
+void startNewResultRun(void);
+
+/* Get the full path of a result file in the current run folder. */
+const char *resultPath(const char *fileName);
 
 #endif

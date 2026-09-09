@@ -1,9 +1,60 @@
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
+#include <sys/stat.h>
+#ifdef _WIN32
+#include <direct.h>
+#endif
 
 #include "battle.h"
 
 #define G 9.81
+
+/* Folder used for all files from the current program run. */
+static char currentResultDir[256] = "results/run_001";
+
+static void makeDirectory(const char *path)
+{
+#ifdef _WIN32
+    _mkdir(path);
+#else
+    mkdir(path, 0777);
+#endif
+}
+
+void startNewResultRun(void)
+{
+    int runNumber = 1;
+    char path[256];
+    struct stat info;
+
+    makeDirectory("results");
+
+    while (1)
+    {
+        snprintf(path, sizeof(path),
+                 "results/run_%03d", runNumber);
+
+        if (stat(path, &info) != 0)
+            break;
+
+        runNumber++;
+    }
+
+    strcpy(currentResultDir, path);
+    makeDirectory(currentResultDir);
+}
+
+const char *resultPath(const char *fileName)
+{
+    static char fullPath[512];
+
+    snprintf(fullPath, sizeof(fullPath),
+             "%s/%s", currentResultDir, fileName);
+
+    return fullPath;
+}
+
 
 
 double calculateDistance(
@@ -432,7 +483,8 @@ void savePart1AInitial(
     Battleship battleship,
     EscortShip escorts[],
     int numberOfEscorts,
-    double battlefieldSize)
+    double battlefieldSize,
+    unsigned int seed)
 {
     FILE *file;
     int i;
@@ -440,7 +492,7 @@ void savePart1AInitial(
 
     file =
         fopen(
-            "results/part1A_initial.txt",
+            resultPath("part1A_initial.txt"),
             "w");
 
 
@@ -453,6 +505,10 @@ void savePart1AInitial(
     fprintf(file,
             "PART 1-A INITIAL CONDITIONS\n\n");
 
+
+    fprintf(file,
+            "Random seed: %u\n",
+            seed);
 
     fprintf(file,
             "Battlefield: %.2f x %.2f\n\n",
@@ -556,7 +612,7 @@ void savePart1AFinal(
 
     file =
         fopen(
-            "results/part1A_final.txt",
+            resultPath("part1A_final.txt"),
             "w");
 
 
@@ -598,6 +654,28 @@ void savePart1AFinal(
                 "B survived.\n");
     }
 
+
+    /* If B survived, keep the required hit details in the final file. */
+    if (!battleship.destroyed && escortsHit > 0)
+    {
+        fprintf(file, "\nEscort ships hit by B:\n");
+
+        for (i = 0; i < numberOfEscorts; i++)
+        {
+            double hitTime;
+
+            if (escorts[i].destroyed &&
+                canBattleshipHitEscort(battleship, escorts[i],
+                                       0.0, 90.0, &hitTime))
+            {
+                fprintf(file,
+                        "E%d E_%c - Time to hit: %.2f seconds\\n",
+                        escorts[i].index,
+                        escorts[i].notation,
+                        hitTime);
+            }
+        }
+    }
 
     fprintf(file,
             "\nEscort final states:\n");

@@ -1,71 +1,157 @@
 NAVAL BATTLE SIMULATOR
 PART 1-B SIMULATION 1
 
-Iterations: 54
+Iterations: 5
 ====================================
 ITERATION 1
-B position: (950.86, 464.91)
+B position: (313.00, 288.61)
 B hit E1 E_D
-Time to hit: 3.09
+Time to hit: 2.85
+B hit E3 E_A
+Time to hit: 2.01
 B hit E4 E_E
-Time to hit: 1.08
+Time to hit: 3.17
+B hit E5 E_C
+Time to hit: 5.34
 B hit E6 E_D
-Time to hit: 2.13
+Time to hit: 3.29
 B hit E7 E_C
-Time to hit: 5.79
+Time to hit: 1.83
 B hit E8 E_D
-Time to hit: 3.80
-B hit E14 E_C
-Time to hit: 5.51
-B hit E20 E_D
-Time to hit: 2.16
-B hit E22 E_C
-Time to hit: 5.96
-B hit E25 E_C
-Time to hit: 4.27
-B hit E26 E_D
-Time to hit: 3.47
-B hit E32 E_E
-Time to hit: 4.25
-B hit E34 E_E
-Time to hit: 4.99
-B hit E45 E_D
-Time to hit: 7.89
-B hit E51 E_D
-Time to hit: 3.23
-E ships hit this iteration: 14
-B survives this iteration
-
-====================================
-ITERATION 2
-B position: (103.16, 729.32)
-B hit E10 E_C
-Time to hit: 3.80
+Time to hit: 4.19
+B hit E9 E_C
+Time to hit: 0.81
+B hit E11 E_D
+Time to hit: 3.24
 B hit E12 E_A
-Time to hit: 4.05
+Time to hit: 6.59
 B hit E13 E_E
-Time to hit: 5.58
-B hit E15 E_A
-Time to hit: 1.80
+Time to hit: 5.57
+B hit E14 E_C
+Time to hit: 4.29
+B hit E16 E_D
+Time to hit: 6.50
+B hit E18 E_C
+Time to hit: 3.20
+B hit E20 E_D
+Time to hit: 2.95
+B hit E22 E_C
+Time to hit: 3.69
+B hit E23 E_E
+Time to hit: 5.44
+B hit E25 E_C
+Time to hit: 3.70
+B hit E26 E_D
+Time to hit: 2.15
 B hit E27 E_C
-Time to hit: 3.91
-B hit E33 E_A
-Time to hit: 4.83
-B hit E42 E_B
+Time to hit: 3.63
+B hit E28 E_B
+Time to hit: 2.03
+B hit E29 E_A
+Time to hit: 1.78
+B hit E30 E_E
+Time to hit: 1.04
+B hit E31 E_A
+Time to hit: 5.32
+B hit E32 E_E
+Time to hit: 6.43
+B hit E34 E_E
+Time to hit: 3.60
+B hit E36 E_B
 Time to hit: 2.56
-B hit E43 E_C
-Time to hit: 0.90
-B hit E44 E_C
-Time to hit: 5.73
+B hit E37 E_C
+Time to hit: 5.32
+B hit E38 E_A
+Time to hit: 2.93
+B hit E39 E_D
+Time to hit: 1.58
+B hit E40 E_B
+Time to hit: 4.85
+B hit E41 E_A
+Time to hit: 3.46
+B hit E42 E_B
+Time to hit: 6.48
+B hit E45 E_D
+Time to hit: 2.28
 B hit E46 E_B
-Time to hit: 3.68
-E ships hit this iteration: 10
+Time to hit: 3.66
+B hit E47 E_C
+Time to hit: 2.29
+B hit E48 E_E
+Time to hit: 2.29
+B hit E49 E_E
+Time to hit: 2.13
+B hit E51 E_D
+Time to hit: 1.66
+B hit E52 E_B
+Time to hit: 3.69
+B hit E53 E_E
+Time to hit: 4.33
+B hit E54 E_B
+Time to hit: 5.50
+B hit E55 E_C
+Time to hit: 4.61
+B hit E56 E_C
+Time to hit: 2.48
+B hit E57 E_A
+Time to hit: 3.91
+B hit E59 E_D
+Time to hit: 2.76
+B hit E60 E_D
+Time to hit: 2.00
+B hit E61 E_D
+Time to hit: 5.36
+B hit E62 E_D
+Time to hit: 2.99
+B hit E64 E_D
+Time to hit: 2.79
+B hit E68 E_B
+Time to hit: 3.37
+B hit E69 E_D
+Time to hit: 4.12
+B hit E70 E_E
+Time to hit: 4.60
+B hit E71 E_C
+Time to hit: 5.74
+B hit E72 E_D
+Time to hit: 0.56
+B hit E73 E_D
+Time to hit: 1.22
+B hit E74 E_E
+Time to hit: 6.25
+B hit E75 E_E
+Time to hit: 2.85
+B hit E76 E_D
+Time to hit: 4.64
+B hit E77 E_B
+Time to hit: 4.06
+B hit E78 E_B
+Time to hit: 2.80
+B hit E79 E_E
+Time to hit: 4.74
+B hit E80 E_B
+Time to hit: 2.91
+B hit E81 E_A
+Time to hit: 3.42
+B hit E82 E_D
+Time to hit: 4.28
+B hit E84 E_D
+Time to hit: 1.45
+B hit E85 E_C
+Time to hit: 5.36
+B hit E86 E_A
+Time to hit: 5.69
+B hit E87 E_A
+Time to hit: 1.05
+B hit E88 E_E
+Time to hit: 5.01
+E ships hit this iteration: 70
 B DESTROYED
-E29 sank B
-Time to impact: 5.93 seconds
-Simulation stopped at iteration 2
+E58 sank B
+Time to impact: 5.15 seconds
+Simulation stopped at iteration 1
 
 
 FINAL RESULT
 B status: DESTROYED
-B shots fired: 24
+B shots fired: 70

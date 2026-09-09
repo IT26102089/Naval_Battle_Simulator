@@ -202,54 +202,6 @@ void runPart1A(
             sinkingEscort);
 
 
-        /*
-         * Save hit details.
-         */
-        {
-            FILE *file =
-                fopen(
-                    "results/part1A_hits.txt",
-                    "w");
-
-            if (file != NULL)
-            {
-                fprintf(file,
-                        "PART 1-A ESCORT HITS\n\n");
-
-                fprintf(file,
-                        "Number hit: %d\n\n",
-                        escortsHit);
-
-
-                for (i = 0;
-                     i < numberOfEscorts;
-                     i++)
-                {
-                    if (e[i].destroyed)
-                    {
-                        if (canBattleshipHitEscort(
-                                b,
-                                e[i],
-                                0.0,
-                                90.0,
-                                &hitTime))
-                        {
-                            fprintf(file,
-                                    "E%d E_%c\n",
-                                    e[i].index,
-                                    e[i].notation);
-
-                            fprintf(file,
-                                    "Time: %.2f seconds\n\n",
-                                    hitTime);
-                        }
-                    }
-                }
-
-                fclose(file);
-            }
-        }
-
         return;
     }
 
@@ -815,6 +767,9 @@ int main(void)
         return 0;
     }
 
+    /* Create one new folder for this simulation session. */
+    startNewResultRun();
+
     /* Common initial conditions. */
     printf("\nEnter random seed: ");
     scanf("%u", &seed);
@@ -869,7 +824,7 @@ int main(void)
         printf("============================================\n");
 
         savePart1AInitial(battleship, escorts,
-                          numberOfEscorts, battlefieldSize);
+                          numberOfEscorts, battlefieldSize, seed);
         runPart1A(battleship, escorts, numberOfEscorts, 0);
     }
 
