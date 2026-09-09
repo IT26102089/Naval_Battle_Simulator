@@ -8,6 +8,7 @@
 
 /* Part 2-A */
 void runPart2A(Battleship battleship, EscortShip escorts[], int numberOfEscorts, double battlefieldSize);
+void runPart2B(Battleship battleship, EscortShip escorts[], int numberOfEscorts, double battlefieldSize);
 
 
 /*
@@ -238,6 +239,9 @@ void runPart1A(
             e[i].currentImpact =
                 e[i].impactPower;
 
+            printf("\nE%d attacked B: %.2f%% damage\n",
+                   e[i].index,
+                   e[i].impactPower * 100.0);
 
 
             if (cumulativeImpact >= 1.0)
@@ -278,7 +282,7 @@ void runPart1A(
     {
         FILE *file =
             fopen(
-                resultPath("part1C_simulationA.txt"),
+                "results/part1C_simulationA.txt",
                 "w");
 
 
@@ -385,7 +389,6 @@ void runPart1B(
     int i;
 
     int escortsHit;
-    int totalDestroyed = 0;
 
     double hitTime;
 
@@ -409,8 +412,8 @@ void runPart1B(
         file =
             fopen(
                 jammed
-                    ? resultPath("part1C_simulationB2.txt")
-                    : resultPath("part1C_simulationB1.txt"),
+                    ? "results/part1C_simulationB2.txt"
+                    : "results/part1C_simulationB1.txt",
                 "w");
     }
     else
@@ -418,8 +421,8 @@ void runPart1B(
         file =
             fopen(
                 jammed
-                    ? resultPath("part1B_simulation2.txt")
-                    : resultPath("part1B_simulation1.txt"),
+                    ? "results/part1B_simulation2.txt"
+                    : "results/part1B_simulation1.txt",
                 "w");
     }
 
@@ -511,6 +514,14 @@ void runPart1B(
                 b.position.x,
                 b.position.y);
 
+        printf("\n--------------------------------------------\n");
+        printf("ITERATION %d\n", iteration + 1);
+        printf("B position: (%.2f, %.2f)\n",
+               b.position.x, b.position.y);
+        if (jammed && iteration >= jamAfter)
+            printf("B gun angle restriction: %.2f - 90.00 degrees\n", jamMinAngle);
+        else
+            printf("B gun angle range: 0.00 - 90.00 degrees\n");
 
 
         /*
@@ -534,7 +545,6 @@ void runPart1B(
                 e[i].destroyed = 1;
 
                 escortsHit++;
-                totalDestroyed++;
 
                 b.shotsFired++;
 
@@ -548,6 +558,8 @@ void runPart1B(
                         "Time to hit: %.2f\n",
                         hitTime);
 
+                printf("B hit E%d E_%c | Time to hit: %.2f seconds\n",
+                       e[i].index, e[i].notation, hitTime);
             }
         }
 
@@ -605,6 +617,8 @@ void runPart1B(
                             e[i].index,
                             e[i].impactPower * 100.0);
 
+                    printf("E%d hit B: %.2f%% impact\n",
+                           e[i].index, e[i].impactPower * 100.0);
 
 
                     if (cumulativeImpact >= 1.0)
@@ -635,6 +649,7 @@ void runPart1B(
         fprintf(file,
                 "E ships hit this iteration: %d\n",
                 escortsHit);
+        printf("E ships hit by B this iteration: %d\n", escortsHit);
 
 
         if (b.destroyed)
@@ -654,6 +669,10 @@ void runPart1B(
                     "Simulation stopped at iteration %d\n\n",
                     iteration + 1);
 
+            printf("B DESTROYED\n");
+            printf("E%d sank B\n", sinkingEscort);
+            printf("Time to impact: %.2f seconds\n", battleTime);
+            printf("Simulation stopped at iteration %d\n", iteration + 1);
 
             break;
         }
@@ -664,11 +683,13 @@ void runPart1B(
             fprintf(file,
                     "Cumulative B impact: %.2f%%\n",
                     cumulativeImpact * 100.0);
+            printf("Cumulative B impact: %.2f%%\n", cumulativeImpact * 100.0);
         }
 
 
         fprintf(file,
                 "B survives this iteration\n\n");
+        printf("B survives this iteration\n");
     }
 
 
@@ -695,32 +716,9 @@ void runPart1B(
                 cumulativeImpact * 100.0);
     }
 
-    printf("\n%s RESULTS\n",
-           jammed ? "SIMULATION 2" : "SIMULATION 1");
-    printf("Battleship status  : %s\n",
-           b.destroyed ? "DESTROYED" : "ALIVE");
-    printf("Iterations run     : %d\n",
-           iteration < k ? iteration + 1 : k);
-    printf("Escort ships hit   : %d\n",
-           totalDestroyed);
+    printf("\nFINAL RESULT: B %s\n", b.destroyed ? "DESTROYED" : "ALIVE");
     if (partCMode)
-        printf("Cumulative impact  : %.2f%%\n",
-               cumulativeImpact * 100.0);
-    if (jammed)
-    {
-        printf("Jamming started    : Iteration %d\n",
-               jamAfter + 1);
-        printf("Angle restriction  : %.2f - 90.00 degrees\n",
-               jamMinAngle);
-    }
-
-    printf("Detailed results saved in:\n");
-    printf("%s\n",
-           resultPath(partCMode
-               ? (jammed ? "part1C_simulationB2.txt"
-                         : "part1C_simulationB1.txt")
-               : (jammed ? "part1B_simulation2.txt"
-                         : "part1B_simulation1.txt")));
+        printf("Cumulative impact on B: %.2f%%\n", cumulativeImpact * 100.0);
 
     fclose(file);
 }
@@ -754,17 +752,18 @@ int main(void)
         printf("3. Run Part 1-C\n");
         printf("4. Run ALL Part 1 (A + B + C)\n");
         printf("5. Run Part 2-A\n");
-        printf("6. Exit\n");
+        printf("6. Run Part 2-B\n");
+        printf("7. Exit\n");
         printf("==========================================\n");
         printf("Select an option: ");
         scanf("%d", &choice);
 
-        if (choice < 1 || choice > 6)
-            printf("Invalid option. Please select 1-6.\n");
+        if (choice < 1 || choice > 7)
+            printf("Invalid option. Please select 1-7.\n");
     }
     while (choice < 1 || choice > 6);
 
-    if (choice == 6)
+    if (choice == 7)
     {
         printf("\nExiting simulator. Goodbye!\n");
         return 0;
@@ -829,10 +828,6 @@ int main(void)
         savePart1AInitial(battleship, escorts,
                           numberOfEscorts, battlefieldSize, seed);
         runPart1A(battleship, escorts, numberOfEscorts, 0);
-
-        printf("Detailed results saved in:\n");
-        printf("%s\n", resultPath("part1A_initial.txt"));
-        printf("%s\n", resultPath("part1A_final.txt"));
     }
 
     /* Part 1-B needs k, t and jam angle. */
@@ -919,16 +914,14 @@ int main(void)
             while (jamAngle <= 0 || jamAngle >= 30);
         }
 
-        printf("\nSIMULATION A\n");
+        printf("\nRunning Part 1-C Simulation A...\n");
         runPart1A(battleship, escorts, numberOfEscorts, 1);
-        printf("Detailed results saved in:\n");
-        printf("%s\n", resultPath("part1C_simulationA.txt"));
 
-        printf("\nSIMULATION B1\n");
+        printf("\nRunning Part 1-C Simulation B1...\n");
         runPart1B(battleship, escorts, numberOfEscorts,
                   path, k, t, jamAngle, 1, 0);
 
-        printf("\nSIMULATION B2\n");
+        printf("\nRunning Part 1-C Simulation B2...\n");
         runPart1B(battleship, escorts, numberOfEscorts,
                   path, k, t, jamAngle, 1, 1);
     }
@@ -941,6 +934,16 @@ int main(void)
         printf("============================================\n");
 
         runPart2A(battleship, escorts, numberOfEscorts, battlefieldSize);
+    }
+
+    /* Part 2-B is added separately. Previous simulation code is unchanged. */
+    if (choice == 6)
+    {
+        printf("\n============================================\n");
+        printf("               PART 2-B\n");
+        printf("============================================\n");
+
+        runPart2B(battleship, escorts, numberOfEscorts, battlefieldSize);
     }
 
     printf("\n============================================\n");

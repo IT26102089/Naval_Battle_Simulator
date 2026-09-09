@@ -1,0 +1,61 @@
+NAVAL BATTLE SIMULATOR
+PART 1-C SIMULATION 1
+
+Iterations: 6
+====================================
+ITERATION 1
+B position: (865.69, 378.58)
+B hit E1 E_D
+Time to hit: 6.62
+B hit E4 E_E
+Time to hit: 3.22
+E ships hit this iteration: 2
+Cumulative B impact: 0.00%
+B survives this iteration
+
+====================================
+ITERATION 2
+B position: (661.08, 507.47)
+B hit E3 E_A
+Time to hit: 5.59
+E ships hit this iteration: 1
+Cumulative B impact: 0.00%
+B survives this iteration
+
+====================================
+ITERATION 3
+B position: (561.36, 664.86)
+E ships hit this iteration: 0
+Cumulative B impact: 0.00%
+B survives this iteration
+
+====================================
+ITERATION 4
+B position: (401.79, 190.00)
+B hit E2 E_D
+Time to hit: 4.56
+B hit E5 E_C
+Time to hit: 3.17
+E ships hit this iteration: 2
+Cumulative B impact: 0.00%
+B survives this iteration
+
+====================================
+ITERATION 5
+B position: (768.96, 377.64)
+E ships hit this iteration: 0
+Cumulative B impact: 0.00%
+B survives this iteration
+
+====================================
+ITERATION 6
+B position: (861.47, 276.56)
+E ships hit this iteration: 0
+Cumulative B impact: 0.00%
+B survives this iteration
+
+
+FINAL RESULT
+B status: ALIVE
+B shots fired: 5
+Cumulative impact: 0.00%

@@ -1,0 +1,16 @@
+PART 1-A FINAL CONDITIONS
+
+Battleship: U - USS Iowa (BB-61)
+Status: ALIVE
+
+Escort ships destroyed by B: 1
+B survived.
+
+Escort ships hit by B:
+E3 E_A - Time to hit: 1.71 seconds\n
+Escort final states:
+E1 E_D - ALIVE
+E2 E_D - ALIVE
+E3 E_A - DESTROYED
+E4 E_E - ALIVE
+E5 E_C - ALIVE
