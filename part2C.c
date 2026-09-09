@@ -215,6 +215,7 @@ static void runSimulation(Battleship originalB, EscortShip originalE[], int coun
     fprintf(file, "B status: %s\n", b.destroyed ? "DESTROYED" : "ALIVE");
     fprintf(file, "B shots fired: %d\n", b.shotsFired);
     fprintf(file, "B current impact power: %.6f\n", b.currentImpact);
+    fprintf(file, "Total battle time: %.2f seconds\n", currentTime);
     if (b.destroyed && sinker != -1)
         fprintf(file, "E%d sank B\n", sinker);
     fprintf(file, "Attack order:\n");
@@ -322,6 +323,36 @@ void runPart2C(Battleship battleship, EscortShip escorts[],
         } while (jamAngle <= 0.0 || jamAngle >= 30.0);
 
         savePart2BasicSettings(bInterval, k, t, jamAngle);
+    }
+
+    {
+        char settings[500];
+        snprintf(settings, sizeof(settings),
+                 "Part 2-C: T_Bq = %.2f seconds, k = %d, t = %d, minimum firing angle = %.2f degrees",
+                 bInterval, k, t, jamAngle);
+        appendSessionSetting(settings);
+        {
+            char line[120];
+            snprintf(line, sizeof(line),
+                     "Part 2-C: Battleship gamma = %.5f", battleship.gamma);
+            appendSessionSetting(line);
+        }
+        appendSessionSetting("Part 2-C escort firing intervals:");
+        for (i = 0; i < MAX_E_TYPES; i++)
+        {
+            char line[120];
+            snprintf(line, sizeof(line), "T_E_%c = %.2f seconds",
+                     'A' + i, eIntervals[i]);
+            appendSessionSetting(line);
+        }
+        appendSessionSetting("Part 2-C escort gamma values:");
+        for (i = 0; i < MAX_E_TYPES; i++)
+        {
+            char line[120];
+            snprintf(line, sizeof(line), "Gamma_E_%c = %.5f",
+                     'A' + i, eGamma[i]);
+            appendSessionSetting(line);
+        }
     }
 
     /* Store the user supplied E gamma values in the working copies. */

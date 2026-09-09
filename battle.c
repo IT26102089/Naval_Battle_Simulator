@@ -55,6 +55,66 @@ const char *resultPath(const char *fileName)
     return fullPath;
 }
 
+void saveSessionSettingsBase(
+    unsigned int seed,
+    double battlefieldSize,
+    Battleship battleship,
+    EscortShip escorts[],
+    int numberOfEscorts)
+{
+    FILE *file;
+    int i;
+
+    file = fopen(resultPath("session_settings.txt"), "w");
+
+    if (file == NULL)
+        return;
+
+    fprintf(file, "NAVAL BATTLE SIMULATOR - SESSION SETTINGS\n\n");
+    fprintf(file, "Random seed: %u\n", seed);
+    fprintf(file, "Battlefield size: %.2f x %.2f\n",
+            battlefieldSize, battlefieldSize);
+
+    fprintf(file, "Battleship type: %c\n", battleship.notation);
+    fprintf(file, "Battleship name: %s\n", battleship.name);
+    fprintf(file, "Battleship Vmax: %.2f\n", battleship.vmax);
+    fprintf(file, "Battleship position: (%.2f, %.2f)\n",
+            battleship.position.x, battleship.position.y);
+
+    fprintf(file, "Escort ship count: %d\n\n", numberOfEscorts);
+
+    fprintf(file, "Escort setup values:\n");
+    for (i = 0; i < numberOfEscorts; i++)
+    {
+        fprintf(file,
+                "E%d E_%c | position (%.2f, %.2f) | Vmin %.2f | Vmax %.2f | angle %.2f-%.2f | impact %.2f\n",
+                escorts[i].index,
+                escorts[i].notation,
+                escorts[i].position.x,
+                escorts[i].position.y,
+                escorts[i].vmin,
+                escorts[i].vmax,
+                escorts[i].angleMin,
+                escorts[i].angleMin + escorts[i].angleRange,
+                escorts[i].impactPower);
+    }
+
+    fclose(file);
+}
+
+void appendSessionSetting(const char *text)
+{
+    FILE *file;
+
+    file = fopen(resultPath("session_settings.txt"), "a");
+
+    if (file == NULL)
+        return;
+
+    fprintf(file, "\n%s\n", text);
+    fclose(file);
+}
+
 
 
 double calculateDistance(
@@ -669,7 +729,7 @@ void savePart1AFinal(
                                        0.0, 90.0, &hitTime))
             {
                 fprintf(file,
-                        "E%d E_%c - Time to hit: %.2f seconds\\n",
+                        "Index of E: E%d E_%c\nTime to hit: %.2f seconds\n",
                         escorts[i].index,
                         escorts[i].notation,
                         hitTime);

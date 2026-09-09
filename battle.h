@@ -64,4 +64,14 @@ void startNewResultRun(void);
 /* Get the full path of a result file in the current run folder. */
 const char *resultPath(const char *fileName);
 
+/* Save setup values for the current simulation session. */
+void saveSessionSettingsBase(
+    unsigned int seed,
+    double battlefieldSize,
+    Battleship battleship,
+    EscortShip escorts[],
+    int numberOfEscorts);
+
+void appendSessionSetting(const char *text);
+
 #endif

@@ -315,6 +315,14 @@ void runPart2A(Battleship battleship,
     /* Save values for Part 2-B and Part 2-C. */
     savePart2BasicSettings(fireInterval, k, t, jamAngle);
 
+    {
+        char settings[220];
+        snprintf(settings, sizeof(settings),
+                 "Part 2-A: T_Bq = %.2f seconds, k = %d, t = %d, minimum firing angle = %.2f degrees",
+                 fireInterval, k, t, jamAngle);
+        appendSessionSetting(settings);
+    }
+
     /* Generate the B path. */
     for (i = 0; i < k; i++)
     {

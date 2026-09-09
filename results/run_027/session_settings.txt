@@ -1,0 +1,113 @@
+NAVAL BATTLE SIMULATOR - SESSION SETTINGS
+
+Random seed: 58
+Battlefield size: 1000.00 x 1000.00
+Battleship type: U
+Battleship name: USS Iowa (BB-61)
+Battleship Vmax: 50.00
+Battleship position: (500.00, 500.00)
+Escort ship count: 56
+
+Escort setup values:
+E1 E_D | position (766.55, 937.67) | Vmin 4.36 | Vmax 6.72 | angle 31.24-81.24 | impact 0.05
+E2 E_E | position (911.38, 582.03) | Vmin 0.57 | Vmax 40.11 | angle 7.05-77.05 | impact 0.04
+E3 E_C | position (236.61, 461.61) | Vmin 14.29 | Vmax 29.49 | angle 50.37-75.37 | impact 0.07
+E4 E_A | position (153.61, 829.89) | Vmin 5.03 | Vmax 60.00 | angle 13.75-33.75 | impact 0.08
+E5 E_E | position (950.69, 744.35) | Vmin 2.05 | Vmax 8.11 | angle 5.46-75.46 | impact 0.04
+E6 E_D | position (596.97, 126.28) | Vmin 4.15 | Vmax 26.39 | angle 3.30-53.30 | impact 0.05
+E7 E_B | position (183.63, 938.37) | Vmin 4.46 | Vmax 35.63 | angle 52.30-82.30 | impact 0.06
+E8 E_D | position (779.88, 477.78) | Vmin 13.88 | Vmax 14.66 | angle 28.82-78.82 | impact 0.05
+E9 E_B | position (726.19, 721.48) | Vmin 9.70 | Vmax 27.24 | angle 57.48-87.48 | impact 0.06
+E10 E_E | position (752.53, 306.70) | Vmin 16.90 | Vmax 43.94 | angle 19.11-89.11 | impact 0.04
+E11 E_E | position (246.40, 981.54) | Vmin 8.48 | Vmax 16.44 | angle 4.78-74.78 | impact 0.04
+E12 E_C | position (368.39, 699.81) | Vmin 9.07 | Vmax 19.49 | angle 19.68-44.68 | impact 0.07
+E13 E_D | position (233.99, 245.35) | Vmin 9.10 | Vmax 18.69 | angle 29.08-79.08 | impact 0.05
+E14 E_A | position (62.88, 213.04) | Vmin 56.22 | Vmax 60.00 | angle 53.84-73.84 | impact 0.08
+E15 E_B | position (804.52, 895.06) | Vmin 5.64 | Vmax 9.45 | angle 29.71-59.71 | impact 0.06
+E16 E_D | position (495.78, 552.95) | Vmin 15.29 | Vmax 24.09 | angle 1.10-51.10 | impact 0.05
+E17 E_B | position (993.50, 873.91) | Vmin 1.68 | Vmax 32.73 | angle 45.48-75.48 | impact 0.06
+E18 E_C | position (158.78, 354.17) | Vmin 2.85 | Vmax 21.17 | angle 21.73-46.73 | impact 0.07
+E19 E_C | position (890.98, 861.70) | Vmin 2.84 | Vmax 9.16 | angle 21.73-46.73 | impact 0.07
+E20 E_B | position (873.14, 114.74) | Vmin 4.70 | Vmax 20.79 | angle 49.61-79.61 | impact 0.06
+E21 E_C | position (889.90, 721.74) | Vmin 6.02 | Vmax 30.26 | angle 0.94-25.94 | impact 0.07
+E22 E_C | position (658.80, 192.56) | Vmin 6.36 | Vmax 7.18 | angle 61.09-86.09 | impact 0.07
+E23 E_D | position (812.65, 44.64) | Vmin 16.69 | Vmax 37.19 | angle 17.15-67.15 | impact 0.05
+E24 E_A | position (139.07, 339.75) | Vmin 32.18 | Vmax 60.00 | angle 31.06-51.06 | impact 0.08
+E25 E_C | position (600.61, 870.62) | Vmin 3.36 | Vmax 33.61 | angle 46.26-71.26 | impact 0.07
+E26 E_E | position (941.30, 926.76) | Vmin 9.66 | Vmax 31.52 | angle 4.66-74.66 | impact 0.04
+E27 E_C | position (862.10, 321.01) | Vmin 1.50 | Vmax 7.19 | angle 61.52-86.52 | impact 0.07
+E28 E_E | position (940.52, 149.27) | Vmin 19.68 | Vmax 44.41 | angle 11.27-81.27 | impact 0.04
+E29 E_A | position (433.93, 871.97) | Vmin 46.42 | Vmax 60.00 | angle 11.37-31.37 | impact 0.08
+E30 E_A | position (239.14, 217.45) | Vmin 6.59 | Vmax 60.00 | angle 37.40-57.40 | impact 0.08
+E31 E_D | position (478.31, 209.73) | Vmin 2.97 | Vmax 21.78 | angle 33.91-83.91 | impact 0.05
+E32 E_E | position (82.65, 443.00) | Vmin 32.69 | Vmax 42.79 | angle 19.45-89.45 | impact 0.04
+E33 E_D | position (999.40, 973.42) | Vmin 5.23 | Vmax 42.60 | angle 27.12-77.12 | impact 0.05
+E34 E_D | position (925.09, 565.98) | Vmin 8.48 | Vmax 19.36 | angle 37.78-87.78 | impact 0.05
+E35 E_C | position (132.71, 600.32) | Vmin 6.90 | Vmax 19.01 | angle 19.07-44.07 | impact 0.07
+E36 E_C | position (884.51, 841.60) | Vmin 2.67 | Vmax 10.22 | angle 41.58-66.58 | impact 0.07
+E37 E_D | position (978.24, 343.86) | Vmin 2.12 | Vmax 7.36 | angle 33.87-83.87 | impact 0.05
+E38 E_D | position (31.40, 288.02) | Vmin 9.80 | Vmax 43.01 | angle 37.71-87.71 | impact 0.05
+E39 E_C | position (628.25, 153.03) | Vmin 20.38 | Vmax 39.80 | angle 61.54-86.54 | impact 0.07
+E40 E_C | position (814.47, 644.76) | Vmin 44.70 | Vmax 44.92 | angle 59.17-84.17 | impact 0.07
+E41 E_D | position (291.54, 879.43) | Vmin 0.37 | Vmax 36.79 | angle 0.53-50.53 | impact 0.05
+E42 E_B | position (434.32, 988.24) | Vmin 1.21 | Vmax 25.68 | angle 38.74-68.74 | impact 0.06
+E43 E_D | position (363.61, 78.56) | Vmin 0.36 | Vmax 12.35 | angle 6.46-56.46 | impact 0.05
+E44 E_B | position (126.44, 657.12) | Vmin 16.03 | Vmax 30.41 | angle 49.60-79.60 | impact 0.06
+E45 E_B | position (581.89, 341.54) | Vmin 3.45 | Vmax 10.16 | angle 27.98-57.98 | impact 0.06
+E46 E_C | position (39.22, 631.19) | Vmin 15.61 | Vmax 36.65 | angle 23.12-48.12 | impact 0.07
+E47 E_D | position (804.26, 860.20) | Vmin 4.32 | Vmax 11.45 | angle 15.65-65.65 | impact 0.05
+E48 E_D | position (806.86, 740.76) | Vmin 32.00 | Vmax 34.62 | angle 19.94-69.94 | impact 0.05
+E49 E_B | position (902.05, 50.88) | Vmin 9.38 | Vmax 13.67 | angle 40.97-70.97 | impact 0.06
+E50 E_B | position (43.30, 267.97) | Vmin 10.16 | Vmax 25.59 | angle 21.84-51.84 | impact 0.06
+E51 E_A | position (981.04, 436.11) | Vmin 19.61 | Vmax 60.00 | angle 15.91-35.91 | impact 0.08
+E52 E_B | position (421.04, 682.58) | Vmin 0.43 | Vmax 16.25 | angle 11.57-41.57 | impact 0.06
+E53 E_A | position (658.39, 417.75) | Vmin 23.95 | Vmax 60.00 | angle 62.12-82.12 | impact 0.08
+E54 E_D | position (740.10, 323.59) | Vmin 11.49 | Vmax 30.69 | angle 21.67-71.67 | impact 0.05
+E55 E_C | position (858.79, 60.55) | Vmin 13.50 | Vmax 41.08 | angle 16.18-41.18 | impact 0.07
+E56 E_A | position (416.80, 725.40) | Vmin 23.87 | Vmax 60.00 | angle 11.31-31.31 | impact 0.08
+
+Part 1-B: k = 6, jam starts at t = 4, minimum firing angle = 20.00 degrees
+
+Part 2-A: T_Bq = 10.00 seconds, k = 6, t = 4, minimum firing angle = 20.00 degrees
+
+Part 2-B: T_Bq = 10.00 seconds, k = 6, t = 4, minimum firing angle = 20.00 degrees
+
+Part 2-B escort firing intervals:
+
+T_E_A = 2.00 seconds
+
+T_E_B = 3.00 seconds
+
+T_E_C = 4.00 seconds
+
+T_E_D = 5.00 seconds
+
+T_E_E = 6.00 seconds
+
+Part 2-C: T_Bq = 10.00 seconds, k = 6, t = 4, minimum firing angle = 20.00 degrees
+
+Part 2-C: Battleship gamma = 7.00000
+
+Part 2-C escort firing intervals:
+
+T_E_A = 2.00 seconds
+
+T_E_B = 3.00 seconds
+
+T_E_C = 4.00 seconds
+
+T_E_D = 5.00 seconds
+
+T_E_E = 6.00 seconds
+
+Part 2-C escort gamma values:
+
+Gamma_E_A = 5.00000
+
+Gamma_E_B = 6.00000
+
+Gamma_E_C = 8.00000
+
+Gamma_E_D = 5.00000
+
+Gamma_E_E = 9.00000

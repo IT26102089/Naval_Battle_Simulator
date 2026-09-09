@@ -268,6 +268,7 @@ static void runSimulation(Battleship originalB, EscortShip originalE[],
             b.destroyed ? "DESTROYED" : "ALIVE");
     fprintf(file, "E ships destroyed by B: %d\n", destroyed);
     fprintf(file, "B shots fired: %d\n", b.shotsFired);
+    fprintf(file, "Total battle time: %.2f seconds\n", currentTime);
     fprintf(file, "Attack order of E ships:\n");
 
     if (attackCount == 0)
@@ -370,6 +371,22 @@ void runPart2B(Battleship battleship, EscortShip escorts[],
         }
 
         savePart2EscortIntervals(eIntervals, 5);
+    }
+
+    {
+        char settings[500];
+        snprintf(settings, sizeof(settings),
+                 "Part 2-B: T_Bq = %.2f seconds, k = %d, t = %d, minimum firing angle = %.2f degrees",
+                 bInterval, k, t, jamAngle);
+        appendSessionSetting(settings);
+        appendSessionSetting("Part 2-B escort firing intervals:");
+        for (i = 0; i < 5; i++)
+        {
+            char line[100];
+            snprintf(line, sizeof(line), "T_E_%c = %.2f seconds",
+                     'A' + i, eIntervals[i]);
+            appendSessionSetting(line);
+        }
     }
 
     for (i = 0; i < k; i++)

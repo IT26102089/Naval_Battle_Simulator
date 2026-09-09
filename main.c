@@ -986,6 +986,10 @@ int main(void)
         createEscortShips(escorts, numberOfEscorts,
                           battlefieldSize, battleship.vmax);
 
+        /* Save common setup values for this session. */
+        saveSessionSettingsBase(seed, battlefieldSize, battleship,
+                                escorts, numberOfEscorts);
+
         displayBattlefield(battlefieldSize, battleship,
                            escorts, numberOfEscorts);
 
@@ -1037,6 +1041,14 @@ int main(void)
             /* Save these values for Part 2 in full-program mode. */
             savePart2PathSettings(k, t, jamAngle);
 
+            {
+                char settings[200];
+                snprintf(settings, sizeof(settings),
+                         "Part 1-B: k = %d, jam starts at t = %d, minimum firing angle = %.2f degrees",
+                         k, t, jamAngle);
+                appendSessionSetting(settings);
+            }
+
             printf("\nSIMULATION 1\n");
             runPart1B(battleship, escorts, numberOfEscorts,
                       path, k, t, jamAngle, 0, 0);
@@ -1077,6 +1089,14 @@ int main(void)
                     scanf("%lf", &jamAngle);
                 }
                 while (jamAngle <= 0 || jamAngle >= 30);
+
+                {
+                    char settings[200];
+                    snprintf(settings, sizeof(settings),
+                             "Part 1-C: k = %d, jam starts at t = %d, minimum firing angle = %.2f degrees",
+                             k, t, jamAngle);
+                    appendSessionSetting(settings);
+                }
             }
 
             printf("\nRunning Part 1-C Simulation A...\n");
