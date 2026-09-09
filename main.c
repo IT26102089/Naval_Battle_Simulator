@@ -942,8 +942,6 @@ int main(void)
         startNewResultRun();
         setPart2FullProgram(choice == 8);
 
-        printf("\nDetailed results for this session will be saved in: results/run_XXX\n");
-
         printf("\nEnter random seed (used to create repeatable random positions): ");
         scanf("%u", &seed);
         srand(seed);

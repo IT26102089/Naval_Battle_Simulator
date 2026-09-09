@@ -1,0 +1,162 @@
+NAVAL BATTLE SIMULATOR
+PART 2-C - SIMULATION B2
+
+B firing interval: 6.00 seconds
+B gamma: 23.00000
+
+E56 fired at 0.00 s, current impact 0.0108, B damage 0.0108.
+B attack 1: E34 E_D, hit time 1.18 s, B impact 0.0000
+B attack 2: E27 E_B, hit time 1.18 s, B impact 0.0000
+E27 fired at 3.00 s, current impact 0.0000, B damage 0.0000.
+E27 fired at 6.00 s, current impact 0.0000, B damage 0.0000.
+E28 fired at 6.00 s, current impact 0.0000, B damage 0.0000.
+B attack 3: E50 E_A, hit time 2.83 s, B impact 0.0000
+E33 fired at 10.00 s, current impact 0.0108, B damage 0.0108.
+E42 fired at 10.00 s, current impact 0.0108, B damage 0.0108.
+E50 fired at 10.00 s, current impact 0.0108, B damage 0.0108.
+E53 fired at 10.00 s, current impact 0.0000, B damage 0.0000.
+E31 fired at 12.00 s, current impact 0.0000, B damage 0.0000.
+E33 fired at 12.00 s, current impact 0.0015, B damage 0.0015.
+E42 fired at 12.00 s, current impact 0.0015, B damage 0.0015.
+E50 fired at 12.00 s, current impact 0.0015, B damage 0.0015.
+E33 fired at 14.00 s, current impact 0.0002, B damage 0.0002.
+E42 fired at 14.00 s, current impact 0.0002, B damage 0.0002.
+E50 fired at 14.00 s, current impact 0.0002, B damage 0.0002.
+E53 fired at 15.00 s, current impact 0.0000, B damage 0.0000.
+E31 fired at 16.00 s, current impact 0.0000, B damage 0.0000.
+E33 fired at 16.00 s, current impact 0.0000, B damage 0.0000.
+E42 fired at 16.00 s, current impact 0.0000, B damage 0.0000.
+E50 fired at 16.00 s, current impact 0.0000, B damage 0.0000.
+B attack 4: E30 E_C, hit time 3.73 s, B impact 0.0000
+E33 fired at 18.00 s, current impact 0.0000, B damage 0.0000.
+E50 fired at 18.00 s, current impact 0.0000, B damage 0.0000.
+E55 fired at 18.00 s, current impact 0.0108, B damage 0.0108.
+E33 fired at 20.00 s, current impact 0.0000, B damage 0.0000.
+E50 fired at 20.00 s, current impact 0.0000, B damage 0.0000.
+E55 fired at 20.00 s, current impact 0.0015, B damage 0.0015.
+E33 fired at 22.00 s, current impact 0.0000, B damage 0.0000.
+E50 fired at 22.00 s, current impact 0.0000, B damage 0.0000.
+E55 fired at 22.00 s, current impact 0.0002, B damage 0.0002.
+E33 fired at 24.00 s, current impact 0.0000, B damage 0.0000.
+E50 fired at 24.00 s, current impact 0.0000, B damage 0.0000.
+E55 fired at 24.00 s, current impact 0.0000, B damage 0.0000.
+E33 fired at 26.00 s, current impact 0.0000, B damage 0.0000.
+E50 fired at 26.00 s, current impact 0.0000, B damage 0.0000.
+E55 fired at 26.00 s, current impact 0.0000, B damage 0.0000.
+B attack 5: E10 E_B, hit time 4.78 s, B impact 0.0000
+E6 fired at 28.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 28.00 s, current impact 0.0108, B damage 0.0108.
+E33 fired at 28.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 30.00 s, current impact 0.0015, B damage 0.0015.
+E33 fired at 30.00 s, current impact 0.0000, B damage 0.0000.
+E6 fired at 32.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 32.00 s, current impact 0.0002, B damage 0.0002.
+E33 fired at 32.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 34.00 s, current impact 0.0000, B damage 0.0000.
+E33 fired at 34.00 s, current impact 0.0000, B damage 0.0000.
+E6 fired at 36.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 36.00 s, current impact 0.0000, B damage 0.0000.
+E33 fired at 36.00 s, current impact 0.0000, B damage 0.0000.
+B attack 6: E54 E_B, hit time 3.54 s, B impact 0.0000
+E7 fired at 38.00 s, current impact 0.0000, B damage 0.0000.
+E8 fired at 38.00 s, current impact 0.0108, B damage 0.0108.
+E18 fired at 38.00 s, current impact 0.0108, B damage 0.0108.
+E24 fired at 38.00 s, current impact 0.0108, B damage 0.0108.
+E33 fired at 38.00 s, current impact 0.0000, B damage 0.0000.
+E42 fired at 38.00 s, current impact 0.0000, B damage 0.0000.
+E6 fired at 40.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 40.00 s, current impact 0.0000, B damage 0.0000.
+E8 fired at 40.00 s, current impact 0.0015, B damage 0.0015.
+E18 fired at 40.00 s, current impact 0.0015, B damage 0.0015.
+E24 fired at 40.00 s, current impact 0.0015, B damage 0.0015.
+E33 fired at 40.00 s, current impact 0.0000, B damage 0.0000.
+E42 fired at 40.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 42.00 s, current impact 0.0000, B damage 0.0000.
+E8 fired at 42.00 s, current impact 0.0002, B damage 0.0002.
+E18 fired at 42.00 s, current impact 0.0002, B damage 0.0002.
+E24 fired at 42.00 s, current impact 0.0002, B damage 0.0002.
+E33 fired at 42.00 s, current impact 0.0000, B damage 0.0000.
+E42 fired at 42.00 s, current impact 0.0000, B damage 0.0000.
+E6 fired at 44.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 44.00 s, current impact 0.0000, B damage 0.0000.
+E8 fired at 44.00 s, current impact 0.0000, B damage 0.0000.
+E18 fired at 44.00 s, current impact 0.0000, B damage 0.0000.
+E24 fired at 44.00 s, current impact 0.0000, B damage 0.0000.
+E33 fired at 44.00 s, current impact 0.0000, B damage 0.0000.
+E42 fired at 44.00 s, current impact 0.0000, B damage 0.0000.
+E7 fired at 46.00 s, current impact 0.0000, B damage 0.0000.
+E8 fired at 46.00 s, current impact 0.0000, B damage 0.0000.
+E18 fired at 46.00 s, current impact 0.0000, B damage 0.0000.
+E24 fired at 46.00 s, current impact 0.0000, B damage 0.0000.
+E33 fired at 46.00 s, current impact 0.0000, B damage 0.0000.
+E42 fired at 46.00 s, current impact 0.0000, B damage 0.0000.
+
+FINAL RESULT
+B status: ALIVE
+B shots fired: 6
+B current impact power: 0.000000
+Total battle time: 47.23 seconds
+Attack order:
+1. E34
+2. E27
+3. E50
+4. E30
+5. E10
+6. E54
+Current E impact powers and health:
+E1 E_D: impact 0.050000, remaining health 1.000000
+E2 E_E: impact 0.040000, remaining health 1.000000
+E3 E_E: impact 0.040000, remaining health 1.000000
+E4 E_B: impact 0.060000, remaining health 1.000000
+E5 E_E: impact 0.040000, remaining health 1.000000
+E6 E_C: impact 0.000000, remaining health 1.000000
+E7 E_A: impact 0.000000, remaining health 1.000000
+E8 E_A: impact 0.000004, remaining health 1.000000
+E9 E_B: impact 0.060000, remaining health 1.000000
+E10 E_B: impact 0.060000, remaining health 1.000000
+E11 E_C: impact 0.070000, remaining health 1.000000
+E12 E_B: impact 0.060000, remaining health 1.000000
+E13 E_A: impact 0.080000, remaining health 1.000000
+E14 E_D: impact 0.050000, remaining health 1.000000
+E15 E_D: impact 0.050000, remaining health 1.000000
+E16 E_B: impact 0.060000, remaining health 1.000000
+E17 E_B: impact 0.060000, remaining health 1.000000
+E18 E_A: impact 0.000004, remaining health 1.000000
+E19 E_E: impact 0.040000, remaining health 1.000000
+E20 E_E: impact 0.040000, remaining health 1.000000
+E21 E_C: impact 0.070000, remaining health 1.000000
+E22 E_A: impact 0.080000, remaining health 1.000000
+E23 E_E: impact 0.040000, remaining health 1.000000
+E24 E_A: impact 0.000004, remaining health 1.000000
+E25 E_A: impact 0.080000, remaining health 1.000000
+E26 E_C: impact 0.070000, remaining health 1.000000
+E27 E_B: impact 0.000000, remaining health 1.000000
+E28 E_E: impact 0.000036, remaining health 1.000000
+E29 E_D: impact 0.050000, remaining health 1.000000
+E30 E_C: impact 0.070000, remaining health 1.000000
+E31 E_C: impact 0.000000, remaining health 1.000000
+E32 E_C: impact 0.070000, remaining health 1.000000
+E33 E_A: impact 0.000000, remaining health 1.000000
+E34 E_D: impact 0.050000, remaining health 1.000000
+E35 E_B: impact 0.060000, remaining health 1.000000
+E36 E_D: impact 0.050000, remaining health 1.000000
+E37 E_E: impact 0.040000, remaining health 1.000000
+E38 E_E: impact 0.040000, remaining health 1.000000
+E39 E_D: impact 0.050000, remaining health 1.000000
+E40 E_C: impact 0.070000, remaining health 1.000000
+E41 E_D: impact 0.050000, remaining health 1.000000
+E42 E_A: impact 0.000000, remaining health 1.000000
+E43 E_E: impact 0.040000, remaining health 1.000000
+E44 E_B: impact 0.060000, remaining health 1.000000
+E45 E_B: impact 0.060000, remaining health 1.000000
+E46 E_C: impact 0.070000, remaining health 1.000000
+E47 E_D: impact 0.050000, remaining health 1.000000
+E48 E_D: impact 0.050000, remaining health 1.000000
+E49 E_C: impact 0.070000, remaining health 1.000000
+E50 E_A: impact 0.000000, remaining health 1.000000
+E51 E_D: impact 0.050000, remaining health 1.000000
+E52 E_D: impact 0.050000, remaining health 1.000000
+E53 E_D: impact 0.000000, remaining health 1.000000
+E54 E_B: impact 0.060000, remaining health 1.000000
+E55 E_A: impact 0.000004, remaining health 1.000000
+E56 E_A: impact 0.010827, remaining health 1.000000

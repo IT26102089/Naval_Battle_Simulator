@@ -1,0 +1,97 @@
+NAVAL BATTLE SIMULATOR - SESSION SETTINGS
+
+Random seed: 50
+Battlefield size: 1000.00 x 1000.00
+Battleship type: U
+Battleship name: USS Iowa (BB-61)
+Battleship Vmax: 50.00
+Battleship position: (500.00, 500.00)
+Escort ship count: 86
+
+Escort setup values:
+E1 E_D | position (894.32, 628.64) | Vmin 29.57 | Vmax 44.03 | angle 20.30-70.30 | impact 0.05
+E2 E_E | position (15.64, 215.47) | Vmin 5.45 | Vmax 12.65 | angle 10.96-80.96 | impact 0.04
+E3 E_E | position (15.12, 38.09) | Vmin 21.79 | Vmax 41.87 | angle 12.96-82.96 | impact 0.04
+E4 E_B | position (91.64, 521.24) | Vmin 0.58 | Vmax 10.22 | angle 57.82-87.82 | impact 0.06
+E5 E_E | position (384.03, 865.69) | Vmin 15.96 | Vmax 31.44 | angle 11.23-81.23 | impact 0.04
+E6 E_C | position (664.86, 401.79) | Vmin 13.50 | Vmax 35.76 | angle 56.00-81.00 | impact 0.07
+E7 E_A | position (276.56, 393.28) | Vmin 30.69 | Vmax 60.00 | angle 40.92-60.92 | impact 0.08
+E8 E_A | position (507.74, 59.41) | Vmin 32.75 | Vmax 60.00 | angle 5.90-25.90 | impact 0.08
+E9 E_B | position (521.61, 66.29) | Vmin 17.35 | Vmax 29.53 | angle 16.34-46.34 | impact 0.06
+E10 E_B | position (743.65, 644.44) | Vmin 5.16 | Vmax 10.11 | angle 36.88-66.88 | impact 0.06
+E11 E_C | position (788.76, 17.60) | Vmin 9.71 | Vmax 23.14 | angle 23.79-48.79 | impact 0.07
+E12 E_B | position (222.57, 797.03) | Vmin 4.75 | Vmax 24.97 | angle 18.26-48.26 | impact 0.06
+E13 E_A | position (10.56, 774.93) | Vmin 4.20 | Vmax 60.00 | angle 26.23-46.23 | impact 0.08
+E14 E_D | position (357.97, 154.19) | Vmin 19.47 | Vmax 21.97 | angle 20.38-70.38 | impact 0.05
+E15 E_D | position (11.80, 158.50) | Vmin 12.33 | Vmax 31.25 | angle 15.23-65.23 | impact 0.05
+E16 E_B | position (166.38, 9.15) | Vmin 2.29 | Vmax 12.36 | angle 37.39-67.39 | impact 0.06
+E17 E_B | position (603.37, 551.11) | Vmin 16.36 | Vmax 21.02 | angle 20.69-50.69 | impact 0.06
+E18 E_A | position (590.71, 82.95) | Vmin 21.94 | Vmax 60.00 | angle 62.66-82.66 | impact 0.08
+E19 E_E | position (425.44, 740.30) | Vmin 17.94 | Vmax 28.19 | angle 13.55-83.55 | impact 0.04
+E20 E_E | position (465.82, 146.09) | Vmin 11.97 | Vmax 29.97 | angle 6.91-76.91 | impact 0.04
+E21 E_C | position (18.85, 780.09) | Vmin 5.81 | Vmax 6.12 | angle 45.22-70.22 | impact 0.07
+E22 E_A | position (213.13, 572.89) | Vmin 45.85 | Vmax 60.00 | angle 29.31-49.31 | impact 0.08
+E23 E_E | position (699.48, 542.80) | Vmin 10.39 | Vmax 16.61 | angle 2.38-72.38 | impact 0.04
+E24 E_A | position (655.83, 520.84) | Vmin 23.77 | Vmax 60.00 | angle 54.17-74.17 | impact 0.08
+E25 E_A | position (124.10, 32.70) | Vmin 35.40 | Vmax 60.00 | angle 12.52-32.52 | impact 0.08
+E26 E_C | position (140.31, 214.24) | Vmin 5.69 | Vmax 24.43 | angle 23.28-48.28 | impact 0.07
+E27 E_B | position (997.39, 261.10) | Vmin 15.52 | Vmax 32.72 | angle 52.84-82.84 | impact 0.06
+E28 E_E | position (992.18, 238.47) | Vmin 25.52 | Vmax 32.67 | angle 1.26-71.26 | impact 0.04
+E29 E_D | position (981.84, 407.02) | Vmin 28.31 | Vmax 30.51 | angle 29.06-79.06 | impact 0.05
+E30 E_C | position (33.81, 701.75) | Vmin 1.17 | Vmax 7.66 | angle 28.63-53.63 | impact 0.07
+E31 E_C | position (245.30, 293.27) | Vmin 29.55 | Vmax 37.93 | angle 57.71-82.71 | impact 0.07
+E32 E_C | position (181.47, 776.32) | Vmin 11.53 | Vmax 24.57 | angle 40.50-65.50 | impact 0.07
+E33 E_A | position (369.96, 461.60) | Vmin 40.16 | Vmax 60.00 | angle 10.73-30.73 | impact 0.08
+E34 E_D | position (642.89, 732.24) | Vmin 6.40 | Vmax 7.00 | angle 30.91-80.91 | impact 0.05
+E35 E_B | position (977.78, 640.64) | Vmin 15.81 | Vmax 32.18 | angle 52.39-82.39 | impact 0.06
+E36 E_D | position (832.49, 931.66) | Vmin 5.88 | Vmax 10.03 | angle 37.67-87.67 | impact 0.05
+E37 E_E | position (904.68, 474.19) | Vmin 20.09 | Vmax 32.24 | angle 12.25-82.25 | impact 0.04
+E38 E_E | position (150.43, 246.24) | Vmin 3.18 | Vmax 29.48 | angle 13.03-83.03 | impact 0.04
+E39 E_D | position (765.28, 750.76) | Vmin 32.84 | Vmax 41.01 | angle 11.93-61.93 | impact 0.05
+E40 E_C | position (673.14, 778.45) | Vmin 11.08 | Vmax 24.19 | angle 27.95-52.95 | impact 0.07
+E41 E_D | position (352.81, 290.47) | Vmin 9.93 | Vmax 23.85 | angle 37.92-87.92 | impact 0.05
+E42 E_A | position (412.93, 320.91) | Vmin 32.17 | Vmax 60.00 | angle 0.13-20.13 | impact 0.08
+E43 E_E | position (45.33, 148.60) | Vmin 2.18 | Vmax 16.66 | angle 15.29-85.29 | impact 0.04
+E44 E_B | position (399.43, 782.76) | Vmin 1.84 | Vmax 11.01 | angle 25.80-55.80 | impact 0.06
+E45 E_B | position (950.86, 464.91) | Vmin 13.80 | Vmax 34.17 | angle 34.97-64.97 | impact 0.06
+E46 E_C | position (187.30, 833.73) | Vmin 4.71 | Vmax 24.11 | angle 26.45-51.45 | impact 0.07
+E47 E_D | position (894.00, 143.44) | Vmin 7.69 | Vmax 13.60 | angle 14.24-64.24 | impact 0.05
+E48 E_D | position (216.82, 610.99) | Vmin 17.84 | Vmax 19.77 | angle 25.42-75.42 | impact 0.05
+E49 E_C | position (133.52, 301.99) | Vmin 14.26 | Vmax 31.53 | angle 38.03-63.03 | impact 0.07
+E50 E_A | position (93.18, 403.05) | Vmin 11.78 | Vmax 60.00 | angle 9.27-29.27 | impact 0.08
+E51 E_D | position (453.72, 779.21) | Vmin 11.79 | Vmax 16.50 | angle 31.90-81.90 | impact 0.05
+E52 E_D | position (482.84, 121.78) | Vmin 28.30 | Vmax 30.05 | angle 36.25-86.25 | impact 0.05
+E53 E_D | position (191.95, 297.56) | Vmin 29.77 | Vmax 37.12 | angle 19.69-69.69 | impact 0.05
+E54 E_B | position (705.51, 437.70) | Vmin 4.54 | Vmax 5.30 | angle 17.34-47.34 | impact 0.06
+E55 E_A | position (459.69, 441.14) | Vmin 51.76 | Vmax 60.00 | angle 34.38-54.38 | impact 0.08
+E56 E_A | position (578.50, 995.10) | Vmin 21.46 | Vmax 60.00 | angle 22.03-42.03 | impact 0.08
+E57 E_E | position (232.29, 72.61) | Vmin 6.53 | Vmax 33.61 | angle 16.07-86.07 | impact 0.04
+E58 E_E | position (341.41, 136.00) | Vmin 11.42 | Vmax 26.33 | angle 16.66-86.66 | impact 0.04
+E59 E_C | position (336.31, 235.68) | Vmin 4.49 | Vmax 6.67 | angle 61.83-86.83 | impact 0.07
+E60 E_E | position (49.33, 529.44) | Vmin 24.61 | Vmax 25.36 | angle 12.45-82.45 | impact 0.04
+E61 E_E | position (371.75, 461.71) | Vmin 8.00 | Vmax 19.67 | angle 11.17-81.17 | impact 0.04
+E62 E_E | position (681.61, 638.84) | Vmin 13.01 | Vmax 36.75 | angle 16.51-86.51 | impact 0.04
+E63 E_D | position (597.46, 695.38) | Vmin 3.96 | Vmax 17.30 | angle 15.81-65.81 | impact 0.05
+E64 E_C | position (140.58, 565.07) | Vmin 14.35 | Vmax 23.64 | angle 19.78-44.78 | impact 0.07
+E65 E_C | position (417.31, 656.22) | Vmin 5.17 | Vmax 31.30 | angle 52.28-77.28 | impact 0.07
+E66 E_B | position (280.03, 536.99) | Vmin 21.91 | Vmax 24.24 | angle 40.35-70.35 | impact 0.06
+E67 E_B | position (39.64, 585.45) | Vmin 12.07 | Vmax 31.84 | angle 39.92-69.92 | impact 0.06
+E68 E_E | position (496.59, 976.72) | Vmin 6.63 | Vmax 23.33 | angle 11.79-81.79 | impact 0.04
+E69 E_A | position (853.49, 424.73) | Vmin 29.06 | Vmax 60.00 | angle 62.35-82.35 | impact 0.08
+E70 E_B | position (761.48, 788.70) | Vmin 13.51 | Vmax 21.71 | angle 57.94-87.94 | impact 0.06
+E71 E_B | position (582.93, 426.76) | Vmin 6.79 | Vmax 9.80 | angle 43.60-73.60 | impact 0.06
+E72 E_C | position (23.75, 365.35) | Vmin 19.88 | Vmax 29.37 | angle 28.42-53.42 | impact 0.07
+E73 E_E | position (988.46, 342.15) | Vmin 30.65 | Vmax 43.61 | angle 7.84-77.84 | impact 0.04
+E74 E_A | position (249.33, 292.44) | Vmin 40.44 | Vmax 60.00 | angle 31.29-51.29 | impact 0.08
+E75 E_A | position (729.96, 564.82) | Vmin 31.12 | Vmax 60.00 | angle 61.10-81.10 | impact 0.08
+E76 E_E | position (626.19, 141.11) | Vmin 7.59 | Vmax 13.36 | angle 1.68-71.68 | impact 0.04
+E77 E_D | position (329.04, 260.65) | Vmin 11.96 | Vmax 19.11 | angle 23.09-73.09 | impact 0.05
+E78 E_A | position (962.00, 302.77) | Vmin 57.03 | Vmax 60.00 | angle 45.14-65.14 | impact 0.08
+E79 E_D | position (948.28, 915.63) | Vmin 3.07 | Vmax 18.61 | angle 25.61-75.61 | impact 0.05
+E80 E_E | position (585.91, 839.03) | Vmin 7.12 | Vmax 17.63 | angle 5.92-75.92 | impact 0.04
+E81 E_B | position (834.53, 276.75) | Vmin 5.08 | Vmax 44.03 | angle 7.87-37.87 | impact 0.06
+E82 E_B | position (543.51, 199.55) | Vmin 0.39 | Vmax 37.17 | angle 48.78-78.78 | impact 0.06
+E83 E_D | position (430.16, 587.69) | Vmin 20.66 | Vmax 34.32 | angle 29.02-79.02 | impact 0.05
+E84 E_B | position (377.85, 550.43) | Vmin 30.31 | Vmax 34.03 | angle 48.36-78.36 | impact 0.06
+E85 E_A | position (365.97, 476.69) | Vmin 27.20 | Vmax 60.00 | angle 55.48-75.48 | impact 0.08
+E86 E_B | position (48.87, 749.06) | Vmin 12.10 | Vmax 18.02 | angle 36.16-66.16 | impact 0.06

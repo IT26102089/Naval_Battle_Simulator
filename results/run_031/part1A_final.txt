@@ -1,0 +1,87 @@
+PART 1-A FINAL CONDITIONS
+
+Battleship: U - USS Iowa (BB-61)
+Status: ALIVE
+
+Escort ships destroyed by B: 10
+B survived.
+
+Escort ships hit by B:
+Index of E: E6 E_C
+Time to hit: 4.22 seconds
+Index of E: E7 E_A
+Time to hit: 6.30 seconds
+Index of E: E17 E_B
+Time to hit: 2.37 seconds
+Index of E: E19 E_E
+Time to hit: 6.61 seconds
+Index of E: E23 E_E
+Time to hit: 4.56 seconds
+Index of E: E24 E_A
+Time to hit: 3.33 seconds
+Index of E: E33 E_A
+Time to hit: 2.82 seconds
+Index of E: E42 E_A
+Time to hit: 4.42 seconds
+Index of E: E54 E_B
+Time to hit: 4.90 seconds
+Index of E: E55 E_A
+Time to hit: 1.44 seconds
+
+Escort final states:
+E1 E_D - ALIVE
+E2 E_E - ALIVE
+E3 E_E - ALIVE
+E4 E_B - ALIVE
+E5 E_E - ALIVE
+E6 E_C - DESTROYED
+E7 E_A - DESTROYED
+E8 E_A - ALIVE
+E9 E_B - ALIVE
+E10 E_B - ALIVE
+E11 E_C - ALIVE
+E12 E_B - ALIVE
+E13 E_A - ALIVE
+E14 E_D - ALIVE
+E15 E_D - ALIVE
+E16 E_B - ALIVE
+E17 E_B - DESTROYED
+E18 E_A - ALIVE
+E19 E_E - DESTROYED
+E20 E_E - ALIVE
+E21 E_C - ALIVE
+E22 E_A - ALIVE
+E23 E_E - DESTROYED
+E24 E_A - DESTROYED
+E25 E_A - ALIVE
+E26 E_C - ALIVE
+E27 E_B - ALIVE
+E28 E_E - ALIVE
+E29 E_D - ALIVE
+E30 E_C - ALIVE
+E31 E_C - ALIVE
+E32 E_C - ALIVE
+E33 E_A - DESTROYED
+E34 E_D - ALIVE
+E35 E_B - ALIVE
+E36 E_D - ALIVE
+E37 E_E - ALIVE
+E38 E_E - ALIVE
+E39 E_D - ALIVE
+E40 E_C - ALIVE
+E41 E_D - ALIVE
+E42 E_A - DESTROYED
+E43 E_E - ALIVE
+E44 E_B - ALIVE
+E45 E_B - ALIVE
+E46 E_C - ALIVE
+E47 E_D - ALIVE
+E48 E_D - ALIVE
+E49 E_C - ALIVE
+E50 E_A - ALIVE
+E51 E_D - ALIVE
+E52 E_D - ALIVE
+E53 E_D - ALIVE
+E54 E_B - DESTROYED
+E55 E_A - DESTROYED
+E56 E_A - ALIVE

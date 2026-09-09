@@ -1,0 +1,19 @@
+NAVAL BATTLE SIMULATOR
+PART 2-A - SIMULATION B2 (jammed Part 1-B style)
+B firing interval: 6.00 seconds
+
+
+------------------------------
+ITERATION 1
+B position: (336.31, 235.68)
+Attack angle: 0.00 - 90.00 degrees
+B attack order position 1: E42 E_A
+Flight time: 2.36 seconds
+E8 can hit B at 6.75 seconds. B is destroyed.
+B destroyed by E8.
+
+FINAL RESULT
+B status: DESTROYED
+E ships destroyed by B: 1
+B shots fired: 1
+Total time: 2.36 seconds
