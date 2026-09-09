@@ -1,0 +1,584 @@
+NAVAL BATTLE SIMULATOR
+PART 1-C SIMULATION 2
+
+Iterations: 56
+B gun jammed after iteration: 24
+B minimum firing angle after jam: 18.00
+
+====================================
+ITERATION 1
+B position: (84.24, 329.04)
+B hit E10 E_C
+Time to hit: 4.23
+B hit E12 E_A
+Time to hit: 4.06
+B hit E13 E_E
+Time to hit: 3.27
+B hit E19 E_B
+Time to hit: 3.77
+B hit E21 E_C
+Time to hit: 0.53
+B hit E31 E_A
+Time to hit: 3.85
+B hit E35 E_C
+Time to hit: 3.82
+B hit E50 E_C
+Time to hit: 1.57
+B hit E54 E_B
+Time to hit: 2.82
+B hit E57 E_A
+Time to hit: 5.66
+B hit E58 E_A
+Time to hit: 1.51
+B hit E66 E_E
+Time to hit: 4.98
+B hit E71 E_C
+Time to hit: 2.53
+B hit E77 E_B
+Time to hit: 5.73
+B hit E86 E_A
+Time to hit: 3.62
+E38 hit B: 8.00% impact
+E83 hit B: 8.00% impact
+E ships hit this iteration: 15
+Cumulative B impact: 16.00%
+B survives this iteration
+
+====================================
+ITERATION 2
+B position: (260.65, 810.92)
+B hit E15 E_A
+Time to hit: 6.72
+B hit E27 E_C
+Time to hit: 4.10
+B hit E41 E_A
+Time to hit: 5.81
+B hit E43 E_C
+Time to hit: 4.14
+B hit E44 E_C
+Time to hit: 3.69
+B hit E46 E_B
+Time to hit: 2.99
+B hit E55 E_C
+Time to hit: 6.43
+B hit E59 E_D
+Time to hit: 4.32
+B hit E83 E_A
+Time to hit: 3.99
+B hit E85 E_C
+Time to hit: 3.10
+E29 hit B: 8.00% impact
+E ships hit this iteration: 10
+Cumulative B impact: 24.00%
+B survives this iteration
+
+====================================
+ITERATION 3
+B position: (352.80, 626.00)
+B hit E3 E_A
+Time to hit: 2.26
+B hit E18 E_C
+Time to hit: 6.37
+B hit E29 E_A
+Time to hit: 2.14
+B hit E38 E_A
+Time to hit: 3.52
+B hit E42 E_B
+Time to hit: 5.46
+B hit E47 E_C
+Time to hit: 5.16
+B hit E48 E_E
+Time to hit: 5.92
+B hit E49 E_E
+Time to hit: 2.33
+B hit E73 E_D
+Time to hit: 6.97
+E ships hit this iteration: 9
+Cumulative B impact: 24.00%
+B survives this iteration
+
+====================================
+ITERATION 4
+B position: (577.23, 962.00)
+B hit E36 E_B
+Time to hit: 3.37
+B hit E39 E_D
+Time to hit: 5.82
+B hit E40 E_B
+Time to hit: 4.34
+B hit E69 E_D
+Time to hit: 1.97
+B hit E70 E_E
+Time to hit: 1.39
+B hit E79 E_E
+Time to hit: 1.66
+B hit E80 E_B
+Time to hit: 2.24
+B hit E82 E_D
+Time to hit: 0.91
+E ships hit this iteration: 8
+Cumulative B impact: 24.00%
+B survives this iteration
+
+====================================
+ITERATION 5
+B position: (302.77, 14.46)
+B hit E2 E_D
+Time to hit: 4.59
+B hit E16 E_D
+Time to hit: 3.16
+B hit E17 E_B
+Time to hit: 4.65
+B hit E23 E_E
+Time to hit: 4.73
+B hit E24 E_C
+Time to hit: 0.86
+B hit E67 E_E
+Time to hit: 2.64
+B hit E74 E_E
+Time to hit: 3.31
+E ships hit this iteration: 7
+Cumulative B impact: 24.00%
+B survives this iteration
+
+====================================
+ITERATION 6
+B position: (950.46, 644.92)
+B hit E1 E_D
+Time to hit: 1.18
+B hit E4 E_E
+Time to hit: 2.64
+B hit E25 E_C
+Time to hit: 1.02
+B hit E34 E_E
+Time to hit: 1.72
+B hit E45 E_D
+Time to hit: 4.85
+B hit E51 E_D
+Time to hit: 4.55
+B hit E52 E_B
+Time to hit: 3.90
+B hit E60 E_D
+Time to hit: 5.17
+B hit E62 E_D
+Time to hit: 4.92
+B hit E81 E_A
+Time to hit: 2.72
+B hit E84 E_D
+Time to hit: 4.10
+B hit E87 E_A
+Time to hit: 5.63
+E ships hit this iteration: 12
+Cumulative B impact: 24.00%
+B survives this iteration
+
+====================================
+ITERATION 7
+B position: (948.28, 915.63)
+B hit E61 E_D
+Time to hit: 0.23
+B hit E65 E_D
+Time to hit: 1.11
+E ships hit this iteration: 2
+Cumulative B impact: 24.00%
+B survives this iteration
+
+====================================
+ITERATION 8
+B position: (347.84, 340.35)
+B hit E11 E_D
+Time to hit: 6.41
+B hit E28 E_B
+Time to hit: 4.57
+B hit E56 E_C
+Time to hit: 3.38
+B hit E64 E_D
+Time to hit: 2.09
+B hit E78 E_B
+Time to hit: 5.84
+E ships hit this iteration: 5
+Cumulative B impact: 24.00%
+B survives this iteration
+
+====================================
+ITERATION 9
+B position: (164.96, 640.28)
+E33 hit B: 8.00% impact
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 10
+B position: (585.91, 839.03)
+B hit E72 E_D
+Time to hit: 4.89
+E ships hit this iteration: 1
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 11
+B position: (87.30, 315.87)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 12
+B position: (403.85, 295.79)
+B hit E5 E_C
+Time to hit: 4.89
+B hit E53 E_E
+Time to hit: 4.72
+B hit E75 E_E
+Time to hit: 4.54
+E ships hit this iteration: 3
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 13
+B position: (834.53, 276.75)
+B hit E6 E_D
+Time to hit: 2.18
+B hit E7 E_C
+Time to hit: 4.77
+B hit E8 E_D
+Time to hit: 0.54
+B hit E14 E_C
+Time to hit: 1.25
+B hit E20 E_D
+Time to hit: 2.57
+B hit E22 E_C
+Time to hit: 1.98
+B hit E26 E_D
+Time to hit: 3.35
+B hit E32 E_E
+Time to hit: 3.45
+B hit E37 E_C
+Time to hit: 2.93
+B hit E68 E_B
+Time to hit: 1.20
+B hit E76 E_D
+Time to hit: 4.72
+B hit E88 E_E
+Time to hit: 6.37
+E ships hit this iteration: 12
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 14
+B position: (921.99, 975.64)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 15
+B position: (115.30, 131.11)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 16
+B position: (543.51, 199.55)
+B hit E63 E_E
+Time to hit: 4.71
+E ships hit this iteration: 1
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 17
+B position: (460.15, 804.16)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 18
+B position: (10.46, 812.95)
+B hit E33 E_A
+Time to hit: 3.81
+E ships hit this iteration: 1
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 19
+B position: (430.16, 587.69)
+B hit E9 E_C
+Time to hit: 3.74
+B hit E30 E_E
+Time to hit: 3.89
+E ships hit this iteration: 2
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 20
+B position: (774.95, 732.93)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 21
+B position: (602.15, 725.40)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 22
+B position: (377.85, 550.43)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 23
+B position: (641.03, 725.69)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 24
+B position: (890.78, 805.99)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 25
+B position: (365.97, 476.69)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 26
+B position: (645.02, 453.27)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 27
+B position: (792.56, 48.87)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 28
+B position: (749.06, 627.09)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 29
+B position: (325.62, 671.05)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 30
+B position: (602.73, 440.92)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 31
+B position: (802.16, 146.24)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 32
+B position: (640.47, 262.31)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 33
+B position: (950.40, 650.93)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 34
+B position: (75.26, 380.56)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 35
+B position: (238.62, 850.21)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 36
+B position: (113.50, 840.77)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 37
+B position: (575.61, 491.35)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 38
+B position: (391.20, 216.64)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 39
+B position: (217.05, 281.98)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 40
+B position: (22.64, 583.01)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 41
+B position: (758.67, 667.66)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 42
+B position: (36.28, 551.22)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 43
+B position: (716.53, 785.34)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 44
+B position: (178.31, 42.14)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 45
+B position: (456.39, 781.05)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 46
+B position: (483.06, 258.54)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 47
+B position: (927.29, 123.53)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 48
+B position: (520.86, 877.69)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 49
+B position: (774.46, 596.12)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 50
+B position: (258.26, 13.08)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 51
+B position: (446.33, 371.76)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 52
+B position: (853.85, 21.93)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 53
+B position: (863.11, 245.05)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 54
+B position: (238.58, 80.15)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 55
+B position: (527.03, 261.22)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+====================================
+ITERATION 56
+B position: (663.17, 285.70)
+E ships hit this iteration: 0
+Cumulative B impact: 32.00%
+B survives this iteration
+
+
+FINAL RESULT
+B status: ALIVE
+B shots fired: 88
+Cumulative impact: 32.00%
