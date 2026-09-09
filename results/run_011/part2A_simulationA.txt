@@ -1,6 +1,6 @@
 NAVAL BATTLE SIMULATOR
 PART 2-A - SIMULATION A (Part 1-A style)
-B firing interval: 5.00 seconds
+B firing interval: 25.00 seconds
 
 
 ------------------------------

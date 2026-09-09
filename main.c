@@ -5,11 +5,10 @@
 
 #include "ships.h"
 #include "battle.h"
+#include "part2A.h"
+#include "part2B.h"
+#include "part2C.h"
 
-/* Part 2-A */
-void runPart2A(Battleship battleship, EscortShip escorts[], int numberOfEscorts, double battlefieldSize);
-void runPart2B(Battleship battleship, EscortShip escorts[], int numberOfEscorts, double battlefieldSize);
-void runPart2C(Battleship battleship, EscortShip escorts[], int numberOfEscorts, double battlefieldSize);
 
 
 /*
@@ -764,7 +763,7 @@ int main(void)
         if (choice < 1 || choice > 9)
             printf("Invalid option. Please select 1-9.\n");
     }
-    while (choice < 1 || choice > 9);
+    while (choice < 1 || choice > 8);
 
     if (choice == 9)
     {
@@ -949,7 +948,7 @@ int main(void)
         runPart2B(battleship, escorts, numberOfEscorts, battlefieldSize);
     }
 
-    /* Part 2-C is added separately. Previous simulation code is unchanged. */
+    /* Part 2-C is added as a separate module. */
     if (choice == 7 || choice == 8)
     {
         printf("\n============================================\n");

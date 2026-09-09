@@ -1,7 +1,7 @@
 PART 1-C SIMULATION A
 
 B status: ALIVE
-Escort ships destroyed by B: 14
+Escort ships destroyed by B: 22
 Cumulative impact on B: 8.00%
 
 E1 E_D
@@ -281,6 +281,171 @@ Shots fired: 0
 
 E56 E_C
 Destroyed: YES
+Impact power: 0.07
+Shots fired: 0
+
+E57 E_A
+Destroyed: YES
+Impact power: 0.08
+Shots fired: 0
+
+E58 E_A
+Destroyed: NO
+Impact power: 0.08
+Shots fired: 0
+
+E59 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E60 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E61 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E62 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E63 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E64 E_D
+Destroyed: YES
+Impact power: 0.05
+Shots fired: 0
+
+E65 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E66 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E67 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E68 E_B
+Destroyed: NO
+Impact power: 0.06
+Shots fired: 0
+
+E69 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E70 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E71 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E72 E_D
+Destroyed: YES
+Impact power: 0.05
+Shots fired: 0
+
+E73 E_D
+Destroyed: YES
+Impact power: 0.05
+Shots fired: 0
+
+E74 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E75 E_E
+Destroyed: YES
+Impact power: 0.04
+Shots fired: 0
+
+E76 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E77 E_B
+Destroyed: YES
+Impact power: 0.06
+Shots fired: 0
+
+E78 E_B
+Destroyed: YES
+Impact power: 0.06
+Shots fired: 0
+
+E79 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E80 E_B
+Destroyed: NO
+Impact power: 0.06
+Shots fired: 0
+
+E81 E_A
+Destroyed: NO
+Impact power: 0.08
+Shots fired: 0
+
+E82 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E83 E_A
+Destroyed: NO
+Impact power: 0.08
+Shots fired: 0
+
+E84 E_D
+Destroyed: NO
+Impact power: 0.05
+Shots fired: 0
+
+E85 E_C
+Destroyed: NO
+Impact power: 0.07
+Shots fired: 0
+
+E86 E_A
+Destroyed: NO
+Impact power: 0.08
+Shots fired: 0
+
+E87 E_A
+Destroyed: YES
+Impact power: 0.08
+Shots fired: 0
+
+E88 E_E
+Destroyed: NO
+Impact power: 0.04
+Shots fired: 0
+
+E89 E_C
+Destroyed: NO
 Impact power: 0.07
 Shots fired: 0
 

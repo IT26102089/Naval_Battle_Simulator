@@ -1,444 +1,57 @@
 NAVAL BATTLE SIMULATOR
 PART 1-B SIMULATION 1
 
-Iterations: 54
+Iterations: 64
 ====================================
 ITERATION 1
-B position: (301.99, 418.35)
+B position: (626.00, 577.23)
 B hit E3 E_A
-Time to hit: 3.97
-B hit E10 E_C
-Time to hit: 5.92
-B hit E12 E_A
-Time to hit: 4.36
-B hit E13 E_E
-Time to hit: 2.72
-B hit E18 E_C
-Time to hit: 2.04
-B hit E21 E_C
-Time to hit: 5.36
-B hit E27 E_C
-Time to hit: 4.68
-B hit E28 E_B
-Time to hit: 6.05
-B hit E29 E_A
-Time to hit: 5.34
-B hit E31 E_A
-Time to hit: 2.43
-B hit E38 E_A
-Time to hit: 1.63
-B hit E42 E_B
-Time to hit: 6.05
-B hit E46 E_B
-Time to hit: 7.16
-B hit E47 E_C
-Time to hit: 3.31
-B hit E48 E_E
-Time to hit: 3.62
-B hit E49 E_E
-Time to hit: 3.60
-B hit E50 E_C
-Time to hit: 4.33
-B hit E54 E_B
-Time to hit: 2.20
-B hit E55 E_C
-Time to hit: 3.67
-B hit E56 E_C
-Time to hit: 4.70
-E ships hit this iteration: 20
-B survives this iteration
-
-====================================
-ITERATION 2
-B position: (663.16, 452.18)
-B hit E6 E_D
-Time to hit: 4.92
+Time to hit: 4.37
 B hit E7 E_C
-Time to hit: 1.01
+Time to hit: 3.89
 B hit E9 E_C
-Time to hit: 1.96
-B hit E11 E_D
-Time to hit: 4.31
-B hit E20 E_D
-Time to hit: 4.16
-B hit E22 E_C
-Time to hit: 4.86
+Time to hit: 1.64
 B hit E26 E_D
-Time to hit: 2.18
+Time to hit: 4.76
+B hit E28 E_B
+Time to hit: 4.40
+B hit E29 E_A
+Time to hit: 3.77
 B hit E30 E_E
-Time to hit: 1.86
-B hit E51 E_D
-Time to hit: 2.98
-E ships hit this iteration: 9
-B survives this iteration
-
-====================================
-ITERATION 3
-B position: (585.08, 93.18)
-B hit E2 E_D
-Time to hit: 2.25
-B hit E5 E_C
-Time to hit: 1.17
-B hit E14 E_C
-Time to hit: 6.55
-B hit E16 E_D
-Time to hit: 5.65
-B hit E17 E_B
-Time to hit: 2.28
-B hit E23 E_E
-Time to hit: 2.71
-B hit E24 E_C
-Time to hit: 6.55
-B hit E37 E_C
-Time to hit: 4.42
-B hit E53 E_E
-Time to hit: 1.92
-E ships hit this iteration: 9
-B survives this iteration
-
-====================================
-ITERATION 4
-B position: (403.05, 49.99)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 5
-B position: (196.33, 132.36)
-B hit E19 E_B
-Time to hit: 1.09
-B hit E35 E_C
-Time to hit: 2.73
-E ships hit this iteration: 2
-B survives this iteration
-
-====================================
-ITERATION 6
-B position: (453.72, 779.21)
+Time to hit: 2.11
 B hit E36 E_B
-Time to hit: 4.62
+Time to hit: 6.31
 B hit E39 E_D
-Time to hit: 4.30
-B hit E41 E_A
-Time to hit: 2.06
-E ships hit this iteration: 3
-B survives this iteration
-
-====================================
-ITERATION 7
-B position: (319.67, 287.44)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 8
-B position: (714.90, 797.44)
-B hit E1 E_D
-Time to hit: 6.22
-B hit E34 E_E
-Time to hit: 5.23
-B hit E40 E_B
-Time to hit: 4.15
+Time to hit: 3.30
 B hit E45 E_D
-Time to hit: 1.39
-E ships hit this iteration: 4
-B survives this iteration
-
-====================================
-ITERATION 9
-B position: (482.84, 121.78)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 10
-B position: (691.44, 626.28)
-B hit E4 E_E
-Time to hit: 6.84
-E ships hit this iteration: 1
-B survives this iteration
-
-====================================
-ITERATION 11
-B position: (941.61, 906.34)
-B hit E25 E_C
-Time to hit: 4.77
-E ships hit this iteration: 1
-B survives this iteration
-
-====================================
-ITERATION 12
-B position: (191.95, 297.56)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 13
-B position: (123.16, 802.95)
-B hit E15 E_A
-Time to hit: 2.39
-B hit E33 E_A
-Time to hit: 4.13
-B hit E43 E_C
-Time to hit: 2.52
-B hit E44 E_C
-Time to hit: 4.99
-E ships hit this iteration: 4
-B survives this iteration
-
-====================================
-ITERATION 14
-B position: (802.12, 492.31)
-B hit E8 E_D
-Time to hit: 5.21
-B hit E52 E_B
-Time to hit: 3.18
-E ships hit this iteration: 2
-B survives this iteration
-
-====================================
-ITERATION 15
-B position: (705.51, 437.70)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 16
-B position: (625.83, 7.51)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 17
-B position: (856.05, 288.99)
-B hit E32 E_E
-Time to hit: 3.04
-E ships hit this iteration: 1
-B survives this iteration
-
-====================================
-ITERATION 18
-B position: (459.69, 441.14)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 19
-B position: (382.17, 862.73)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 20
-B position: (491.13, 578.50)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 21
-B position: (995.10, 944.84)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 22
-B position: (357.71, 314.76)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 23
-B position: (232.29, 72.61)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 24
-B position: (112.20, 715.13)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 25
-B position: (194.39, 803.64)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 26
-B position: (341.41, 136.00)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 27
-B position: (709.98, 533.37)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 28
-B position: (433.56, 833.14)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 29
-B position: (336.31, 235.68)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 30
-B position: (325.45, 41.82)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 31
-B position: (673.39, 951.28)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 32
-B position: (49.33, 529.44)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 33
-B position: (240.28, 509.02)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 34
-B position: (970.58, 622.45)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 35
-B position: (371.75, 461.71)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 36
-B position: (200.95, 366.85)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 37
-B position: (406.55, 558.66)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 38
-B position: (681.61, 638.84)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 39
-B position: (631.27, 793.81)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 40
-B position: (353.97, 825.67)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 41
-B position: (597.46, 695.38)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 42
-B position: (961.67, 307.44)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 43
-B position: (228.75, 395.23)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 44
-B position: (140.58, 565.07)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 45
-B position: (630.91, 466.03)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 46
-B position: (606.89, 304.30)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 47
-B position: (417.31, 656.22)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 48
-B position: (833.74, 657.59)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 49
-B position: (165.24, 804.32)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 50
-B position: (280.03, 536.99)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 51
-B position: (266.02, 480.98)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 52
-B position: (903.84, 672.57)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 53
-B position: (39.64, 585.45)
-E ships hit this iteration: 0
-B survives this iteration
-
-====================================
-ITERATION 54
-B position: (311.41, 670.92)
-E ships hit this iteration: 0
-B survives this iteration
+Time to hit: 5.16
+B hit E47 E_C
+Time to hit: 5.19
+B hit E48 E_E
+Time to hit: 5.19
+B hit E49 E_E
+Time to hit: 4.68
+B hit E51 E_D
+Time to hit: 3.49
+B hit E56 E_C
+Time to hit: 5.92
+B hit E60 E_D
+Time to hit: 4.32
+B hit E72 E_D
+Time to hit: 1.12
+B hit E73 E_D
+Time to hit: 2.51
+B hit E84 E_D
+Time to hit: 3.01
+B hit E87 E_A
+Time to hit: 2.14
+E ships hit this iteration: 20
+B DESTROYED
+E38 sank B
+Time to impact: 5.17 seconds
+Simulation stopped at iteration 1
 
 
 FINAL RESULT
-B status: ALIVE
-B shots fired: 56
+B status: DESTROYED
+B shots fired: 20

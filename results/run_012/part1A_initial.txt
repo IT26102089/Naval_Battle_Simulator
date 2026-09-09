@@ -1,6 +1,7 @@
 NAVAL BATTLE SIMULATOR
 PART 1-A INITIAL CONDITIONS
 
+Random seed: 50
 Battlefield: 1000.00 x 1000.00
 
 BATTLESHIP
@@ -532,3 +533,373 @@ Vmax: 40.00
 Theta_L: 24.22
 Theta_H: 54.22
 Impact Power: 0.06
+
+E53
+Type: E_E
+Name: Japanese Kaibokan
+Position: 582.88 187.30
+Vmin: 37.43
+Vmax: 40.00
+Theta_L: 9.56
+Theta_H: 79.56
+Impact Power: 0.04
+
+E54
+Type: E_B
+Name: Gabbiano-class Corvette
+Position: 195.40 406.89
+Vmin: 5.74
+Vmax: 40.00
+Theta_L: 49.19
+Theta_H: 79.19
+Impact Power: 0.06
+
+E55
+Type: E_C
+Name: Matsu-class Destroyer
+Position: 214.90 565.67
+Vmin: 8.67
+Vmax: 40.00
+Theta_L: 39.71
+Theta_H: 64.71
+Impact Power: 0.07
+
+E56
+Type: E_C
+Name: Matsu-class Destroyer
+Position: 504.56 369.15
+Vmin: 25.42
+Vmax: 40.00
+Theta_L: 8.68
+Theta_H: 33.68
+Impact Power: 0.07
+
+E57
+Type: E_A
+Name: 1936A-class Destroyer
+Position: 301.99 418.35
+Vmin: 27.13
+Vmax: 60.00
+Theta_L: 40.96
+Theta_H: 60.96
+Impact Power: 0.08
+
+E58
+Type: E_A
+Name: 1936A-class Destroyer
+Position: 93.18 403.05
+Vmin: 11.78
+Vmax: 60.00
+Theta_L: 9.27
+Theta_H: 29.27
+Impact Power: 0.08
+
+E59
+Type: E_D
+Name: F-class Escort Ships
+Position: 453.72 779.21
+Vmin: 11.50
+Vmax: 40.00
+Theta_L: 28.60
+Theta_H: 78.60
+Impact Power: 0.05
+
+E60
+Type: E_D
+Name: F-class Escort Ships
+Position: 797.44 482.84
+Vmin: 27.66
+Vmax: 40.00
+Theta_L: 25.05
+Theta_H: 75.05
+Impact Power: 0.05
+
+E61
+Type: E_D
+Name: F-class Escort Ships
+Position: 941.61 906.34
+Vmin: 11.90
+Vmax: 40.00
+Theta_L: 4.93
+Theta_H: 54.93
+Impact Power: 0.05
+
+E62
+Type: E_D
+Name: F-class Escort Ships
+Position: 802.95 802.12
+Vmin: 28.22
+Vmax: 40.00
+Theta_L: 17.51
+Theta_H: 67.51
+Impact Power: 0.05
+
+E63
+Type: E_E
+Name: Japanese Kaibokan
+Position: 625.83 7.51
+Vmin: 11.56
+Vmax: 40.00
+Theta_L: 9.19
+Theta_H: 79.19
+Impact Power: 0.04
+
+E64
+Type: E_D
+Name: F-class Escort Ships
+Position: 441.14 382.17
+Vmin: 19.65
+Vmax: 40.00
+Theta_L: 23.14
+Theta_H: 73.14
+Impact Power: 0.05
+
+E65
+Type: E_D
+Name: F-class Escort Ships
+Position: 995.10 944.84
+Vmin: 12.59
+Vmax: 40.00
+Theta_L: 9.29
+Theta_H: 59.29
+Impact Power: 0.05
+
+E66
+Type: E_E
+Name: Japanese Kaibokan
+Position: 72.61 112.20
+Vmin: 7.78
+Vmax: 40.00
+Theta_L: 16.07
+Theta_H: 86.07
+Impact Power: 0.04
+
+E67
+Type: E_E
+Name: Japanese Kaibokan
+Position: 341.41 136.00
+Vmin: 21.33
+Vmax: 40.00
+Theta_L: 8.67
+Theta_H: 78.67
+Impact Power: 0.04
+
+E68
+Type: E_B
+Name: Gabbiano-class Corvette
+Position: 833.14 336.31
+Vmin: 13.02
+Vmax: 40.00
+Theta_L: 2.51
+Theta_H: 32.51
+Impact Power: 0.06
+
+E69
+Type: E_D
+Name: F-class Escort Ships
+Position: 673.39 951.28
+Vmin: 21.18
+Vmax: 40.00
+Theta_L: 9.61
+Theta_H: 59.61
+Impact Power: 0.05
+
+E70
+Type: E_E
+Name: Japanese Kaibokan
+Position: 509.02 970.58
+Vmin: 14.87
+Vmax: 40.00
+Theta_L: 9.23
+Theta_H: 79.23
+Impact Power: 0.04
+
+E71
+Type: E_C
+Name: Matsu-class Destroyer
+Position: 200.95 366.85
+Vmin: 22.35
+Vmax: 40.00
+Theta_L: 44.30
+Theta_H: 69.30
+Impact Power: 0.07
+
+E72
+Type: E_D
+Name: F-class Escort Ships
+Position: 638.84 631.27
+Vmin: 14.16
+Vmax: 40.00
+Theta_L: 33.03
+Theta_H: 83.03
+Impact Power: 0.05
+
+E73
+Type: E_D
+Name: F-class Escort Ships
+Position: 597.46 695.38
+Vmin: 12.30
+Vmax: 40.00
+Theta_L: 9.15
+Theta_H: 59.15
+Impact Power: 0.05
+
+E74
+Type: E_E
+Name: Japanese Kaibokan
+Position: 395.23 140.58
+Vmin: 25.24
+Vmax: 40.00
+Theta_L: 9.32
+Theta_H: 79.32
+Impact Power: 0.04
+
+E75
+Type: E_E
+Name: Japanese Kaibokan
+Position: 606.89 304.30
+Vmin: 26.25
+Vmax: 40.00
+Theta_L: 16.67
+Theta_H: 86.67
+Impact Power: 0.04
+
+E76
+Type: E_D
+Name: F-class Escort Ships
+Position: 657.59 165.24
+Vmin: 11.20
+Vmax: 40.00
+Theta_L: 21.48
+Theta_H: 71.48
+Impact Power: 0.05
+
+E77
+Type: E_B
+Name: Gabbiano-class Corvette
+Position: 266.02 480.98
+Vmin: 26.90
+Vmax: 40.00
+Theta_L: 2.38
+Theta_H: 32.38
+Impact Power: 0.06
+
+E78
+Type: E_B
+Name: Gabbiano-class Corvette
+Position: 585.45 311.41
+Vmin: 15.17
+Vmax: 40.00
+Theta_L: 39.92
+Theta_H: 69.92
+Impact Power: 0.06
+
+E79
+Type: E_E
+Name: Japanese Kaibokan
+Position: 496.59 976.72
+Vmin: 18.33
+Vmax: 40.00
+Theta_L: 5.68
+Theta_H: 75.68
+Impact Power: 0.04
+
+E80
+Type: E_B
+Name: Gabbiano-class Corvette
+Position: 589.52 853.49
+Vmin: 6.18
+Vmax: 40.00
+Theta_L: 29.06
+Theta_H: 59.06
+Impact Power: 0.06
+
+E81
+Type: E_A
+Name: 1936A-class Destroyer
+Position: 890.76 761.48
+Vmin: 18.48
+Vmax: 60.00
+Theta_L: 29.24
+Theta_H: 49.24
+Impact Power: 0.08
+
+E82
+Type: E_D
+Name: F-class Escort Ships
+Position: 622.44 965.66
+Vmin: 17.07
+Vmax: 40.00
+Theta_L: 9.83
+Theta_H: 59.83
+Impact Power: 0.05
+
+E83
+Type: E_A
+Name: 1936A-class Destroyer
+Position: 119.92 692.78
+Vmin: 1.43
+Vmax: 60.00
+Theta_L: 25.57
+Theta_H: 45.57
+Impact Power: 0.08
+
+E84
+Type: E_D
+Name: F-class Escort Ships
+Position: 766.31 609.20
+Vmin: 17.49
+Vmax: 40.00
+Theta_L: 39.54
+Theta_H: 89.54
+Impact Power: 0.05
+
+E85
+Type: E_C
+Name: Matsu-class Destroyer
+Position: 342.15 933.82
+Vmin: 28.12
+Vmax: 40.00
+Theta_L: 25.48
+Theta_H: 50.48
+Impact Power: 0.07
+
+E86
+Type: E_A
+Name: 1936A-class Destroyer
+Position: 249.33 292.44
+Vmin: 40.44
+Vmax: 60.00
+Theta_L: 31.29
+Theta_H: 51.29
+Impact Power: 0.08
+
+E87
+Type: E_A
+Name: 1936A-class Destroyer
+Position: 729.96 564.82
+Vmin: 31.12
+Vmax: 60.00
+Theta_L: 61.10
+Theta_H: 81.10
+Impact Power: 0.08
+
+E88
+Type: E_E
+Name: Japanese Kaibokan
+Position: 626.19 141.11
+Vmin: 8.36
+Vmax: 40.00
+Theta_L: 11.36
+Theta_H: 81.36
+Impact Power: 0.04
+
+E89
+Type: E_C
+Name: Matsu-class Destroyer
+Position: 84.24 329.04
+Vmin: 32.44
+Vmax: 40.00
+Theta_L: 22.93
+Theta_H: 47.93
+Impact Power: 0.07
