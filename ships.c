@@ -104,6 +104,8 @@ void createEscortShips(
         escorts[i].destroyed = 0;
         escorts[i].shotsFired = 0;
         escorts[i].currentImpact = 1.0;
+        escorts[i].gamma = 0.0;
+        escorts[i].damageTaken = 0.0;
 
         /*
          * Random position.

@@ -1,0 +1,581 @@
+NAVAL BATTLE SIMULATOR
+PART 2-C - SIMULATION B2 (jammed Part 1-C style)
+
+B firing interval: 8.00 seconds
+B gamma: 52.00000
+E firing intervals:
+E_A: 5.00
+E_B: 2.00
+E_C: 7.00
+E_D: 9.00
+E_E: 6.00
+
+
+ITERATION 1
+B position: (849.01, 661.23)
+B angle range: 0.00 - 90.00
+E4 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 5.04 s
+E25 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 2.84 s
+E34 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 2.71 s
+E45 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 7.43 s
+E51 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 4.36 s
+B attack order 1: E1 E_D
+B shots fired: 1 | B current impact: 0.0000
+Damage on E1: 0.00%
+E1 survives with 0.00% damage
+
+ITERATION 2
+B position: (403.99, 732.40)
+B angle range: 0.00 - 90.00
+B attack order 2: E29 E_A
+B shots fired: 2 | B current impact: 0.0000
+Damage on E29: 0.00%
+E29 survives with 0.00% damage
+E3 fired at 5.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 8.22 s
+E3 fired at 10.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 13.22 s
+E27 fired at 7.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 11.85 s
+E38 fired at 5.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 9.98 s
+E38 fired at 10.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 14.98 s
+E41 fired at 5.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 7.84 s
+E41 fired at 10.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 12.84 s
+
+ITERATION 3
+B position: (627.78, 483.89)
+B angle range: 0.00 - 90.00
+B attack order 3: E9 E_C
+B shots fired: 3 | B current impact: 0.0000
+Damage on E9: 0.00%
+E9 survives with 0.00% damage
+E3 fired at 15.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 18.61 s
+E3 fired at 20.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 23.61 s
+E26 fired at 18.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 22.56 s
+E28 fired at 14.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 17.31 s
+E28 fired at 16.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 19.31 s
+E28 fired at 18.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 21.31 s
+E28 fired at 20.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 23.31 s
+E29 fired at 15.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 18.59 s
+E29 fired at 20.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 23.59 s
+E30 fired at 18.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 26.06 s
+E38 fired at 15.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 19.67 s
+E38 fired at 20.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 24.67 s
+E51 fired at 18.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 23.36 s
+
+ITERATION 4
+B position: (932.49, 453.85)
+B angle range: 0.00 - 90.00
+B attack order 4: E52 E_B
+B shots fired: 4 | B current impact: 0.0000
+Damage on E52: 0.00%
+E52 survives with 0.00% damage
+E4 fired at 24.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 25.73 s
+E6 fired at 27.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 34.71 s
+E20 fired at 27.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 34.70 s
+
+ITERATION 5
+B position: (645.47, 895.59)
+B angle range: 0.00 - 90.00
+B attack order 5: E36 E_B
+B shots fired: 5 | B current impact: 0.0000
+Damage on E36: 0.00%
+E36 survives with 0.00% damage
+E36 fired at 30.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 31.87 s
+E36 fired at 32.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 33.87 s
+E36 fired at 34.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 35.87 s
+E36 fired at 36.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 37.87 s
+E36 fired at 38.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 39.87 s
+E40 fired at 30.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 36.75 s
+E40 fired at 32.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 38.75 s
+E40 fired at 34.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 40.75 s
+E40 fired at 36.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 42.75 s
+E40 fired at 38.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 44.75 s
+E41 fired at 30.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 32.66 s
+E41 fired at 35.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 37.66 s
+
+ITERATION 6
+B position: (511.20, 742.56)
+B angle range: 13.00 - 90.00
+B attack order 6: E39 E_D
+B shots fired: 6 | B current impact: 0.0000
+Damage on E39: 0.00%
+E39 survives with 0.00% damage
+E3 fired at 40.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 43.68 s
+E3 fired at 45.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 48.68 s
+E38 fired at 40.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 46.02 s
+E38 fired at 45.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 51.02 s
+E39 fired at 45.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 52.26 s
+E41 fired at 40.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 42.24 s
+E41 fired at 45.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 47.24 s
+
+ITERATION 7
+B position: (643.64, 662.93)
+B angle range: 13.00 - 90.00
+B attack order 7: E9 E_C
+B shots fired: 7 | B current impact: 0.0000
+Damage on E9: 0.00%
+E9 survives with 0.00% damage
+E3 fired at 50.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 54.31 s
+E3 fired at 55.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 59.31 s
+E3 fired at 60.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 64.31 s
+E29 fired at 50.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 53.59 s
+E29 fired at 55.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 58.59 s
+E29 fired at 60.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 63.59 s
+E36 fired at 50.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 55.26 s
+E36 fired at 52.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 57.26 s
+E36 fired at 54.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 59.26 s
+E36 fired at 56.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 61.26 s
+E36 fired at 58.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 63.26 s
+E36 fired at 60.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 65.26 s
+E39 fired at 54.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 61.96 s
+E41 fired at 50.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 54.68 s
+E41 fired at 55.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 59.68 s
+E41 fired at 60.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 64.68 s
+E45 fired at 54.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 58.50 s
+
+ITERATION 8
+B position: (20.22, 415.22)
+B angle range: 13.00 - 90.00
+B attack order 8: E12 E_A
+B shots fired: 8 | B current impact: 0.0000
+Damage on E12: 0.00%
+E12 survives with 0.00% damage
+E12 fired at 65.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 67.44 s
+E12 fired at 70.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 72.44 s
+E13 fired at 66.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 71.22 s
+E13 fired at 72.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 77.22 s
+E15 fired at 65.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 72.75 s
+E15 fired at 70.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 77.75 s
+E31 fired at 65.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 76.26 s
+E31 fired at 70.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 81.26 s
+
+ITERATION 9
+B position: (989.20, 5.49)
+B angle range: 13.00 - 90.00
+B attack order 9: E32 E_E
+B shots fired: 9 | B current impact: 0.0000
+Damage on E32: 0.00%
+E32 survives with 0.00% damage
+
+ITERATION 10
+B position: (471.54, 153.18)
+B angle range: 13.00 - 90.00
+B attack order 10: E16 E_D
+B shots fired: 10 | B current impact: 0.0000
+Damage on E16: 0.00%
+E16 survives with 0.00% damage
+E2 fired at 90.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 94.12 s
+E16 fired at 90.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 97.56 s
+E17 fired at 88.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 94.92 s
+E17 fired at 90.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 96.92 s
+E17 fired at 92.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 98.92 s
+E17 fired at 94.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 100.92 s
+E17 fired at 96.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 102.92 s
+E31 fired at 90.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 101.29 s
+E31 fired at 95.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 106.29 s
+E53 fired at 90.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 93.16 s
+E53 fired at 96.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 99.16 s
+
+ITERATION 11
+B position: (984.04, 741.47)
+B angle range: 13.00 - 90.00
+B attack order 11: E1 E_D
+B shots fired: 11 | B current impact: 0.0000
+Damage on E1: 0.00%
+E1 survives with 0.00% damage
+E1 fired at 99.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 103.21 s
+E34 fired at 102.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 110.02 s
+
+ITERATION 12
+B position: (854.31, 792.81)
+B angle range: 13.00 - 90.00
+B attack order 12: E25 E_C
+B shots fired: 12 | B current impact: 0.0000
+Damage on E25: 0.00%
+E25 survives with 0.00% damage
+E25 fired at 112.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 115.86 s
+E34 fired at 108.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 110.61 s
+E34 fired at 114.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 116.61 s
+E45 fired at 108.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 115.73 s
+E45 fired at 117.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 124.73 s
+
+ITERATION 13
+B position: (870.43, 577.38)
+B angle range: 13.00 - 90.00
+B attack order 13: E52 E_B
+B shots fired: 13 | B current impact: 0.0000
+Damage on E52: 0.00%
+E52 survives with 0.00% damage
+E4 fired at 120.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 121.98 s
+E4 fired at 126.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 127.98 s
+E25 fired at 119.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 123.13 s
+E25 fired at 126.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 130.13 s
+E34 fired at 120.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 125.15 s
+E34 fired at 126.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 131.15 s
+E51 fired at 126.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 128.64 s
+E52 fired at 120.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 123.95 s
+E52 fired at 122.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 125.95 s
+E52 fired at 124.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 127.95 s
+E52 fired at 126.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 129.95 s
+E52 fired at 128.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 131.95 s
+
+ITERATION 14
+B position: (447.03, 545.94)
+B angle range: 13.00 - 90.00
+B attack order 14: E47 E_C
+B shots fired: 14 | B current impact: 0.0000
+Damage on E47: 0.00%
+E47 survives with 0.00% damage
+E9 fired at 133.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 140.02 s
+E30 fired at 132.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 136.21 s
+E30 fired at 138.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 142.21 s
+E31 fired at 130.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 140.83 s
+E31 fired at 135.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 145.83 s
+E48 fired at 132.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 135.70 s
+E48 fired at 138.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 141.70 s
+E49 fired at 132.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 132.67 s
+E49 fired at 138.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 138.67 s
+
+ITERATION 15
+B position: (263.56, 742.96)
+B angle range: 13.00 - 90.00
+B attack order 15: E43 E_C
+B shots fired: 15 | B current impact: 0.0000
+Damage on E43: 0.00%
+E43 survives with 0.00% damage
+E29 fired at 140.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 144.31 s
+E29 fired at 145.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 149.31 s
+E29 fired at 150.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 154.31 s
+E33 fired at 140.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 150.69 s
+E33 fired at 145.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 155.69 s
+E33 fired at 150.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 160.69 s
+E38 fired at 140.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 145.65 s
+E38 fired at 145.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 150.65 s
+E38 fired at 150.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 155.65 s
+E41 fired at 140.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 144.74 s
+E41 fired at 145.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 149.74 s
+E41 fired at 150.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 154.74 s
+
+ITERATION 16
+B position: (938.62, 112.56)
+B angle range: 13.00 - 90.00
+B attack order 16: E37 E_C
+B shots fired: 16 | B current impact: 0.0000
+Damage on E37: 0.00%
+E37 survives with 0.00% damage
+E32 fired at 156.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 159.89 s
+E32 fired at 162.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 165.89 s
+
+ITERATION 17
+B position: (404.19, 342.61)
+B angle range: 13.00 - 90.00
+B attack order 17: E54 E_B
+B shots fired: 17 | B current impact: 0.0000
+Damage on E54: 0.00%
+E54 survives with 0.00% damage
+E3 fired at 165.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 168.61 s
+E3 fired at 170.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 173.61 s
+E3 fired at 175.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 178.61 s
+E29 fired at 165.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 169.51 s
+E29 fired at 170.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 174.51 s
+E29 fired at 175.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 179.51 s
+E31 fired at 165.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 176.97 s
+E31 fired at 170.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 181.97 s
+E31 fired at 175.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 186.97 s
+E48 fired at 168.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 170.63 s
+E48 fired at 174.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 176.63 s
+E56 fired at 168.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 170.76 s
+E56 fired at 175.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 177.76 s
+
+ITERATION 18
+B position: (844.97, 31.97)
+B angle range: 13.00 - 90.00
+B attack order 18: E37 E_C
+B shots fired: 18 | B current impact: 0.0000
+Damage on E37: 0.00%
+E37 survives with 0.00% damage
+E37 fired at 182.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 189.19 s
+
+ITERATION 19
+B position: (826.50, 777.46)
+B angle range: 13.00 - 90.00
+B attack order 19: E1 E_D
+B shots fired: 19 | B current impact: 0.0000
+Damage on E1: 0.00%
+E1 survives with 0.00% damage
+E25 fired at 189.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 193.38 s
+E25 fired at 196.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 200.38 s
+E34 fired at 192.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 195.06 s
+E45 fired at 189.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 196.97 s
+
+ITERATION 20
+B position: (485.82, 471.97)
+B angle range: 13.00 - 90.00
+B attack order 20: E18 E_C
+B shots fired: 20 | B current impact: 0.0000
+Damage on E18: 0.00%
+E18 survives with 0.00% damage
+E3 fired at 200.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 201.58 s
+E3 fired at 205.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 206.58 s
+E18 fired at 203.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 206.59 s
+E28 fired at 198.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 200.52 s
+E28 fired at 200.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 202.52 s
+E28 fired at 202.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 204.52 s
+E28 fired at 204.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 206.52 s
+E28 fired at 206.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 208.52 s
+E28 fired at 208.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 210.52 s
+E30 fired at 198.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 205.78 s
+E30 fired at 204.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 211.78 s
+E31 fired at 200.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 211.12 s
+E31 fired at 205.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 216.12 s
+E48 fired at 198.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 199.46 s
+E48 fired at 204.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 205.46 s
+E49 fired at 198.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 200.36 s
+E49 fired at 204.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 206.36 s
+E56 fired at 203.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 205.78 s
+
+FINAL RESULT
+B status: ALIVE
+B shots fired: 20
+B current impact power: 0.0000
+Cumulative impact on B: 0.00%
+E ships destroyed by B: 0
+Attack order:
+1. E1
+2. E29
+3. E9
+4. E52
+5. E36
+6. E39
+7. E9
+8. E12
+9. E32
+10. E16
+11. E1
+12. E25
+13. E52
+14. E47
+15. E43
+16. E37
+17. E54
+18. E37
+19. E1
+20. E18
+
+CURRENT IMPACT POWER
+B: 0.0000
+E1 E_D | Gamma: 58.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E2 E_D | Gamma: 58.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E3 E_A | Gamma: 32.00000 | Shots: 14 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E4 E_E | Gamma: 94.00000 | Shots: 4 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E5 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E6 E_D | Gamma: 58.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E7 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E8 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E9 E_C | Gamma: 47.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E10 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E11 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E12 E_A | Gamma: 32.00000 | Shots: 2 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E13 E_E | Gamma: 94.00000 | Shots: 2 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E14 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E15 E_A | Gamma: 32.00000 | Shots: 2 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E16 E_D | Gamma: 58.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E17 E_B | Gamma: 56.00000 | Shots: 5 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E18 E_C | Gamma: 47.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E19 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E20 E_D | Gamma: 58.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E21 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E22 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E23 E_E | Gamma: 94.00000 | Shots: 0 | Current IP: 0.0400 | Damage taken: 0.00% | ALIVE
+E24 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E25 E_C | Gamma: 47.00000 | Shots: 6 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E26 E_D | Gamma: 58.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E27 E_C | Gamma: 47.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E28 E_B | Gamma: 56.00000 | Shots: 10 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E29 E_A | Gamma: 32.00000 | Shots: 11 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E30 E_E | Gamma: 94.00000 | Shots: 5 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E31 E_A | Gamma: 32.00000 | Shots: 11 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E32 E_E | Gamma: 94.00000 | Shots: 2 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E33 E_A | Gamma: 32.00000 | Shots: 3 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E34 E_E | Gamma: 94.00000 | Shots: 7 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E35 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E36 E_B | Gamma: 56.00000 | Shots: 11 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E37 E_C | Gamma: 47.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E38 E_A | Gamma: 32.00000 | Shots: 9 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E39 E_D | Gamma: 58.00000 | Shots: 2 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E40 E_B | Gamma: 56.00000 | Shots: 5 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E41 E_A | Gamma: 32.00000 | Shots: 12 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E42 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E43 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E44 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E45 E_D | Gamma: 58.00000 | Shots: 5 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E46 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E47 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E48 E_E | Gamma: 94.00000 | Shots: 6 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E49 E_E | Gamma: 94.00000 | Shots: 4 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E50 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E51 E_D | Gamma: 58.00000 | Shots: 3 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E52 E_B | Gamma: 56.00000 | Shots: 5 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E53 E_E | Gamma: 94.00000 | Shots: 2 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E54 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E55 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E56 E_C | Gamma: 47.00000 | Shots: 3 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE

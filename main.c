@@ -9,6 +9,7 @@
 /* Part 2-A */
 void runPart2A(Battleship battleship, EscortShip escorts[], int numberOfEscorts, double battlefieldSize);
 void runPart2B(Battleship battleship, EscortShip escorts[], int numberOfEscorts, double battlefieldSize);
+void runPart2C(Battleship battleship, EscortShip escorts[], int numberOfEscorts, double battlefieldSize);
 
 
 /*
@@ -753,17 +754,19 @@ int main(void)
         printf("4. Run ALL Part 1 (A + B + C)\n");
         printf("5. Run Part 2-A\n");
         printf("6. Run Part 2-B\n");
-        printf("7. Exit\n");
+        printf("7. Run Part 2-C\n");
+        printf("8. Run FULL PROGRAM (Part 1 + Part 2)\n");
+        printf("9. Exit\n");
         printf("==========================================\n");
         printf("Select an option: ");
         scanf("%d", &choice);
 
-        if (choice < 1 || choice > 7)
-            printf("Invalid option. Please select 1-7.\n");
+        if (choice < 1 || choice > 9)
+            printf("Invalid option. Please select 1-9.\n");
     }
-    while (choice < 1 || choice > 6);
+    while (choice < 1 || choice > 9);
 
-    if (choice == 7)
+    if (choice == 9)
     {
         printf("\nExiting simulator. Goodbye!\n");
         return 0;
@@ -819,7 +822,7 @@ int main(void)
                        escorts, numberOfEscorts);
 
     /* Part 1-A */
-    if (choice == 1 || choice == 4)
+    if (choice == 1 || choice == 4 || choice == 8)
     {
         printf("\n============================================\n");
         printf("               PART 1-A\n");
@@ -831,7 +834,7 @@ int main(void)
     }
 
     /* Part 1-B needs k, t and jam angle. */
-    if (choice == 2 || choice == 4)
+    if (choice == 2 || choice == 4 || choice == 8)
     {
         printf("\n============================================\n");
         printf("               PART 1-B\n");
@@ -876,7 +879,7 @@ int main(void)
     }
 
     /* Part 1-C includes its own A, B1 and B2 simulations. */
-    if (choice == 3 || choice == 4)
+    if (choice == 3 || choice == 4 || choice == 8)
     {
         printf("\n============================================\n");
         printf("               PART 1-C\n");
@@ -927,7 +930,7 @@ int main(void)
     }
 
     /* Part 2-A is kept separate so the original Part 1 code is unchanged. */
-    if (choice == 5)
+    if (choice == 5 || choice == 8)
     {
         printf("\n============================================\n");
         printf("               PART 2-A\n");
@@ -937,13 +940,23 @@ int main(void)
     }
 
     /* Part 2-B is added separately. Previous simulation code is unchanged. */
-    if (choice == 6)
+    if (choice == 6 || choice == 8)
     {
         printf("\n============================================\n");
         printf("               PART 2-B\n");
         printf("============================================\n");
 
         runPart2B(battleship, escorts, numberOfEscorts, battlefieldSize);
+    }
+
+    /* Part 2-C is added separately. Previous simulation code is unchanged. */
+    if (choice == 7 || choice == 8)
+    {
+        printf("\n============================================\n");
+        printf("               PART 2-C\n");
+        printf("============================================\n");
+
+        runPart2C(battleship, escorts, numberOfEscorts, battlefieldSize);
     }
 
     printf("\n============================================\n");

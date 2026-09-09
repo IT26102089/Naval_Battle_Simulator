@@ -27,6 +27,10 @@ typedef struct
 
     double impactPower;
 
+    double gamma;
+
+    double damageTaken;
+
     int destroyed;
 
     int shotsFired;

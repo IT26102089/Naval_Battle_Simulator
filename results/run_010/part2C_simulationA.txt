@@ -1,0 +1,104 @@
+NAVAL BATTLE SIMULATOR
+PART 2-C - SIMULATION A (Part 1-C style)
+
+B firing interval: 8.00 seconds
+B gamma: 52.00000
+E firing intervals:
+E_A: 5.00
+E_B: 2.00
+E_C: 7.00
+E_D: 9.00
+E_E: 6.00
+
+
+ITERATION 1
+B position: (500.00, 500.00)
+B angle range: 0.00 - 90.00
+E3 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 1.41 s
+E28 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 3.04 s
+E30 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 7.89 s
+E31 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 10.77 s
+E38 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 2.30 s
+E48 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 2.31 s
+E49 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 2.23 s
+E56 fired at 0.00 s | IP: 0.0000 | Damage: 0.00%
+Time to B impact: 3.66 s
+B attack order 1: E47 E_C
+B shots fired: 1 | B current impact: 0.0000
+Damage on E47: 0.00%
+E47 survives with 0.00% damage
+
+FINAL RESULT
+B status: ALIVE
+B shots fired: 1
+B current impact power: 0.0000
+Cumulative impact on B: 0.00%
+E ships destroyed by B: 0
+Attack order:
+1. E47
+
+CURRENT IMPACT POWER
+B: 0.0000
+E1 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E2 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E3 E_A | Gamma: 32.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E4 E_E | Gamma: 94.00000 | Shots: 0 | Current IP: 0.0400 | Damage taken: 0.00% | ALIVE
+E5 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E6 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E7 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E8 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E9 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E10 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E11 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E12 E_A | Gamma: 32.00000 | Shots: 0 | Current IP: 0.0800 | Damage taken: 0.00% | ALIVE
+E13 E_E | Gamma: 94.00000 | Shots: 0 | Current IP: 0.0400 | Damage taken: 0.00% | ALIVE
+E14 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E15 E_A | Gamma: 32.00000 | Shots: 0 | Current IP: 0.0800 | Damage taken: 0.00% | ALIVE
+E16 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E17 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E18 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E19 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E20 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E21 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E22 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E23 E_E | Gamma: 94.00000 | Shots: 0 | Current IP: 0.0400 | Damage taken: 0.00% | ALIVE
+E24 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E25 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E26 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E27 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E28 E_B | Gamma: 56.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E29 E_A | Gamma: 32.00000 | Shots: 0 | Current IP: 0.0800 | Damage taken: 0.00% | ALIVE
+E30 E_E | Gamma: 94.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E31 E_A | Gamma: 32.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E32 E_E | Gamma: 94.00000 | Shots: 0 | Current IP: 0.0400 | Damage taken: 0.00% | ALIVE
+E33 E_A | Gamma: 32.00000 | Shots: 0 | Current IP: 0.0800 | Damage taken: 0.00% | ALIVE
+E34 E_E | Gamma: 94.00000 | Shots: 0 | Current IP: 0.0400 | Damage taken: 0.00% | ALIVE
+E35 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E36 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E37 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E38 E_A | Gamma: 32.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E39 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E40 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E41 E_A | Gamma: 32.00000 | Shots: 0 | Current IP: 0.0800 | Damage taken: 0.00% | ALIVE
+E42 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E43 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E44 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E45 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E46 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E47 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E48 E_E | Gamma: 94.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E49 E_E | Gamma: 94.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
+E50 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E51 E_D | Gamma: 58.00000 | Shots: 0 | Current IP: 0.0500 | Damage taken: 0.00% | ALIVE
+E52 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E53 E_E | Gamma: 94.00000 | Shots: 0 | Current IP: 0.0400 | Damage taken: 0.00% | ALIVE
+E54 E_B | Gamma: 56.00000 | Shots: 0 | Current IP: 0.0600 | Damage taken: 0.00% | ALIVE
+E55 E_C | Gamma: 47.00000 | Shots: 0 | Current IP: 0.0700 | Damage taken: 0.00% | ALIVE
+E56 E_C | Gamma: 47.00000 | Shots: 1 | Current IP: 0.0000 | Damage taken: 0.00% | ALIVE
