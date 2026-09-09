@@ -4,6 +4,7 @@
 
 #include "ships.h"
 #include "battle.h"
+#include "part2Settings.h"
 
 /*
  * Part 2-A is built on the Part 1 functions.
@@ -161,6 +162,9 @@ static void runTimedSimulation(Battleship originalB,
     fprintf(file, "%s\n", title);
     fprintf(file, "B firing interval: %.2f seconds\n\n", fireInterval);
 
+    printf("\n%s\n", title);
+    printf("B firing interval: %.2f seconds\n", fireInterval);
+
     for (i = 0; i < k; i++)
     {
         double minAngle = 0.0;
@@ -179,14 +183,11 @@ static void runTimedSimulation(Battleship originalB,
         fprintf(file, "Attack angle: %.2f - %.2f degrees\n",
                 minAngle, maxAngle);
 
-
         if (b.destroyed)
             break;
 
-        /*
-         * B has to wait between consecutive shots.
-         */
-        if (i > 0)
+        /* Wait only when B has already fired. */
+        if (b.shotsFired > 0)
             currentTime += fireInterval;
 
         target = chooseTarget(b, e, count,
@@ -250,15 +251,10 @@ static void runTimedSimulation(Battleship originalB,
         fprintf(file, "Cumulative B impact: %.2f%%\n",
                 totalDamage * 100.0);
 
-    printf("\n%s\n", title);
-    printf("Battleship status  : %s\n",
+    printf("\nFinal result: B %s\n",
            b.destroyed ? "DESTROYED" : "ALIVE");
-    printf("E ships destroyed  : %d\n", destroyed);
-    printf("Attack order       : %d E ships\n", destroyed);
-    if (cumulative)
-        printf("Cumulative impact  : %.2f%%\n",
-               totalDamage * 100.0);
-    printf("Detailed results saved in:\n%s\n", fileName);
+    printf("E ships destroyed by B: %d\n", destroyed);
+    printf("Total time: %.2f seconds\n", currentTime);
 
     fclose(file);
 }
@@ -279,7 +275,7 @@ void runPart2A(Battleship battleship,
 
     do
     {
-        printf("Enter B firing interval T_Bq (seconds): ");
+        printf("Enter T_Bq (seconds between two consecutive B gun firings): ");
         scanf("%lf", &fireInterval);
 
         if (fireInterval <= 0)
@@ -287,43 +283,44 @@ void runPart2A(Battleship battleship,
     }
     while (fireInterval <= 0);
 
-    do
+    /* Reuse k, t and jam angle when the full program is selected. */
+    if (isPart2FullProgram() && loadPart2PathSettings(&k, &t, &jamAngle))
     {
-        printf("Enter number of path points k (2-%d): ", MAX_POINTS);
-        scanf("%d", &k);
-
-        if (k < 2 || k > MAX_POINTS)
-            printf("Please enter a value between 2 and %d.\n",
-                   MAX_POINTS);
+        printf("Using k, t and jamming angle from Part 1-B.\n");
     }
-    while (k < 2 || k > MAX_POINTS);
+    else
+    {
+        do
+        {
+            printf("Enter k (number of points in the B movement path, 2-%d): ", MAX_POINTS);
+            scanf("%d", &k);
+        }
+        while (k < 2 || k > MAX_POINTS);
 
-    /* Generate the same kind of random path used in Part 1-B. */
+        do
+        {
+            printf("Enter t (iteration when jamming starts, 1 to %d): ", k - 1);
+            scanf("%d", &t);
+        }
+        while (t < 1 || t >= k);
+
+        do
+        {
+            printf("Enter minimum firing angle after jamming (0-30 degrees): ");
+            scanf("%lf", &jamAngle);
+        }
+        while (jamAngle <= 0 || jamAngle >= 30);
+    }
+
+    /* Save values for Part 2-B and Part 2-C. */
+    savePart2BasicSettings(fireInterval, k, t, jamAngle);
+
+    /* Generate the B path. */
     for (i = 0; i < k; i++)
     {
         path[i].x = ((double)rand() / RAND_MAX) * battlefieldSize;
         path[i].y = ((double)rand() / RAND_MAX) * battlefieldSize;
     }
-
-    do
-    {
-        printf("Enter t (1 to %d): ", k - 1);
-        scanf("%d", &t);
-
-        if (t < 1 || t >= k)
-            printf("t must satisfy 0 < t < k.\n");
-    }
-    while (t < 1 || t >= k);
-
-    do
-    {
-        printf("Enter jammed minimum angle (0-30): ");
-        scanf("%lf", &jamAngle);
-
-        if (jamAngle <= 0 || jamAngle >= 30)
-            printf("Angle must satisfy 0 < theta_min < 30.\n");
-    }
-    while (jamAngle <= 0 || jamAngle >= 30);
 
     printf("\nSimple strategy: higher E impact and shorter B flight time are preferred.\n");
 
@@ -360,5 +357,9 @@ void runPart2A(Battleship battleship,
                        resultPath("part2A_simulationC.txt"),
                        "PART 2-A - SIMULATION C (Part 1-C style)");
 
-    printf("\nPart 2-A detailed results saved in the current results/run folder.\n");
+    printf("\nPart 2-A detailed result files:\n");
+    printf("  %s\n", resultPath("part2A_simulationA.txt"));
+    printf("  %s\n", resultPath("part2A_simulationB1.txt"));
+    printf("  %s\n", resultPath("part2A_simulationB2.txt"));
+    printf("  %s\n", resultPath("part2A_simulationC.txt"));
 }

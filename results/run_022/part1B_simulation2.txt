@@ -1,0 +1,164 @@
+NAVAL BATTLE SIMULATOR
+PART 1-B SIMULATION 2
+
+Iterations: 10
+B gun jammed after iteration: 5
+B minimum firing angle after jam: 10.00
+
+====================================
+ITERATION 1
+B position: (367.83, 739.04)
+B hit E4 E_A
+Time to hit: 5.11
+B hit E7 E_B
+Time to hit: 6.81
+B hit E11 E_E
+Time to hit: 6.79
+B hit E12 E_C
+Time to hit: 0.76
+B hit E16 E_D
+Time to hit: 4.90
+B hit E25 E_C
+Time to hit: 6.52
+B hit E29 E_A
+Time to hit: 2.97
+B hit E35 E_C
+Time to hit: 6.96
+B hit E41 E_D
+Time to hit: 3.23
+B hit E42 E_B
+Time to hit: 6.03
+B hit E44 E_B
+Time to hit: 5.90
+B hit E52 E_B
+Time to hit: 1.51
+B hit E56 E_A
+Time to hit: 0.98
+B hit E57 E_C
+Time to hit: 5.36
+E ships hit this iteration: 14
+B survives this iteration
+
+====================================
+ITERATION 2
+B position: (352.74, 691.42)
+B hit E3 E_C
+Time to hit: 6.01
+B hit E58 E_D
+Time to hit: 6.18
+E ships hit this iteration: 2
+B survives this iteration
+
+====================================
+ITERATION 3
+B position: (125.10, 994.88)
+E ships hit this iteration: 0
+B survives this iteration
+
+====================================
+ITERATION 4
+B position: (65.90, 666.87)
+B hit E32 E_E
+Time to hit: 4.86
+B hit E46 E_C
+Time to hit: 0.86
+E ships hit this iteration: 2
+B survives this iteration
+
+====================================
+ITERATION 5
+B position: (853.67, 126.45)
+B hit E6 E_D
+Time to hit: 5.98
+B hit E10 E_E
+Time to hit: 4.36
+B hit E20 E_B
+Time to hit: 0.44
+B hit E22 E_C
+Time to hit: 4.34
+B hit E23 E_D
+Time to hit: 1.79
+B hit E27 E_C
+Time to hit: 4.05
+B hit E28 E_E
+Time to hit: 1.75
+B hit E37 E_D
+Time to hit: 5.73
+B hit E39 E_C
+Time to hit: 4.93
+B hit E49 E_B
+Time to hit: 1.75
+B hit E54 E_D
+Time to hit: 4.95
+B hit E55 E_C
+Time to hit: 1.28
+E ships hit this iteration: 12
+B DESTROYED
+E51 sank B
+Time to impact: 6.12 seconds
+Simulation stopped at iteration 5
+
+
+FINAL RESULT
+B status: DESTROYED
+B shots fired: 30
+E51 sank B
+Final escort states:
+E1 E_D - ALIVE
+E2 E_E - ALIVE
+E3 E_C - DESTROYED
+E4 E_A - DESTROYED
+E5 E_E - ALIVE
+E6 E_D - DESTROYED
+E7 E_B - DESTROYED
+E8 E_D - ALIVE
+E9 E_B - ALIVE
+E10 E_E - DESTROYED
+E11 E_E - DESTROYED
+E12 E_C - DESTROYED
+E13 E_D - ALIVE
+E14 E_A - ALIVE
+E15 E_B - ALIVE
+E16 E_D - DESTROYED
+E17 E_B - ALIVE
+E18 E_C - ALIVE
+E19 E_C - ALIVE
+E20 E_B - DESTROYED
+E21 E_C - ALIVE
+E22 E_C - DESTROYED
+E23 E_D - DESTROYED
+E24 E_A - ALIVE
+E25 E_C - DESTROYED
+E26 E_E - ALIVE
+E27 E_C - DESTROYED
+E28 E_E - DESTROYED
+E29 E_A - DESTROYED
+E30 E_A - ALIVE
+E31 E_D - ALIVE
+E32 E_E - DESTROYED
+E33 E_D - ALIVE
+E34 E_D - ALIVE
+E35 E_C - DESTROYED
+E36 E_C - ALIVE
+E37 E_D - DESTROYED
+E38 E_D - ALIVE
+E39 E_C - DESTROYED
+E40 E_C - ALIVE
+E41 E_D - DESTROYED
+E42 E_B - DESTROYED
+E43 E_D - ALIVE
+E44 E_B - DESTROYED
+E45 E_B - ALIVE
+E46 E_C - DESTROYED
+E47 E_D - ALIVE
+E48 E_D - ALIVE
+E49 E_B - DESTROYED
+E50 E_B - ALIVE
+E51 E_A - ALIVE
+E52 E_B - DESTROYED
+E53 E_A - ALIVE
+E54 E_D - DESTROYED
+E55 E_C - DESTROYED
+E56 E_A - DESTROYED
+E57 E_C - DESTROYED
+E58 E_D - DESTROYED

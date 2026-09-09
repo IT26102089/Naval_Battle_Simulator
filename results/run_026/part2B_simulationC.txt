@@ -1,0 +1,39 @@
+NAVAL BATTLE SIMULATOR
+PART 2-B - SIMULATION C
+
+B firing interval: 5.00 seconds
+E firing intervals:
+E_A: 2.00
+E_B: 3.00
+E_C: 4.00
+E_D: 5.00
+E_E: 6.00
+
+
+ITERATION 1
+B position: (500.00, 500.00)
+B angle range: 0.00 - 90.00
+E16 E_D fired at 0.00 seconds | Time to B impact: 2.40 seconds
+Impact: 5.00%
+E24 E_A fired at 0.00 seconds | Time to B impact: 8.53 seconds
+Impact: 8.00%
+E30 E_A fired at 0.00 seconds | Time to B impact: 7.80 seconds
+Impact: 8.00%
+E53 E_A fired at 0.00 seconds | Time to B impact: 12.38 seconds
+Impact: 8.00%
+E56 E_A fired at 0.00 seconds | Time to B impact: 4.06 seconds
+Impact: 8.00%
+E58 E_D fired at 0.00 seconds | Time to B impact: 5.47 seconds
+Impact: 5.00%
+E69 E_B fired at 0.00 seconds | Time to B impact: 8.62 seconds
+Impact: 6.00%
+B attack order 1: E16 E_D
+B time to hit: 1.03 seconds
+
+FINAL RESULT
+B status: ALIVE
+E ships destroyed by B: 1
+B shots fired: 1
+Attack order of E ships:
+1. E16
+Cumulative impact on B: 48.00%

@@ -1,0 +1,71 @@
+NAVAL BATTLE SIMULATOR
+PART 2-A - SIMULATION B1 (Part 1-B style)
+B firing interval: 5.00 seconds
+
+
+------------------------------
+ITERATION 1
+B position: (555.86, 126.67)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 2
+B position: (192.69, 590.55)
+Attack angle: 0.00 - 90.00 degrees
+B attack order position 1: E18 E_B
+Flight time: 1.09 seconds
+
+------------------------------
+ITERATION 3
+B position: (429.61, 397.81)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 4
+B position: (818.67, 297.51)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 5
+B position: (941.14, 974.62)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 6
+B position: (227.25, 385.33)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 7
+B position: (48.71, 43.03)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 8
+B position: (343.25, 774.73)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 9
+B position: (614.63, 639.49)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+------------------------------
+ITERATION 10
+B position: (982.63, 800.05)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+
+FINAL RESULT
+B status: ALIVE
+E ships destroyed by B: 1
+B shots fired: 1
+Total time: 41.09 seconds

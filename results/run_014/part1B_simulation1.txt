@@ -1,0 +1,35 @@
+NAVAL BATTLE SIMULATOR
+PART 1-B SIMULATION 1
+
+Iterations: 68
+====================================
+ITERATION 1
+B position: (119.92, 692.78)
+B hit E10 E_C
+Time to hit: 3.76
+B hit E12 E_A
+Time to hit: 3.97
+B hit E13 E_E
+Time to hit: 6.17
+B hit E15 E_A
+Time to hit: 2.85
+B hit E27 E_C
+Time to hit: 3.97
+B hit E42 E_B
+Time to hit: 2.18
+B hit E43 E_C
+Time to hit: 0.24
+B hit E46 E_B
+Time to hit: 3.88
+B hit E55 E_C
+Time to hit: 3.36
+E ships hit this iteration: 9
+B DESTROYED
+E58 sank B
+Time to impact: 5.41 seconds
+Simulation stopped at iteration 1
+
+
+FINAL RESULT
+B status: DESTROYED
+B shots fired: 9

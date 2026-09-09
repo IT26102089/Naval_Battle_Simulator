@@ -157,7 +157,8 @@ void createEscortShips(
                 escorts[i].angleRange = 30.0;
 
                 escorts[i].vmax =
-                    0.8 * battleshipVmax;
+                    (0.1 + 0.8 * ((double)rand() / RAND_MAX))
+                    * battleshipVmax;
 
                 break;
 
@@ -174,7 +175,8 @@ void createEscortShips(
                 escorts[i].angleRange = 25.0;
 
                 escorts[i].vmax =
-                    0.8 * battleshipVmax;
+                    (0.1 + 0.8 * ((double)rand() / RAND_MAX))
+                    * battleshipVmax;
 
                 break;
 
@@ -191,7 +193,8 @@ void createEscortShips(
                 escorts[i].angleRange = 50.0;
 
                 escorts[i].vmax =
-                    0.8 * battleshipVmax;
+                    (0.1 + 0.8 * ((double)rand() / RAND_MAX))
+                    * battleshipVmax;
 
                 break;
 
@@ -208,7 +211,8 @@ void createEscortShips(
                 escorts[i].angleRange = 70.0;
 
                 escorts[i].vmax =
-                    0.8 * battleshipVmax;
+                    (0.1 + 0.8 * ((double)rand() / RAND_MAX))
+                    * battleshipVmax;
 
                 break;
         }

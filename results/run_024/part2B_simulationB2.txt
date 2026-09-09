@@ -1,0 +1,24 @@
+NAVAL BATTLE SIMULATOR
+PART 2-B - SIMULATION B2
+
+B firing interval: 5.00 seconds
+E firing intervals:
+E_A: 2.00
+E_B: 3.00
+E_C: 4.00
+E_D: 5.00
+E_E: 6.00
+
+
+ITERATION 1
+B position: (522.40, 202.05)
+B angle range: 0.00 - 90.00
+E31 E_D fired at 0.00 seconds | Time to B impact: 4.02 seconds
+E31 destroyed B.
+
+FINAL RESULT
+B status: DESTROYED
+E ships destroyed by B: 0
+B shots fired: 0
+Attack order of E ships:
+None

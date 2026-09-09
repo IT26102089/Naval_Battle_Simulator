@@ -1,0 +1,140 @@
+NAVAL BATTLE SIMULATOR
+PART 2-C - SIMULATION B1
+
+B firing interval: 2.00 seconds
+B gamma: 0.01000
+
+E31 fired at 0.00 s, current impact 0.0495, B damage 0.0495.
+E39 fired at 0.00 s, current impact 0.0693, B damage 0.0693.
+E53 fired at 0.00 s, current impact 0.0792, B damage 0.0792.
+E80 fired at 0.00 s, current impact 0.0396, B damage 0.0396.
+E83 fired at 0.00 s, current impact 0.0693, B damage 0.0693.
+B attack 1: E31 E_D, hit time 0.86 s, B impact 0.9900
+B attack 2: E29 E_A, hit time 2.66 s, B impact 0.9802
+E4 fired at 2.00 s, current impact 0.0792, B damage 0.0792.
+E56 fired at 2.00 s, current impact 0.0792, B damage 0.0792.
+E4 fired at 4.00 s, current impact 0.0784, B damage 0.0784.
+E56 fired at 4.00 s, current impact 0.0784, B damage 0.0784.
+E41 fired at 5.00 s, current impact 0.0495, B damage 0.0495.
+B attack 3: E33 E_D, hit time 0.24 s, B impact 0.9704
+E17 fired at 6.00 s, current impact 0.0594, B damage 0.0594.
+E26 fired at 6.00 s, current impact 0.0396, B damage 0.0396.
+B attack 4: E71 E_B, hit time 0.45 s, B impact 0.9608
+E87 fired at 8.00 s, current impact 0.0792, B damage 0.0792.
+E71 fired at 9.00 s, current impact 0.0594, B damage 0.0594.
+E87 fired at 10.00 s, current impact 0.0784, B damage 0.0784.
+B attack 5: E85 E_B, hit time 0.41 s, B impact 0.9512
+E29 fired at 12.00 s, current impact 0.0792, B damage 0.0792.
+
+FINAL RESULT
+B status: DESTROYED
+B shots fired: 5
+B current impact power: 0.951229
+E29 sank B
+Attack order:
+1. E31
+2. E29
+3. E33
+4. E71
+5. E85
+Current E impact powers and health:
+E1 E_D: impact 0.050000, remaining health 1.000000
+E2 E_E: impact 0.040000, remaining health 1.000000
+E3 E_C: impact 0.070000, remaining health 1.000000
+E4 E_A: impact 0.078416, remaining health 1.000000
+E5 E_E: impact 0.040000, remaining health 1.000000
+E6 E_D: impact 0.050000, remaining health 1.000000
+E7 E_B: impact 0.060000, remaining health 1.000000
+E8 E_D: impact 0.050000, remaining health 1.000000
+E9 E_B: impact 0.060000, remaining health 1.000000
+E10 E_E: impact 0.040000, remaining health 1.000000
+E11 E_E: impact 0.040000, remaining health 1.000000
+E12 E_C: impact 0.070000, remaining health 1.000000
+E13 E_D: impact 0.050000, remaining health 1.000000
+E14 E_A: impact 0.080000, remaining health 1.000000
+E15 E_B: impact 0.060000, remaining health 1.000000
+E16 E_D: impact 0.050000, remaining health 1.000000
+E17 E_B: impact 0.059403, remaining health 1.000000
+E18 E_C: impact 0.070000, remaining health 1.000000
+E19 E_C: impact 0.070000, remaining health 1.000000
+E20 E_B: impact 0.060000, remaining health 1.000000
+E21 E_C: impact 0.070000, remaining health 1.000000
+E22 E_C: impact 0.070000, remaining health 1.000000
+E23 E_D: impact 0.050000, remaining health 1.000000
+E24 E_A: impact 0.080000, remaining health 1.000000
+E25 E_C: impact 0.070000, remaining health 1.000000
+E26 E_E: impact 0.039602, remaining health 1.000000
+E27 E_C: impact 0.070000, remaining health 1.000000
+E28 E_E: impact 0.040000, remaining health 1.000000
+E29 E_A: impact 0.079204, remaining health 0.019801
+E30 E_A: impact 0.080000, remaining health 1.000000
+E31 E_D: impact 0.049502, remaining health 0.009950
+E32 E_E: impact 0.040000, remaining health 1.000000
+E33 E_D: impact 0.050000, remaining health 0.029554
+E34 E_D: impact 0.050000, remaining health 1.000000
+E35 E_C: impact 0.070000, remaining health 1.000000
+E36 E_C: impact 0.070000, remaining health 1.000000
+E37 E_D: impact 0.050000, remaining health 1.000000
+E38 E_D: impact 0.050000, remaining health 1.000000
+E39 E_C: impact 0.069303, remaining health 1.000000
+E40 E_C: impact 0.070000, remaining health 1.000000
+E41 E_D: impact 0.049502, remaining health 1.000000
+E42 E_B: impact 0.060000, remaining health 1.000000
+E43 E_D: impact 0.050000, remaining health 1.000000
+E44 E_B: impact 0.060000, remaining health 1.000000
+E45 E_B: impact 0.060000, remaining health 1.000000
+E46 E_C: impact 0.070000, remaining health 1.000000
+E47 E_D: impact 0.050000, remaining health 1.000000
+E48 E_D: impact 0.050000, remaining health 1.000000
+E49 E_B: impact 0.060000, remaining health 1.000000
+E50 E_B: impact 0.060000, remaining health 1.000000
+E51 E_A: impact 0.080000, remaining health 1.000000
+E52 E_B: impact 0.060000, remaining health 1.000000
+E53 E_A: impact 0.079204, remaining health 1.000000
+E54 E_D: impact 0.050000, remaining health 1.000000
+E55 E_C: impact 0.070000, remaining health 1.000000
+E56 E_A: impact 0.078416, remaining health 1.000000
+E57 E_C: impact 0.070000, remaining health 1.000000
+E58 E_D: impact 0.050000, remaining health 1.000000
+E59 E_E: impact 0.040000, remaining health 1.000000
+E60 E_B: impact 0.060000, remaining health 1.000000
+E61 E_E: impact 0.040000, remaining health 1.000000
+E62 E_A: impact 0.080000, remaining health 1.000000
+E63 E_C: impact 0.070000, remaining health 1.000000
+E64 E_B: impact 0.060000, remaining health 1.000000
+E65 E_B: impact 0.060000, remaining health 1.000000
+E66 E_A: impact 0.080000, remaining health 1.000000
+E67 E_B: impact 0.060000, remaining health 1.000000
+E68 E_C: impact 0.070000, remaining health 1.000000
+E69 E_B: impact 0.060000, remaining health 1.000000
+E70 E_B: impact 0.060000, remaining health 1.000000
+E71 E_B: impact 0.059403, remaining health 0.039211
+E72 E_D: impact 0.050000, remaining health 1.000000
+E73 E_D: impact 0.050000, remaining health 1.000000
+E74 E_C: impact 0.070000, remaining health 1.000000
+E75 E_A: impact 0.080000, remaining health 1.000000
+E76 E_C: impact 0.070000, remaining health 1.000000
+E77 E_E: impact 0.040000, remaining health 1.000000
+E78 E_E: impact 0.040000, remaining health 1.000000
+E79 E_C: impact 0.070000, remaining health 1.000000
+E80 E_E: impact 0.039602, remaining health 1.000000
+E81 E_A: impact 0.080000, remaining health 1.000000
+E82 E_C: impact 0.070000, remaining health 1.000000
+E83 E_C: impact 0.069303, remaining health 1.000000
+E84 E_B: impact 0.060000, remaining health 1.000000
+E85 E_B: impact 0.060000, remaining health 0.048771
+E86 E_D: impact 0.050000, remaining health 1.000000
+E87 E_A: impact 0.078416, remaining health 1.000000
+E88 E_E: impact 0.040000, remaining health 1.000000
+E89 E_E: impact 0.040000, remaining health 1.000000
+E90 E_E: impact 0.040000, remaining health 1.000000
+E91 E_C: impact 0.070000, remaining health 1.000000
+E92 E_B: impact 0.060000, remaining health 1.000000
+E93 E_B: impact 0.060000, remaining health 1.000000
+E94 E_B: impact 0.060000, remaining health 1.000000
+E95 E_B: impact 0.060000, remaining health 1.000000
+E96 E_B: impact 0.060000, remaining health 1.000000
+E97 E_D: impact 0.050000, remaining health 1.000000
+E98 E_B: impact 0.060000, remaining health 1.000000
+E99 E_E: impact 0.040000, remaining health 1.000000
+E100 E_D: impact 0.050000, remaining health 1.000000

@@ -4,6 +4,7 @@
 
 #include "ships.h"
 #include "battle.h"
+#include "part2Settings.h"
 
 /*
  * Part 2-B
@@ -224,7 +225,8 @@ static void runSimulation(Battleship originalB, EscortShip originalE[],
 
         if (target != -1)
         {
-            if (i > 0)
+            /* Wait only between actual B shots. */
+            if (b.shotsFired > 0)
                 currentTime += bInterval;
 
             currentTime += hitTime;
@@ -310,53 +312,71 @@ void runPart2B(Battleship battleship, EscortShip escorts[],
 
     printf("\n========== PART 2-B SETUP ==========\n");
 
-    do
+    if (isPart2FullProgram() && loadPart2BasicSettings(&bInterval, &k, &t, &jamAngle))
     {
-        printf("Enter B firing interval T_Bq (seconds): ");
-        scanf("%lf", &bInterval);
+        printf("Using T_Bq, k, t and jamming angle from Part 2-A.\n");
     }
-    while (bInterval <= 0);
-
-    printf("\nEnter firing interval for each escort type.\n");
-
-    for (i = 0; i < 5; i++)
+    else
     {
-        char type = 'A' + i;
+        do
+        {
+            printf("Enter T_Bq (seconds between two consecutive B gun firings): ");
+            scanf("%lf", &bInterval);
+        }
+        while (bInterval <= 0);
 
         do
         {
-            printf("T_E_%c (seconds): ", type);
-            scanf("%lf", &eIntervals[i]);
+            printf("Enter k (number of points in the B movement path, 2-%d): ", MAX_POINTS);
+            scanf("%d", &k);
         }
-        while (eIntervals[i] <= 0);
+        while (k < 2 || k > MAX_POINTS);
+
+        do
+        {
+            printf("Enter t (iteration when jamming starts, 1 to %d): ", k - 1);
+            scanf("%d", &t);
+        }
+        while (t < 1 || t >= k);
+
+        do
+        {
+            printf("Enter minimum firing angle after jamming (0-30 degrees): ");
+            scanf("%lf", &jamAngle);
+        }
+        while (jamAngle <= 0 || jamAngle >= 30);
+
+        savePart2BasicSettings(bInterval, k, t, jamAngle);
     }
 
-    do
+    if (isPart2FullProgram() && loadPart2EscortIntervals(eIntervals, 5))
     {
-        printf("\nEnter number of path points k (2-%d): ", MAX_POINTS);
-        scanf("%d", &k);
+        printf("Using escort firing intervals from the previous Part 2 run.\n");
     }
-    while (k < 2 || k > MAX_POINTS);
+    else
+    {
+        printf("\nT_E is the time between two consecutive gun firings of an escort ship type.\n");
+
+        for (i = 0; i < 5; i++)
+        {
+            char type = 'A' + i;
+
+            do
+            {
+                printf("Enter T_E_%c (seconds between E_%c firings): ", type, type);
+                scanf("%lf", &eIntervals[i]);
+            }
+            while (eIntervals[i] <= 0);
+        }
+
+        savePart2EscortIntervals(eIntervals, 5);
+    }
 
     for (i = 0; i < k; i++)
     {
         path[i].x = ((double)rand() / RAND_MAX) * battlefieldSize;
         path[i].y = ((double)rand() / RAND_MAX) * battlefieldSize;
     }
-
-    do
-    {
-        printf("Enter t (jam point, 1 to %d): ", k - 1);
-        scanf("%d", &t);
-    }
-    while (t < 1 || t >= k);
-
-    do
-    {
-        printf("Enter jammed minimum angle (0-30): ");
-        scanf("%lf", &jamAngle);
-    }
-    while (jamAngle <= 0 || jamAngle >= 30);
 
     runSimulation(battleship, escorts, numberOfEscorts,
                   path, 1, bInterval, eIntervals,

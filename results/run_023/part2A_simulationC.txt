@@ -1,0 +1,18 @@
+NAVAL BATTLE SIMULATOR
+PART 2-A - SIMULATION C (Part 1-C style)
+B firing interval: 5.00 seconds
+
+
+------------------------------
+ITERATION 1
+B position: (500.00, 500.00)
+Attack angle: 0.00 - 90.00 degrees
+No E ship is in B attack range.
+Cumulative B impact: 0.00%
+
+FINAL RESULT
+B status: ALIVE
+E ships destroyed by B: 0
+B shots fired: 0
+Total time: 0.00 seconds
+Cumulative B impact: 0.00%
